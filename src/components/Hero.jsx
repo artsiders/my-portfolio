@@ -1,5 +1,6 @@
 import { FaCode } from "react-icons/fa";
 import Tilt from "react-tilt";
+import image from "../assets/logo.webp";
 
 const Hero = () => {
   return (
@@ -29,7 +30,7 @@ const Hero = () => {
           <img
             loading="lazy"
             className="w-full md:w-[420px] animate-updown"
-            src={`/src/assets/logo.webp`}
+            src={image}
             alt=""
           />
         </Tilt>

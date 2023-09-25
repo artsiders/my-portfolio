@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
+import image from "../assets/logo.webp";
 
-// import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 
 const Contact = () => {
@@ -123,7 +123,7 @@ const Contact = () => {
           <img
             loading="lazy"
             className="max-w-full max-h-full"
-            src={`/src/assets/logo.webp`}
+            src={image}
             alt=""
           />
         </div>
