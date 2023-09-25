@@ -1,0 +1,87 @@
+import { BrowserRouter } from "react-router-dom";
+import { createContext, useEffect, useState } from "react";
+
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Experience from "./components/Experience";
+import Tech from "./components/Tech";
+import Works from "./components/Works";
+import Contact from "./components/Contact";
+import Skills from "./components/Skills";
+// Animation package
+import Aos from "aos";
+import "aos/dist/aos.css";
+// import Testimonials from "./components/Testimonials";
+
+export const ThemeContext = createContext("light");
+
+const App = () => {
+  useEffect(() => {
+    Aos.init({
+      duration: 600,
+      offset: 100,
+      // disable: "mobile",
+    });
+  }, []);
+  const [theme, setTheme] = useState(localStorage.getItem("theme"));
+
+  useEffect(() => {
+    return () => {
+      if (theme) {
+        if (theme === "dark") {
+          document.documentElement.classList.add("dark");
+          document.documentElement.classList.remove("light");
+        } else {
+          document.documentElement.classList.add("light");
+          document.documentElement.classList.remove("dark");
+        }
+      } else {
+        localStorage.setItem("theme", "light");
+      }
+    };
+  }, []);
+  return (
+    <ThemeContext.Provider
+      value={{
+        SetTheme: setTheme,
+        Theme: theme,
+      }}
+    >
+      <BrowserRouter>
+        <div className="relative z-0">
+          <div
+            className={`${
+              theme === "light"
+                ? "bg-hero-pattern-light"
+                : "bg-hero-pattern-dark"
+            } bg-cover bg-no-repeat bg-center`}
+          >
+            <Navbar />
+            <Hero />
+          </div>
+          <About />
+          <Skills />
+          {/* <Testimonials /> */}
+          <Experience />
+          <Tech />
+          <Works />
+          {/* <Feedbacks /> */}
+          <div className="dark:bg-dark relative z-0">
+            <Contact />
+            {/* <StarsCanvas /> */}
+          </div>
+          <footer className="bg-white dark:bg-dark p-3 text-center text-writing dark:text-white">
+            <h6 className="mb-3">SALIM NJIKAM</h6>
+            <p>
+              <a href="https://youtube.com/@art-sider">ART SIDER</a> © All
+              CopyRights Reserved 2023
+            </p>
+          </footer>
+        </div>
+      </BrowserRouter>
+    </ThemeContext.Provider>
+  );
+};
+
+export default App;
