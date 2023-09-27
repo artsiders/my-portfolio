@@ -12,6 +12,7 @@ import Skills from "./components/Skills";
 // Animation package
 import Aos from "aos";
 import "aos/dist/aos.css";
+import Testimonials from "./components/Testimonials";
 // import Testimonials from "./components/Testimonials";
 
 export const ThemeContext = createContext("light");
@@ -62,7 +63,7 @@ const App = () => {
           </div>
           <About />
           <Skills />
-          {/* <Testimonials /> */}
+          <Testimonials />
           <Experience />
           <Tech />
           <Works />

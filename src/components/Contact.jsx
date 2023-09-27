@@ -56,7 +56,7 @@ const Contact = () => {
   };
 
   return (
-    <div
+    <section
       className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
     >
       <div
@@ -109,7 +109,7 @@ const Contact = () => {
             />
           </label>
 
-          <button type="submit" className="btn">
+          <button type="submit" className="btn mt-4">
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
@@ -128,7 +128,7 @@ const Contact = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

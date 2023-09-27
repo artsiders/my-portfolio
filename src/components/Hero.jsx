@@ -4,7 +4,7 @@ import image from "../assets/logo.webp";
 
 const Hero = () => {
   return (
-    <section id="home" className={`relative w-full min-h-screen mx-auto flex`}>
+    <section id="home" className="relative w-full min-h-screen mx-auto flex">
       <div
         className={`inset-0 mt-20 mb-10 w-full max-w-7xl mx-auto paddingX flex flex-col-reverse md:grid md:grid-cols-2 items-center md:items-start gap-10 justify-evenly`}
       >
@@ -21,7 +21,7 @@ const Hero = () => {
             <br className="sm:block hidden" />
           </p>
           <div className="flex gap-3">
-            <button type="submit" className="btn">
+            <button type="submit" className="btn mt-4">
               See More <FaCode className="ml-2" />
             </button>
           </div>
