@@ -8,12 +8,12 @@ import Experience from "./components/Experience";
 import Tech from "./components/Tech";
 import Works from "./components/Works";
 import Contact from "./components/Contact";
-import Skills from "./components/Skills";
+import Testimonials from "./components/Testimonials";
+// import Skills from "./components/Skills";
+
 // Animation package
 import Aos from "aos";
 import "aos/dist/aos.css";
-import Testimonials from "./components/Testimonials";
-// import Testimonials from "./components/Testimonials";
 
 export const ThemeContext = createContext("light");
 
@@ -62,12 +62,11 @@ const App = () => {
             <Hero />
           </div>
           <About />
-          <Skills />
-          <Testimonials />
+          {/* <Skills /> */}
           <Experience />
           <Tech />
           <Works />
-          {/* <Feedbacks /> */}
+          <Testimonials />
           <div className="dark:bg-dark relative z-0">
             <Contact />
             {/* <StarsCanvas /> */}
