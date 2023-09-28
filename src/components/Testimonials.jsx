@@ -18,7 +18,7 @@ const Testimonials = () => {
         >
           Testimonials
         </h2>
-        <p data-aos="fade-up" data-aos-delay="300">
+        <p className="mb-28 md:mb-0" data-aos="fade-up" data-aos-delay="300">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
           praesentium consequatur laborum unde, optio facere omnis iste ipsum
           alias doloremque beatae maxime, culpa distinctio totam recusandae

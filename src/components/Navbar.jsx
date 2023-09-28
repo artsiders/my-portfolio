@@ -61,6 +61,7 @@ const Navbar = () => {
               href="https://github.com/artsiders"
               target="_blank"
               className="sm:cursor-pointer right-4 z-[999]"
+              rel="noreferrer"
             >
               <FaGithub />
             </a>
@@ -68,6 +69,7 @@ const Navbar = () => {
               href="https://youtube.com/@art-sider"
               target="_blank"
               className="sm:cursor-pointer right-4 z-[999] hover:text-red-700 transition-all"
+              rel="noreferrer"
             >
               <IoLogoYoutube />
             </a>
@@ -75,6 +77,7 @@ const Navbar = () => {
               href="https://web.facebook.com/SalimArtSider/"
               target="_blank"
               className="sm:cursor-pointer right-4 z-[999] hover:text-blue-500 transition-all"
+              rel="noreferrer"
             >
               <BsFacebook />
             </a>

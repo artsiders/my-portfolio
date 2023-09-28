@@ -14,6 +14,13 @@ import graphicDesigner from "./assets/services/graphic-designer.webp"
 import mobile from "./assets/services/mobile.webp"
 import web from "./assets/services/web.webp"
 
+import altplusSite from "./assets/work/altplus.webp"
+import comx from "./assets/work/comx.webp"
+import campus from "./assets/work/campus.webp"
+import maadana from "./assets/work/maadana.webp"
+import smartbook from "./assets/work/smartbook.webp"
+import socapco from "./assets/work/socapco.webp"
+
 export const navLinks = [
   {
     id: "about",
@@ -135,37 +142,37 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Atplus website",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "The Alt plus website is a platform that showcases the services and achievements of this innovative startup. Alt plus pushes the boundaries of technology to provide personalized and high-quality IT solutions.",
     tags: [
       {
-        name: "react",
+        name: "javascript",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "bootstrap",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "css",
         color: "pink-text-gradient",
       },
     ],
-    image: '../assets/carrent.png',
-    source_code_link: "https://github.com/",
+    image: altplusSite,
+    link: "https://alt-plus.onrender.com/",
   },
   {
-    name: "Job IT",
+    name: "Comx shop",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Comx-front is a web application that allows users to easily and quickly create their own online store. With this application, you can create an online store to sell your products in just a few minutes, without the need for technical skills.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "TypeScript",
         color: "green-text-gradient",
       },
       {
@@ -173,20 +180,20 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: '../assets/jobit.png',
-    source_code_link: "https://github.com/",
+    image: comx,
+    link: "https://comx-front.vercel.app/",
   },
   {
-    name: "Trip Guide",
+    name: "socapco cosmetic website",
     description:
       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
     tags: [
       {
-        name: "nextjs",
+        name: "php",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "bootstrap",
         color: "green-text-gradient",
       },
       {
@@ -194,29 +201,66 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: '../assets/backend.png',
-    source_code_link: "https://github.com/",
+    image: socapco,
+    link: "https://www.socapco-cosmetique.com/",
   },
   {
-    name: "Trip Guide",
+    name: "smartbook Accounting",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "SmartBook is a comprehensive application for managing analytical accounting specifically designed to meet the specific needs of Edkadi Hotel. This application offers advanced features that allow the hotel to track and analyze its expenses and revenues in a detailed manner.",
     tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "mongoDB",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "scss",
         color: "pink-text-gradient",
       },
     ],
-    image: '../assets/backend.png',
-    source_code_link: "https://github.com/",
+    image: smartbook,
+    link: "http://smartbook.onrender.com/",
+  },
+  {
+    name: "ma'adana cloud hosting",
+    description: "Ma'adana Cloud Hosting is a reliable and innovative African cloud hosting service, providing top-notch hosting solutions for businesses and individuals.",
+    tags: [
+      {
+        name: "wordpress",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "php",
+        color: "green-text-gradient",
+      },
+    ],
+    image: maadana,
+    link: "https://maadana.likupdigital.com/",
+  },
+  {
+    name: "campus app",
+    description:
+      "Plateforme de gestion complète du parcours universitaire, regroupant bibliothèque numérique, gestion des notes, emploi du temps, communication et supports de cours numériques.",
+    tags: [
+      {
+        name: "viteJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Typescript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "scss",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: campus,
+    link: "https://campus-main-ui.onrender.com/",
   },
 ];
 
