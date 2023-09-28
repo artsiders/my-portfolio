@@ -22,7 +22,7 @@ const Testimonials = () => {
         </p>
       </div>
       <div
-        className="relative flex justify-center items-center h-[300px] w-full md:w-1/2"
+        className="outer relative flex justify-center items-center h-[300px] w-full md:w-1/2"
         data-aos="zoom-out-up"
       >
         {testimonials.map((testimonial, key) => (

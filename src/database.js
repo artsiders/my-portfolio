@@ -150,7 +150,7 @@ const testimonials = [
     name: "Cyril",
     post: "Étudiant",
     message:
-      "La formation dispensée par Mr Salim a été extrêmement bénéfique pour ma carrière. Je suis maintenant mieux préparé pour le monde professionnel.",
+      "La formation dispensée par Salim a été extrêmement bénéfique pour ma carrière. Je suis maintenant mieux préparé pour le monde professionnel.",
   },
   {
     key: 2,

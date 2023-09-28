@@ -16,6 +16,7 @@ const ExperienceCard = ({ experience }) => {
   let light = {
     background: "#ffffff",
     color: "#211e35",
+    boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
   };
   let dark = {
     background: "#1d1836",
