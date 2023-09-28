@@ -21,6 +21,12 @@ import maadana from "./assets/work/maadana.webp"
 import smartbook from "./assets/work/smartbook.webp"
 import socapco from "./assets/work/socapco.webp"
 
+import testimonial1 from "./assets/testimonials/testimonial-1.webp";
+import testimonial2 from "./assets/testimonials/testimonial-2.webp";
+import testimonial3 from "./assets/testimonials/testimonial-3.webp";
+import testimonial4 from "./assets/testimonials/testimonial-4.webp";
+import testimonial5 from "./assets/testimonials/testimonial-5.webp";
+
 export const navLinks = [
   {
     id: "about",
@@ -115,28 +121,44 @@ const experiences = [
 
 const testimonials = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    key: -1,
+    image: testimonial1,
+    name: "Mewe Loic",
+    post: "Étudiant",
+    message:
+      "Je suis tellement reconnaissant d'avoir rencontré Mr Salim. Ses conseils et son soutien m'ont aidé à progresser dans mes études.",
   },
   {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    key: 0,
+    image: testimonial2,
+    name: "Merline Yassa",
+    post: "Entrepreneur",
+    message:
+      "Les applications créées par Mr Salim sont vraiment incroyables. Elles ont transformé la façon dont je gère mon entreprise.",
   },
   {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    key: 1,
+    image: testimonial3,
+    name: "Moustapha Aka",
+    post: "Directeur de l'hôtel Edkadi",
+    message:
+      "J'utilise le logiciel SmartBook développé par ces jeunes. C'est très efficace et cela a grandement amélioré notre système de réservation.",
+  },
+  {
+    key: 2,
+    image: testimonial4,
+    name: "Cyril",
+    post: "Étudiant",
+    message:
+      "La formation dispensée par Mr Salim a été extrêmement bénéfique pour ma carrière. Je suis maintenant mieux préparé pour le monde professionnel.",
+  },
+  {
+    key: 2,
+    image: testimonial5,
+    name: "Dimitri Mabon",
+    post: "Développeur front-end",
+    message:
+      "Je suis impressionné par les compétences de Mr Salim en développement web. Travailler avec lui a été une expérience enrichissante.",
   },
 ];
 

@@ -1,8 +1,4 @@
-import testimonial1 from "../assets/testimonials/testimonial-1.webp";
-import testimonial2 from "../assets/testimonials/testimonial-2.webp";
-import testimonial3 from "../assets/testimonials/testimonial-3.webp";
-import testimonial4 from "../assets/testimonials/testimonial-4.webp";
-import testimonial5 from "../assets/testimonials/testimonial-5.webp";
+import { testimonials } from "../database";
 
 const Testimonials = () => {
   return (
@@ -29,48 +25,7 @@ const Testimonials = () => {
         className="relative flex justify-center items-center h-[300px] w-full md:w-1/2"
         data-aos="zoom-out-up"
       >
-        {[
-          {
-            key: -1,
-            image: testimonial1,
-            name: "mewe loic",
-            post: "student",
-            message:
-              "la formation est de très bonne qualité! perso je vallide le projet",
-          },
-          {
-            key: 0,
-            image: testimonial2,
-            name: "merline yassa",
-            post: "Entrepreneur",
-            message:
-              "les applications faites par alt sont vraiment incroyables",
-          },
-          {
-            key: 1,
-            image: testimonial3,
-            name: "Moustapha Aka",
-            post: "Directeur Edkadi hotel",
-            message:
-              "j'utilise le logiciel smartbook developper par ces jeunes. c'est très éfficace",
-          },
-          {
-            key: 2,
-            image: testimonial4,
-            name: "cyril",
-            post: "student",
-            message:
-              "la formation est de très bonne qualité! perso je vallide le projet",
-          },
-          {
-            key: 2,
-            image: testimonial5,
-            name: "dimitri mabon",
-            post: "front-end developer",
-            message:
-              "la formation est de très bonne qualité! perso je vallide le projet",
-          },
-        ].map((testimonial, key) => (
+        {testimonials.map((testimonial, key) => (
           <div
             key={key}
             className="card flex items-center max-w-fit justify-around gap-6 bg-white dark:bg-tertiary w-full p-5 opacity-0 pointer-events-none absolute shadow-card rounded-[100px_20px_20px_100px]"
