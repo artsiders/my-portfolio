@@ -1,3 +1,4 @@
+import { BiMenu } from "react-icons/bi";
 import { BiChevronDown } from "react-icons/bi";
 // import { IoLogoYoutube } from "react-icons/io";
 // import { BsFacebook } from "react-icons/bs";
@@ -53,10 +54,10 @@ const Navbar = () => {
         className={`h-16 w-full fixed z-[999] ${scrollClass} flex justify-between items-center px-3 md:px-6`}
       >
         <div
-          className="text-white sm:cursor-pointer top-4 left-4 z-[999] rounded-lg bg-primary dark:bg-tertiary p-2"
-          onClick={() => setShowMenu(!showMenu)}
+          className="sm:cursor-pointer top-4 left-4 z-[999] rounded-lg  bg-white/60 dark:bg-dark/40 p-2 hover:bg-slate-400/20 dark:highlight-white/5"
+          onClick={() => setShowMenu(() => !showMenu)}
         >
-          <HiMenuAlt2 size={22} />
+          {showMenu ? <HiMenuAlt2 size={22} /> : <BiMenu size={22} />}
         </div>
         <div className="flex gap-3 items-center">
           {/* <a

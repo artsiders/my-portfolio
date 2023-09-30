@@ -1,5 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 import { createContext, useEffect, useState } from "react";
+import Cookies from "js-cookie";
 
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
@@ -25,7 +26,7 @@ const App = () => {
       // disable: "mobile",
     });
   }, []);
-  const [theme, setTheme] = useState(localStorage.getItem("theme"));
+  const [theme, setTheme] = useState(Cookies.get("theme"));
 
   useEffect(() => {
     return () => {
@@ -38,7 +39,7 @@ const App = () => {
           document.documentElement.classList.remove("dark");
         }
       } else {
-        localStorage.setItem("theme", "light");
+        Cookies.set("theme", "light");
       }
     };
   }, []);
