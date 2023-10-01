@@ -28,15 +28,15 @@ const Testimonials = () => {
         {testimonials.map((testimonial, key) => (
           <div
             key={key}
-            className="card flex items-center max-w-fit justify-around gap-6 bg-[#f7f7f7] dark:bg-tertiary border-2 border-white dark:border-transparent w-full p-5 opacity-0 pointer-events-none absolute shadow-card dark:shadow-none rounded-[100px_20px_20px_100px]"
+            className="card flex items-center max-w-fit justify-around gap-6 bg-[#f7f7f7] dark:bg-tertiary border-2 border-white dark:border-transparent w-full p-5 opacity-0 pointer-events-none absolute shadow-card dark:shadow-none rounded-xl"
             style={{
               "--delay": testimonial.key,
             }}
           >
             <div className="content">
-              <div className="img">
+              <div className="w-24 h-24 absolute left-3 bg-white rounded-xl p-1 shadow-card">
                 <img
-                  className="w-full h-full rounded-full mr-3"
+                  className="w-full h-full rounded-xl mr-3"
                   src={testimonial.image}
                   alt=""
                 />
