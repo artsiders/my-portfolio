@@ -9,6 +9,7 @@ import { HiMenuAlt2 } from "react-icons/hi";
 import { createElement } from "react";
 import { BiMoon, BiSun } from "react-icons/bi";
 import { ThemeContext } from "../App";
+import Cookies from "js-cookie";
 
 const Navbar = () => {
   const { nav } = content;
@@ -23,7 +24,7 @@ const Navbar = () => {
     const handleScroll = () => {
       if (window.scrollY > 500) {
         setScrollClass(
-          "backdrop-blur-xl bg-light/10 dark:bg-dark/10 border-b-[1px] border-white"
+          "backdrop-blur-xl bg-light/10 dark:bg-dark/10 border-b-[1px] border-white dark:border-dark"
         );
       } else {
         setScrollClass("");
@@ -39,10 +40,10 @@ const Navbar = () => {
 
   const switchTheme = () => {
     if (document.documentElement.classList.contains("dark")) {
-      localStorage.setItem("theme", "light");
+      Cookies.set("theme", "light");
       SetTheme("light");
     } else {
-      localStorage.setItem("theme", "dark");
+      Cookies.set("theme", "dark");
       SetTheme("dark");
     }
     document.documentElement.classList.toggle("dark");
