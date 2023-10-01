@@ -13,7 +13,7 @@ module.exports = {
         "black-200": "#090325",
         "white-100": "#f3f3f3",
         "dark": "#050816",
-        "light": "#fafafa",
+        "light": "#edf0ef",
         "writing": "#211e35",
       },
 

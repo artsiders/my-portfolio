@@ -54,7 +54,7 @@ const Navbar = () => {
         className={`h-16 w-full fixed z-[999] ${scrollClass} flex justify-between items-center px-3 md:px-6`}
       >
         <div
-          className="sm:cursor-pointer top-4 left-4 z-[999] rounded-lg  bg-white/60 dark:bg-dark/40 p-2 hover:bg-slate-400/20 dark:highlight-white/5"
+          className="sm:cursor-pointer top-4 left-4 z-[999] rounded-lg  bg-[#f7f7f7] dark:bg-dark/40 border-[1px] border-white dark:border-transparent p-2 hover:bg-slate-400/20 dark:highlight-white/5"
           onClick={() => setShowMenu(() => !showMenu)}
         >
           {showMenu ? <HiMenuAlt2 size={22} /> : <BiMenu size={22} />}
@@ -90,13 +90,13 @@ const Navbar = () => {
               selectLang.current.classList.toggle("hidden");
             }}
           >
-            <button className="text-xs leading-5 font-semibold bg-white/60 dark:bg-dark/40 rounded-full py-1 px-3 flex items-center space-x-2 hover:bg-slate-400/20 dark:highlight-white/5">
+            <button className="text-xs leading-5 font-semibold bg-[#f7f7f7] dark:bg-dark/40 border-[1px] border-white dark:border-transparent rounded-full py-1 px-3 flex items-center space-x-2 hover:bg-slate-400/20 dark:highlight-white/5">
               {lang === "en" ? "English" : "French"}
               <BiChevronDown size={20} />
             </button>
             <div
               ref={selectLang}
-              className="hidden absolute top-full right-px mt-1 py-2 w-40 rounded-lg bg-white shadow ring-1 ring-slate-900/5 text-sm leading-6 font-semibold text-slate-700 dark:bg-slate-800 dark:text-slate-300 dark:highlight-white/5"
+              className="hidden absolute top-full right-px mt-1 py-2 w-40 rounded-lg bg-[#f7f7f7] shadow-none ring-1 ring-slate-900/5 text-sm leading-6 font-semibold text-slate-700 dark:bg-slate-800 dark:text-slate-300 dark:highlight-white/5 border-[1px] border-white dark:border-transparent"
             >
               <span
                 className={`cursor-pointer hover:text-primary/60 flex items-center justify-between px-3 py-1 ${
@@ -118,7 +118,7 @@ const Navbar = () => {
           </div>
 
           <div
-            className="sm:cursor-pointer right-4 z-[999] rounded-full bg-light/80 dark:bg-tertiary/50 p-2 hover:bg-primary hover:text-white"
+            className="sm:cursor-pointer right-4 z-[999] rounded-full bg-[#f7f7f7] dark:bg-tertiary/50 p-2 hover:bg-primary hover:text-white  border-[1px] border-white dark:border-transparent"
             onClick={switchTheme}
           >
             {Theme === "dark" ? <BiSun size={16} /> : <BiMoon size={16} />}
@@ -131,12 +131,12 @@ const Navbar = () => {
         flex 
         items-center
         gap-5 
-        bg-background/30 
+        bg-light/60 dark:bg-dark/30 
         px-6 py-3 
         backdrop-blur-md 
         rounded-full 
         text-dark_primary
-        border-b-[1px] border-primary/30
+        border-[1px] border-white dark:border-tertiary
         duration-300 ${showMenu ? "bottom-10" : "bottom-[-100%]"}`}
       >
         {nav.map((item, key) => (

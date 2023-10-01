@@ -5,7 +5,7 @@ const ServiceCard = ({ index, title, icon }) => {
     <div data-aos="fade-up" data-aos-delay={index * 200}>
       <Tilt className="xs:w-[250px] w-full">
         <div className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card">
-          <div className="bg-white dark:bg-tertiary rounded-[20px] py-5 px-12 min-h-[140px] flex justify-evenly items-center flex-col">
+          <div className="bg-[#f7f7f7] dark:bg-tertiary rounded-[20px] py-5 px-12 min-h-[140px] flex justify-evenly items-center flex-col">
             <img
               loading="lazy"
               src={icon}

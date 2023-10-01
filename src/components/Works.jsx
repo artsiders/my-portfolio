@@ -25,8 +25,7 @@ const Works = () => {
       <div className="w-full flex">
         <p
           className="mt-3 text-writing dark:text-secondary text-[17px] max-w-3xl leading-[30px]"
-          data-aos="fade-up"
-          data-aos-delay="200"
+          data-aos="fade-down"
         >
           Following projects showcases my skills and experience through
           real-world examples of my work. Each project is briefly described with

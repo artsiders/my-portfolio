@@ -9,7 +9,8 @@ const ExperienceCard = ({ experience }) => {
   const { Theme } = useContext(ThemeContext);
 
   let light = {
-    background: "#ffffff",
+    background: "#f7f7f7",
+    border: "2px solid #ffffff",
     color: "#211e35",
     boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
   };
