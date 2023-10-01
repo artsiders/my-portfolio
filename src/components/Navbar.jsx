@@ -23,7 +23,7 @@ const Navbar = () => {
     const handleScroll = () => {
       if (window.scrollY > 500) {
         setScrollClass(
-          "backdrop-blur-xl bg-light/10 dark:bg-dark/10 border-b-[1px] border-primary/30"
+          "backdrop-blur-xl bg-light/10 dark:bg-dark/10 border-b-[1px] border-white"
         );
       } else {
         setScrollClass("");

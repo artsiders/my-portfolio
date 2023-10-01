@@ -8,7 +8,7 @@ import { ThemeContext } from "../App";
 const Hero = () => {
   const { Theme } = useContext(ThemeContext);
   return (
-    <section id="home" className="relative w-full min-h-screen mx-auto flex">
+    <header id="home" className="relative w-full min-h-screen mx-auto flex">
       <div
         className={`inset-0 mt-20 mb-10 w-full max-w-7xl mx-auto paddingX flex flex-col-reverse md:grid md:grid-cols-2 items-center md:items-start gap-10 justify-evenly`}
       >
@@ -39,7 +39,7 @@ const Hero = () => {
           />
         </Tilt>
       </div>
-    </section>
+    </header>
   );
 };
 
