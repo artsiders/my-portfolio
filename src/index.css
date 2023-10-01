@@ -210,13 +210,10 @@ body {
 }
 
 .btn {
-  @apply bg-primary/90 dark:bg-tertiary py-3 px-8 rounded-xl outline-none 
-              w-fit text-white font-bold border-b-2  dark:border-primary/30 
-              inline-flex items-center cursor-pointer hover:bg-primary dark:hover:bg-primary;
+  @apply inline-flex items-center px-8 py-3 font-bold text-white border-b-2 outline-none cursor-pointer bg-primary/90 dark:bg-tertiary rounded-xl w-fit dark:border-primary/30 hover:bg-primary dark:hover:bg-primary;
 }
 .input-field {
-  @apply bg-light dark:bg-tertiary p-4 placeholder:text-secondary text-writing 
-  dark:text-white rounded-lg outline-none border-none font-medium;
+  @apply p-4 font-medium border-none rounded-lg outline-none bg-light dark:bg-tertiary placeholder:text-secondary text-writing dark:text-white;
 }
 
 .heroHeadText {
@@ -234,16 +231,16 @@ body {
 }
 
 .paddingX {
-  @apply sm:px-16 px-6;
+  @apply px-6 sm:px-16;
 }
 .paddingY {
-  @apply sm:py-16 py-6;
+  @apply py-6 sm:py-16;
 }
 .padding {
-  @apply sm:px-16 px-6 sm:py-16 py-10;
+  @apply px-6 py-10 sm:px-16 sm:py-16;
 }
 .box-center {
-  @apply flex justify-center items-center;
+  @apply flex items-center justify-center;
 }
 
 .animate-updown {
@@ -338,7 +335,7 @@ body {
 }
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  @apply text-writing dark:text-white text-xl bg-white/10 dark:bg-dark/10 p-2 rounded-full backdrop-blur-xl;
+  @apply p-2 text-xl rounded-full text-writing dark:text-white bg-white/10 dark:bg-dark/10 backdrop-blur-xl;
 }
 .swiper-button-prev,
 .swiper-button-next {

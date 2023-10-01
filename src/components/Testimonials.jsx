@@ -3,7 +3,7 @@ import { testimonials } from "../database";
 const Testimonials = () => {
   return (
     <section className="w-full bg-[#f7f7f7] dark:bg-dark py-10">
-      <div className="testimonials padding max-w-7xl mx-auto relative z-0 flex flex-col md:flex-row">
+      <div className="relative z-0 flex flex-col mx-auto testimonials padding max-w-7xl md:flex-row">
         <div className="relative p-5 md:h-[300px] h-fit w-full md:w-1/2 break-words">
           <p className="sectionSubText" data-aos="zoom-out-left">
             MY CLIENT REVIEWS
@@ -29,28 +29,28 @@ const Testimonials = () => {
           {testimonials.map((testimonial, key) => (
             <div
               key={key}
-              className="card flex items-center max-w-fit justify-around gap-6 bg-light dark:bg-tertiary border-2 border-white dark:border-transparent w-full p-5 opacity-0 pointer-events-none absolute shadow-lg dark:shadow-none rounded-xl"
+              className="absolute flex items-center justify-around w-full gap-6 p-5 border-2 border-white shadow-lg opacity-0 pointer-events-none card max-w-fit bg-light dark:bg-tertiary dark:border-transparent dark:shadow-none rounded-xl"
               style={{
                 "--delay": testimonial.key,
               }}
             >
               <div className="content">
-                <div className="w-24 h-24 absolute left-3 bg-white rounded-xl p-1 shadow-card">
+                <div className="absolute w-24 h-24 p-1 bg-white left-3 rounded-xl shadow-card">
                   <img
-                    className="w-full h-full rounded-xl mr-3"
+                    className="w-full h-full mr-3 rounded-xl"
                     src={testimonial.image}
                     alt=""
                   />
                 </div>
-                <div className="details ml-6 capitalize">
+                <div className="ml-6 capitalize details">
                   <span className="name">{testimonial.name}</span>
                   <p className="">{testimonial.post}</p>
-                  <p className="text-sm opacity-60 lowercase line-clamp-2">
+                  <p className="text-sm lowercase transition-all opacity-60 line-clamp-2 hover:line-clamp-5">
                     {testimonial.message}
                   </p>
                 </div>
               </div>
-              {/* <a className="btn dark:bg-primary h-8" href="#">
+              {/* <a className="h-8 btn dark:bg-primary" href="#">
               like <AiFillHeart />
             </a> */}
             </div>

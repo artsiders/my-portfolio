@@ -6,7 +6,7 @@ const Skills = () => {
   const { skills } = content;
 
   return (
-    <section className="padding max-w-7xl mx-auto relative z-0" id="skills">
+    <section className="relative z-0 mx-auto padding max-w-7xl" id="skills">
       <div className="">
         <h4 className="sectionSubText" data-aos="fade-down">
           {skills.subtitle}
@@ -15,7 +15,7 @@ const Skills = () => {
           {skills.title}.
         </h2>
         <br />
-        <div className="flex flex-wrap gap-4 justify-center pt-10">
+        <div className="flex flex-wrap justify-center gap-4 pt-10">
           {skills.skills_content.map((skill, i) => (
             <div
               key={i}
@@ -29,13 +29,13 @@ const Skills = () => {
                 <img
                   src={skill.logo}
                   alt="..."
-                  className="w-10 group-hover:scale-125 duration-200"
+                  className="w-10 duration-200 group-hover:scale-125"
                 />
               </div>
               <div>
                 <h6>{skill.name}</h6>
                 <p className="italic">{skill.para}</p>
-                <div className="text-xl absolute top-3 right-3">
+                <div className="absolute text-xl top-3 right-3">
                   <BiRightArrowAlt />
                 </div>
               </div>

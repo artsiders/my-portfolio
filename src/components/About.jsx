@@ -8,7 +8,7 @@ const About = () => {
   return (
     <section
       id="overview"
-      className="padding max-w-7xl mx-auto relative z-0 py-2"
+      className="relative z-0 py-2 mx-auto padding max-w-7xl"
       data-aos="fade-down"
     >
       <div>
@@ -24,13 +24,13 @@ const About = () => {
           consultations.
         </span>
         <Tilt className="xs:w-[250px] w-full">
-          <button type="submit" className="btn mt-6">
+          <button type="submit" className="mt-6 btn">
             Adopt a Dev <FaCode className="ml-2" />
           </button>
         </Tilt>
       </p>
 
-      <div className="mt-20 flex flex-wrap gap-10 justify-center">
+      <div className="flex flex-wrap justify-center gap-10 mt-20">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

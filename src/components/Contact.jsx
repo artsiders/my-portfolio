@@ -58,7 +58,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="padding max-w-7xl mx-auto relative z-0">
+    <section className="relative z-0 mx-auto padding max-w-7xl">
       <div
         className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
       >
@@ -70,10 +70,10 @@ const Contact = () => {
           <form
             ref={formRef}
             onSubmit={handleSubmit}
-            className="mt-12 flex flex-col gap-4"
+            className="flex flex-col gap-4 mt-12"
           >
             <label className="flex flex-col">
-              <span className="text-writing dark:text-white font-medium mb-2">
+              <span className="mb-2 font-medium text-writing dark:text-white">
                 Your Name
               </span>
               <input
@@ -86,7 +86,7 @@ const Contact = () => {
               />
             </label>
             <label className="flex flex-col">
-              <span className="text-writing dark:text-white font-medium mb-2">
+              <span className="mb-2 font-medium text-writing dark:text-white">
                 Your email
               </span>
               <input
@@ -99,7 +99,7 @@ const Contact = () => {
               />
             </label>
             <label className="flex flex-col">
-              <span className="text-writing dark:text-white font-medium mb-2">
+              <span className="mb-2 font-medium text-writing dark:text-white">
                 Your Message
               </span>
               <textarea
@@ -112,7 +112,7 @@ const Contact = () => {
               />
             </label>
 
-            <button type="submit" className="btn mt-4">
+            <button type="submit" className="mt-4 btn">
               {loading ? "Sending..." : "Send"}
             </button>
           </form>
@@ -122,7 +122,7 @@ const Contact = () => {
           className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
           data-aos="fade-left"
         >
-          <div className="flex justify-center items-center w-full h-full p-3 lg:p-10">
+          <div className="flex items-center justify-center w-full h-full p-3 lg:p-10">
             <img
               loading="lazy"
               className="max-w-full max-h-full"

@@ -10,10 +10,10 @@ const ServiceCard = ({ index, title, icon }) => {
               loading="lazy"
               src={icon}
               alt="web-development"
-              className="w-10 h-10 object-contain"
+              className="object-contain w-10 h-10"
             />
 
-            <h3 className="text-writing dark:text-white text-lg font-bold text-center">
+            <h3 className="text-lg font-bold text-center text-writing dark:text-white">
               {title}
             </h3>
           </div>

@@ -12,7 +12,7 @@ import ProjectCard from "./ProjectCard";
 
 const Works = () => {
   return (
-    <section className="padding max-w-7xl mx-auto relative z-0">
+    <section className="relative z-0 mx-auto padding max-w-7xl">
       <div id="projects">
         <p className="sectionSubText" data-aos="fade-down">
           My work
@@ -22,7 +22,7 @@ const Works = () => {
         </h2>
       </div>
 
-      <div className="w-full flex">
+      <div className="flex w-full">
         <p
           className="mt-3 text-writing dark:text-secondary text-[17px] max-w-3xl leading-[30px]"
           data-aos="fade-down"
@@ -35,7 +35,7 @@ const Works = () => {
         </p>
       </div>
 
-      {/* <div className="mt-20 flex flex-wrap gap-7 justify-center">
+      {/* <div className="flex flex-wrap justify-center mt-20 gap-7">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}

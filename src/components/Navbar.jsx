@@ -50,7 +50,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full flex justify-center">
+    <div className="flex justify-center w-full">
       <div
         className={`h-16 w-full fixed z-[999] ${scrollClass} flex justify-between items-center px-3 md:px-6`}
       >
@@ -60,7 +60,7 @@ const Navbar = () => {
         >
           {showMenu ? <HiMenuAlt2 size={22} /> : <BiMenu size={22} />}
         </div>
-        <div className="flex gap-3 items-center">
+        <div className="flex items-center gap-3">
           {/* <a
               href="https://github.com/artsiders"
               target="_blank"
