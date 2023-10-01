@@ -2,12 +2,15 @@ import Tilt from "react-tilt";
 import { FaCode } from "react-icons/fa";
 
 import { services } from "../database";
-import { SectionWrapper } from "../hoc";
 import ServiceCard from "./ServiceCard";
 
 const About = () => {
   return (
-    <section id="overview" className="py-2" data-aos="fade-down">
+    <section
+      id="overview"
+      className="padding max-w-7xl mx-auto relative z-0 py-2"
+      data-aos="fade-down"
+    >
       <div>
         <p className="sectionSubText">Introduction</p>
         <h2 className="sectionHeadText">Overview.</h2>
@@ -36,4 +39,4 @@ const About = () => {
   );
 };
 
-export default SectionWrapper(About, "about");
+export default About;

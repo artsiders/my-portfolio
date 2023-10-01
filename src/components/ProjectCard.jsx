@@ -13,7 +13,7 @@ const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
         <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
           <div
             onClick={() => window.open(source_code_link, "_blank")}
-            className="bg-light dark:bg-tertiary w-10 h-10 rounded-full flex justify-center items-center cursor-pointer hover:bg-primary hover:text-white dark:hover:bg-primary transition-all"
+            className="bg-light/10 dark:bg-tertiary/30 backdrop-blur-md w-10 h-10 rounded-full flex justify-center items-center cursor-pointer hover:bg-light/50 dark:hover:bg-tertiary/50 transition-all"
           >
             <RxExternalLink />
           </div>

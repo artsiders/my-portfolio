@@ -3,8 +3,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-// import github from "../assets/tech/git.webp";
-import { SectionWrapper } from "../hoc";
 import { projects } from "../database";
 
 // Import Swiper React components
@@ -14,7 +12,7 @@ import ProjectCard from "./ProjectCard";
 
 const Works = () => {
   return (
-    <>
+    <section className="padding max-w-7xl mx-auto relative z-0">
       <div id="projects">
         <p className="sectionSubText" data-aos="fade-down">
           My work
@@ -47,7 +45,7 @@ const Works = () => {
         <Swiper
           modules={[Virtual, Navigation, Pagination]}
           pagination={{
-            type: "fraction",
+            type: "bullets",
           }}
           loop={true}
           navigation={true}
@@ -71,8 +69,8 @@ const Works = () => {
           ))}
         </Swiper>
       </div>
-    </>
+    </section>
   );
 };
 
-export default SectionWrapper(Works, "");
+export default Works;

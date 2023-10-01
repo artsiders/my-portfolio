@@ -1,9 +1,8 @@
-import { SectionWrapper } from "../hoc";
 import { technologies } from "../database";
 
 const Tech = () => {
   return (
-    <section>
+    <section className="padding max-w-7xl mx-auto relative z-0">
       <h4 className="sectionSubText" data-aos="fade-down">
         My main technologies
       </h4>
@@ -32,4 +31,4 @@ const Tech = () => {
   );
 };
 
-export default SectionWrapper(Tech, "tech");
+export default Tech;
