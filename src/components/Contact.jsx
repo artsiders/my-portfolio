@@ -1,8 +1,12 @@
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
-import image from "../assets/logo.webp";
+import image from "../assets/logo-light.webp";
+import imageDark from "../assets/logo.webp";
+import { useContext } from "react";
+import { ThemeContext } from "../App";
 
 const Contact = () => {
+  const { Theme } = useContext(ThemeContext);
   const formRef = useRef();
   const [form, setForm] = useState({
     name: "",
@@ -122,7 +126,7 @@ const Contact = () => {
             <img
               loading="lazy"
               className="max-w-full max-h-full"
-              src={image}
+              src={Theme === "dark" ? imageDark : image}
               alt=""
             />
           </div>
