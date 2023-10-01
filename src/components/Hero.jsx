@@ -1,7 +1,7 @@
 import { FaCode } from "react-icons/fa";
 import Tilt from "react-tilt";
-import image from "../assets/logo-light.webp";
-import imageDark from "../assets/logo.webp";
+import imageLight from "../assets/logo-light.webp";
+import imageDark from "../assets/logo-dark.webp";
 import { useContext } from "react";
 import { ThemeContext } from "../App";
 
@@ -33,9 +33,11 @@ const Hero = () => {
         <Tilt className="w-full h-full flex justify-center items-center">
           <img
             loading="lazy"
-            className="w-full md:w-[420px] animate-updown"
-            src={Theme === "dark" ? imageDark : image}
+            className="animate-updown"
+            src={Theme === "dark" ? imageDark : imageLight}
             alt=""
+            height={420}
+            width={412}
           />
         </Tilt>
       </div>

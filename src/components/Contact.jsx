@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
-import image from "../assets/logo-light.webp";
-import imageDark from "../assets/logo.webp";
+import imageLight from "../assets/logo-light.webp";
+import imageDark from "../assets/logo-dark.webp";
 import { useContext } from "react";
 import { ThemeContext } from "../App";
 
@@ -126,8 +126,10 @@ const Contact = () => {
             <img
               loading="lazy"
               className="max-w-full max-h-full"
-              src={Theme === "dark" ? imageDark : image}
+              src={Theme === "dark" ? imageDark : imageLight}
               alt=""
+              height={420}
+              width={412}
             />
           </div>
         </div>

@@ -2,7 +2,7 @@ import { testimonials } from "../database";
 
 const Testimonials = () => {
   return (
-    <section className="w-full bg-[#f7f7f7] py-10">
+    <section className="w-full bg-[#f7f7f7] dark:bg-dark py-10">
       <div className="testimonials padding max-w-7xl mx-auto relative z-0 flex flex-col md:flex-row">
         <div className="relative p-5 md:h-[300px] h-fit w-full md:w-1/2 break-words">
           <p className="sectionSubText" data-aos="zoom-out-left">

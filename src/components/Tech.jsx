@@ -2,7 +2,7 @@ import { technologies } from "../database";
 
 const Tech = () => {
   return (
-    <section className="w-full bg-[#f7f7f7] pb-28">
+    <section className="w-full bg-[#f7f7f7] dark:bg-dark pb-28">
       <div className="padding max-w-7xl mx-auto relative z-0">
         <h4 className="sectionSubText" data-aos="fade-down">
           My main technologies

@@ -24,7 +24,7 @@ const About = () => {
           consultations.
         </span>
         <Tilt className="xs:w-[250px] w-full">
-          <button type="submit" className="btn">
+          <button type="submit" className="btn mt-6">
             Adopt a Dev <FaCode className="ml-2" />
           </button>
         </Tilt>
