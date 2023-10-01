@@ -43,12 +43,9 @@ const Works = () => {
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div> */}
-      <div className="mt-20 flex flex-wrap gap-7 justify-center">
+      <div className="mt-20">
         <Swiper
           modules={[Virtual, Navigation, Pagination]}
-          slidesPerView={3}
-          // centeredSlides={true}
-          spaceBetween={10}
           pagination={{
             type: "fraction",
           }}
@@ -59,7 +56,7 @@ const Works = () => {
             0: {
               slidesPerView: 1,
             },
-            520: {
+            768: {
               slidesPerView: 2,
             },
             950: {
@@ -68,7 +65,7 @@ const Works = () => {
           }}
         >
           {projects.map((project, index) => (
-            <SwiperSlide key={`project-${index}`}>
+            <SwiperSlide key={index}>
               <ProjectCard index={index} {...project} />
             </SwiperSlide>
           ))}

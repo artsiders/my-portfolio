@@ -2,7 +2,7 @@ import { RxExternalLink } from "react-icons/rx";
 
 const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
   return (
-    <div className="bg-white dark:bg-tertiary p-2 rounded-md sm:w-[300px] w-full shadow-card dark:shadow-sm">
+    <div className="bg-white dark:bg-tertiary p-2 rounded-md sm:w-[300px] w-full shadow-none md:shadow-card dark:shadow-sm">
       <div className="relative w-full h-fit">
         <img
           loading="lazy"

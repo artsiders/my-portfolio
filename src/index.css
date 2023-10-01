@@ -331,3 +331,25 @@ body {
 .testimonials .card a:hover {
   transform: scale(0.94);
 }
+
+/* swiper default style  */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  @apply text-writing dark:text-white text-xl bg-white/10 dark:bg-dark/10 p-2 rounded-full backdrop-blur-xl;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  top: 40%;
+}
