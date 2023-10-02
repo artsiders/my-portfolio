@@ -1,18 +1,14 @@
 import { BiMenu } from "react-icons/bi";
 import { BiChevronDown } from "react-icons/bi";
-// import { IoLogoYoutube } from "react-icons/io";
-// import { BsFacebook } from "react-icons/bs";
-// import { FaGithub } from "react-icons/fa";
 import { useState, useEffect, useContext, useRef } from "react";
-import { content } from "../Content";
 import { HiMenuAlt2 } from "react-icons/hi";
 import { createElement } from "react";
 import { BiMoon, BiSun } from "react-icons/bi";
 import { ThemeContext } from "../App";
 import Cookies from "js-cookie";
+import { nav } from "../database";
 
 const Navbar = () => {
-  const { nav } = content;
   const [showMenu, setShowMenu] = useState(true);
   const [active, setActive] = useState(0);
   const [scrollClass, setScrollClass] = useState("");
@@ -61,30 +57,6 @@ const Navbar = () => {
           {showMenu ? <HiMenuAlt2 size={22} /> : <BiMenu size={22} />}
         </div>
         <div className="flex items-center gap-3">
-          {/* <a
-              href="https://github.com/artsiders"
-              target="_blank"
-              className="sm:cursor-pointer right-4 z-[999]"
-              rel="noreferrer"
-            >
-              <FaGithub />
-            </a>
-            <a
-              href="https://youtube.com/@art-sider"
-              target="_blank"
-              className="sm:cursor-pointer right-4 z-[999] hover:text-red-700 transition-all"
-              rel="noreferrer"
-            >
-              <IoLogoYoutube />
-            </a>
-            <a
-              href="https://web.facebook.com/SalimArtSider/"
-              target="_blank"
-              className="sm:cursor-pointer right-4 z-[999] hover:text-blue-500 transition-all"
-              rel="noreferrer"
-            >
-              <BsFacebook />
-            </a> */}
           <div
             className="relative"
             onClick={() => {

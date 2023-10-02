@@ -60,14 +60,14 @@ const Contact = () => {
   return (
     <section className="relative z-0 mx-auto padding max-w-7xl">
       <div
-        className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
+        className={`flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
       >
         <div className="flex-[0.75] bg-[#f7f7f7] dark:bg-black-100 border-2 border-white dark:border-transparent p-8 rounded-2xl shadow-card dark:shadow-none">
           <p className="sectionSubText">Contact .</p>
           <form
             ref={formRef}
             onSubmit={handleSubmit}
-            className="flex flex-col gap-4 mt-12"
+            className="flex flex-col gap-4"
           >
             <label className="flex flex-col">
               <span className="mb-2 font-medium text-writing dark:text-white">

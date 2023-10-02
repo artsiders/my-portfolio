@@ -3,7 +3,7 @@ import { RxExternalLink } from "react-icons/rx";
 const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
   return (
     <div className="bg-[#f7f7f7] dark:bg-tertiary border-2 dark:border-transparent border-white p-2 rounded-md sm:w-[300px] w-full shadow-none md:shadow-card dark:shadow-sm">
-      <div className="relative w-full h-fit">
+      <div className="relative w-full cursor-pointer h-fit">
         <img
           loading="lazy"
           src={image}
@@ -22,7 +22,7 @@ const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
       <div className="p-3">
         <a
           href="#"
-          className="font-bold text-[24px] text-writing dark:text-white line-clamp-1"
+          className="font-bold text-[24px] text-writing dark:text-white line-clamp-1 hover:text-primary dark:hover:text-primary transition-all"
         >
           {name}
         </a>

@@ -1,10 +1,7 @@
 import { BiRightArrowAlt } from "react-icons/bi";
-// import content
-import { content } from "../Content";
+import { skills } from "../database";
 
 const Skills = () => {
-  const { skills } = content;
-
   return (
     <section className="relative z-0 mx-auto padding max-w-7xl" id="skills">
       <div className="">
