@@ -27,23 +27,19 @@ const App = () => {
       // disable: "mobile",
     });
   }, []);
-  const [theme, setTheme] = useState(Cookies.get("theme"));
+  const [theme, setTheme] = useState(Cookies.get("theme") || "light");
 
   useEffect(() => {
-    return () => {
-      if (theme) {
-        if (theme === "dark") {
-          document.documentElement.classList.add("dark");
-          document.documentElement.classList.remove("light");
-        } else {
-          document.documentElement.classList.add("light");
-          document.documentElement.classList.remove("dark");
-        }
-      } else {
-        Cookies.set("theme", "light");
-      }
-    };
-  }, []);
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+      document.documentElement.classList.remove("light");
+      Cookies.set("theme", "dark");
+    } else {
+      document.documentElement.classList.add("light");
+      document.documentElement.classList.remove("dark");
+      Cookies.set("theme", "light");
+    }
+  }, [theme]);
   return (
     <ThemeContext.Provider
       value={{
