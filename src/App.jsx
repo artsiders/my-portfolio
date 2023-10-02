@@ -15,6 +15,7 @@ import Testimonials from "./components/Testimonials";
 // Animation package
 import Aos from "aos";
 import "aos/dist/aos.css";
+import Footer from "./components/Footer";
 
 export const ThemeContext = createContext("light");
 
@@ -68,17 +69,10 @@ const App = () => {
           <Tech />
           <Works />
           <Testimonials />
-          <div className="dark:bg-dark relative z-0">
+          <div className="relative z-0 dark:bg-dark">
             <Contact />
-            {/* <StarsCanvas /> */}
           </div>
-          <footer className="bg-white dark:bg-dark p-3 text-center text-writing dark:text-white">
-            <h6 className="mb-3">SALIM NJIKAM</h6>
-            <p>
-              <a href="https://youtube.com/@art-sider">ART SIDER</a> © All
-              CopyRights Reserved 2023
-            </p>
-          </footer>
+          <Footer />
         </div>
       </BrowserRouter>
     </ThemeContext.Provider>
