@@ -58,7 +58,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="relative z-0 mx-auto padding max-w-7xl">
+    <section id="contact" className="relative z-0 mx-auto padding max-w-7xl">
       <div
         className={`flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
       >

@@ -12,8 +12,8 @@ import ProjectCard from "./ProjectCard";
 
 const Works = () => {
   return (
-    <section className="relative z-0 mx-auto padding max-w-7xl">
-      <div id="projects">
+    <section id="projects" className="relative z-0 mx-auto padding max-w-7xl">
+      <div>
         <p className="sectionSubText">My work</p>
         <h2 className="sectionHeadText">Projects.</h2>
       </div>
