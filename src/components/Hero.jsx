@@ -31,10 +31,10 @@ const Hero = () => {
         </div>
         <div className="flex items-center justify-center w-full h-full max-w-full">
           <img
-            loading="lazy"
-            className="w-72 h-72 sm:w-[420px] sm:h-[420px] animate-updown"
+            className="animate-updown"
             src={Theme === "dark" ? imageDark : imageLight}
-            alt=""
+            alt="salim-profile-image"
+            width={420}
           />
         </div>
       </div>
