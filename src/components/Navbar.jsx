@@ -131,9 +131,11 @@ const Navbar = () => {
         z-[999] 
         flex 
         items-center
-        gap-5 
+        sm:gap-5
+        gap-0
         bg-light/60 dark:bg-dark/30 
-        px-6 py-3 
+        px-3 py-2 
+        xxs:px-6 xxs:py-3 
         backdrop-blur-md 
         rounded-full 
         text-dark_primary
