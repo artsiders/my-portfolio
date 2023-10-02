@@ -1,5 +1,4 @@
 import { FaCode } from "react-icons/fa";
-import Tilt from "react-tilt";
 import imageLight from "../assets/logo-light.webp";
 import imageDark from "../assets/logo-dark.webp";
 import { useContext } from "react";
@@ -30,16 +29,14 @@ const Hero = () => {
             </button>
           </div>
         </div>
-        <Tilt className="flex items-center justify-center w-full h-full max-w-full">
+        <div className="flex items-center justify-center w-full h-full max-w-full">
           <img
             loading="lazy"
-            className="animate-updown"
+            className="w-72 h-72 sm:w-[420px] sm:h-[420px] animate-updown"
             src={Theme === "dark" ? imageDark : imageLight}
             alt=""
-            height={420}
-            width={420}
           />
-        </Tilt>
+        </div>
       </div>
     </header>
   );

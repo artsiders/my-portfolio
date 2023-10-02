@@ -52,7 +52,7 @@ const App = () => {
       }}
     >
       <BrowserRouter>
-        <div className="relative z-0">
+        <div className="relative z-0 w-screen">
           <div
             className={`${
               theme === "light"

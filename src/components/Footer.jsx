@@ -6,7 +6,7 @@ import { BsFacebook } from "react-icons/bs";
 import { BsYoutube } from "react-icons/bs";
 function Footer() {
   return (
-    <footer className="flex flex-col items-center text-center text-white bg-neutral-200 dark:bg-tertiary">
+    <footer className="flex flex-col items-center text-center text-white bg-[#F7F7F7] dark:bg-tertiary">
       <div className="container pt-9">
         <div className="flex justify-center mb-9">
           <a
@@ -60,7 +60,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className="w-full p-4 pb-32 text-center bg-neutral-300 dark:bg-dark text-neutral-700 dark:text-neutral-200">
+      <div className="w-full p-4 pb-32 text-center bg-light dark:bg-dark text-neutral-700 dark:text-neutral-200">
         © 2023 Copyright:
         <a
           target="_blank"

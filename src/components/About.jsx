@@ -1,4 +1,3 @@
-import Tilt from "react-tilt";
 import { FaCode } from "react-icons/fa";
 
 import { services } from "../database";
@@ -23,11 +22,9 @@ const About = () => {
           optimized experiences for mobile devices. 📱💻 Available for free
           consultations.
         </span>
-        <Tilt className="xs:w-[250px] w-full">
-          <button type="submit" className="mt-6 btn">
-            Adopt a Dev <FaCode className="ml-2" />
-          </button>
-        </Tilt>
+        <button type="submit" className="mt-6 btn">
+          Adopt a Dev <FaCode className="ml-2" />
+        </button>
       </p>
 
       <div className="flex flex-wrap justify-center gap-10 mt-20">

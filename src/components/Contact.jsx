@@ -125,11 +125,9 @@ const Contact = () => {
           <div className="flex items-center justify-center w-full h-full p-3 lg:p-10">
             <img
               loading="lazy"
-              className="max-w-full max-h-full"
+              className="w-72 h-72 sm:w-[420px] sm:h-[420px]"
               src={Theme === "dark" ? imageDark : imageLight}
               alt=""
-              height={420}
-              width={412}
             />
           </div>
         </div>

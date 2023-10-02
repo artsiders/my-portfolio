@@ -10,7 +10,14 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
-  color-scheme: dark;
+  /* color-scheme: dark; */
+  /* border: 1px solid gray !important; */
+}
+body,
+html,
+#root {
+  overflow-x: hidden !important;
+  width: 100vw !important;
 }
 
 .hash-span {

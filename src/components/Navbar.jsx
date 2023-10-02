@@ -52,7 +52,7 @@ const Navbar = () => {
   return (
     <div className="flex justify-center w-full">
       <div
-        className={`h-16 w-full fixed z-[999] ${scrollClass} flex justify-between items-center px-3 md:px-6 w-screen`}
+        className={`h-16 fixed z-[999] ${scrollClass} flex justify-between items-center px-3 md:px-6 w-screen`}
       >
         <div
           className="sm:cursor-pointer top-4 left-4 z-[999] rounded-lg  bg-[#f7f7f7] dark:bg-dark/40 border-[1px] border-white dark:border-transparent p-2 hover:bg-slate-400/20 dark:highlight-white/5"
