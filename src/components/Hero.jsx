@@ -8,9 +8,9 @@ import { ThemeContext } from "../App";
 const Hero = () => {
   const { Theme } = useContext(ThemeContext);
   return (
-    <header id="home" className="relative flex w-full min-h-screen mx-auto">
+    <header id="home" className="relative flex min-h-screen mx-auto">
       <div
-        className={`inset-0 mt-20 mb-10 w-full max-w-7xl mx-auto paddingX flex flex-col-reverse md:grid md:grid-cols-2 items-center md:items-start gap-10 justify-evenly`}
+        className={`inset-0 mt-20 mb-10 max-w-7xl mx-auto paddingX flex flex-col-reverse md:grid md:grid-cols-2 items-center md:items-start gap-10 justify-evenly`}
       >
         {/* <div className="absolute flex flex-col items-center justify-center mt-5">
           <div className="w-5 h-5 rounded-full bg-primary" />
@@ -30,14 +30,14 @@ const Hero = () => {
             </button>
           </div>
         </div>
-        <Tilt className="flex items-center justify-center w-full h-full">
+        <Tilt className="flex items-center justify-center w-full h-full max-w-full">
           <img
             loading="lazy"
             className="animate-updown"
             src={Theme === "dark" ? imageDark : imageLight}
             alt=""
             height={420}
-            width={412}
+            width={420}
           />
         </Tilt>
       </div>
