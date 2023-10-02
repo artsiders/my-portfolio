@@ -22,11 +22,11 @@ const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
       <div className="p-3">
         <a
           href="#"
-          className="font-bold text-[24px] text-writing dark:text-white"
+          className="font-bold text-[24px] text-writing dark:text-white line-clamp-1"
         >
           {name}
         </a>
-        <p className="mt-2 text-writing dark:text-secondary text-[14px]">
+        <p className="mt-2 text-writing dark:text-secondary text-[14px] line-clamp-5">
           {description}
         </p>
       </div>

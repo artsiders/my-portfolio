@@ -5,27 +5,16 @@ const Testimonials = () => {
     <section className="w-full bg-[#f7f7f7] dark:bg-dark py-10">
       <div className="relative z-0 flex flex-col mx-auto testimonials padding max-w-7xl md:flex-row">
         <div className="relative p-5 md:h-[300px] h-fit w-full md:w-1/2 break-words">
-          <p className="sectionSubText" data-aos="zoom-out-left">
-            MY CLIENT REVIEWS
-          </p>
-          <h2
-            className="sectionHeadText"
-            data-aos="zoom-out-left"
-            data-aos-delay="200"
-          >
-            Testimonials
-          </h2>
-          <p className="mb-28 md:mb-0" data-aos="fade-up" data-aos-delay="300">
+          <p className="sectionSubText">MY CLIENT REVIEWS</p>
+          <h2 className="sectionHeadText">Testimonials</h2>
+          <p className="mb-28 md:mb-0">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             Consequuntur praesentium consequatur laborum unde, optio facere
             omnis iste ipsum alias doloremque beatae maxime, culpa distinctio
             totam recusandae porro hic illo ullam.
           </p>
         </div>
-        <div
-          className="outer relative flex justify-center items-center h-[300px] w-full md:w-1/2"
-          data-aos="zoom-out-up"
-        >
+        <div className="outer relative flex justify-center items-center h-[300px] w-full md:w-1/2">
           {testimonials.map((testimonial, key) => (
             <div
               key={key}

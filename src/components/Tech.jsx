@@ -4,12 +4,8 @@ const Tech = () => {
   return (
     <section className="w-full bg-[#f7f7f7] dark:bg-dark pb-28">
       <div className="relative z-0 mx-auto padding max-w-7xl">
-        <h4 className="sectionSubText" data-aos="fade-down">
-          My main technologies
-        </h4>
-        <h2 className="sectionHeadText" data-aos="fade-down">
-          Technologies.
-        </h2>
+        <h4 className="sectionSubText">My main technologies</h4>
+        <h2 className="sectionHeadText">Technologies.</h2>
         <br />
         <div className="flex flex-row flex-wrap justify-center gap-10">
           {technologies.map((technology, key) => (

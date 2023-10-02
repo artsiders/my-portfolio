@@ -62,10 +62,7 @@ const Contact = () => {
       <div
         className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
       >
-        <div
-          className="flex-[0.75] bg-[#f7f7f7] dark:bg-black-100 border-2 border-white dark:border-transparent p-8 rounded-2xl shadow-card dark:shadow-none"
-          data-aos="fade-right"
-        >
+        <div className="flex-[0.75] bg-[#f7f7f7] dark:bg-black-100 border-2 border-white dark:border-transparent p-8 rounded-2xl shadow-card dark:shadow-none">
           <p className="sectionSubText">Contact .</p>
           <form
             ref={formRef}
@@ -118,10 +115,7 @@ const Contact = () => {
           </form>
         </div>
 
-        <div
-          className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
-          data-aos="fade-left"
-        >
+        <div className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]">
           <div className="flex items-center justify-center w-full h-full p-3 lg:p-10">
             <img
               loading="lazy"

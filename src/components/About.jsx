@@ -8,7 +8,6 @@ const About = () => {
     <section
       id="overview"
       className="relative z-0 py-2 mx-auto padding max-w-7xl"
-      data-aos="fade-down"
     >
       <div>
         <p className="sectionSubText">Introduction</p>
