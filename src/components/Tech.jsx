@@ -10,7 +10,7 @@ const Tech = () => {
         <div className="flex flex-row flex-wrap justify-center gap-10">
           {technologies.map((technology, key) => (
             <div
-              className="bg-[#f7f7f7] dark:bg-tertiary w-28 h-28 border-2 border-white dark:border-transparent rounded-lg flex justify-center items-center shadow-card dark:shadow-none"
+              className="bg-[#f7f7f7] shadow-neomorphism dark:bg-tertiary w-28 h-28 border-[1px] border-white dark:border-transparent rounded-lg flex justify-center items-center dark:shadow-none"
               key={technology.name}
               data-aos="fade-up"
               data-aos-delay={key * 200}
