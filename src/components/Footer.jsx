@@ -8,7 +8,7 @@ function Footer() {
   return (
     <footer className="flex flex-col items-center text-center text-white bg-[#F7F7F7] dark:bg-tertiary">
       <div className="container pt-9">
-        <div className="flex justify-center mb-9">
+        <div className="flex justify-center mb-9 social-icons">
           <a
             target="_blank"
             rel="noreferrer"
@@ -29,7 +29,7 @@ function Footer() {
             target="_blank"
             rel="noreferrer"
             href="https://github.com/artsiders/"
-            className="mr-9 text-neutral-800 dark:text-neutral-200 hover:text-black-200 dark:hover:text-black-200"
+            className="mr-9 text-neutral-800 dark:text-neutral-200 hover:text-gray-500 dark:hover:text-gray-500"
           >
             <BsGithub />
           </a>
@@ -45,7 +45,7 @@ function Footer() {
             target="_blank"
             rel="noreferrer"
             href="https://wa.link/n4mjqu"
-            className="mr-9 text-neutral-800 dark:text-neutral-200 hover:text-green-900 dark:hover:text-green-900"
+            className="mr-9 text-neutral-800 dark:text-neutral-200 hover:text-green-600 dark:hover:text-green-600"
           >
             <ImWhatsapp />
           </a>
@@ -53,7 +53,7 @@ function Footer() {
             target="_blank"
             rel="noreferrer"
             href="https://www.tiktok.com/@artsider99"
-            className="text-neutral-800 dark:text-neutral-200 hover:text-purple-700 dark:hover:text-purple-700"
+            className="text-neutral-800 dark:text-neutral-200 hover:text-pink-700 dark:hover:text-pink-700"
           >
             <FaTiktok />
           </a>

@@ -52,18 +52,22 @@ const services = [
   {
     title: "Web Developer",
     icon: web,
+    description: "Crée des sites web interactifs et fonctionnels.",
   },
   {
     title: "Graphic Designer",
     icon: graphicDesigner,
+    description: "Conçoit des éléments graphiques attrayants et visuellement percutants.",
   },
   {
     title: "Mobile Developer",
     icon: mobile,
+    description: "Développe des applications mobiles pour différentes plateformes.",
   },
   {
     title: "Content Creator",
     icon: contentCreator,
+    description: "Produit du contenu original et engageant sur des plateformes en ligne, telles que YouTube, dans divers formats.",
   },
 ];
 

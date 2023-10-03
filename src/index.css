@@ -348,3 +348,39 @@ body {
 .swiper-button-next {
   top: 40%;
 }
+
+/* .social-icons */
+.social-icons {
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+
+.social-icons a {
+  background: #ecf0f3;
+  position: relative;
+  height: 60px;
+  width: 60px;
+  margin: 0 10px;
+  display: inline-flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all 0.3s;
+  box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+}
+.social-icons a:hover:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  background: #ecf0f3;
+  box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
+}
+.social-icons a svg {
+  position: relative;
+  z-index: 3;
+}
