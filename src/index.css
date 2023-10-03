@@ -253,8 +253,11 @@ body {
   @apply font-bold text-blue-600 dark:text-blue-500 hover:underline;
 }
 
-.animate-updown {
-  animation: updown 3s linear infinite;
+.animate-updown-lg {
+  animation: updown 6s linear infinite;
+}
+.animate-updown-sm {
+  animation: updown2 4s linear infinite;
 }
 
 @keyframes updown {
@@ -266,6 +269,17 @@ body {
   }
   100% {
     transform: translateY(-20px);
+  }
+}
+@keyframes updown2 {
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(-5px);
   }
 }
 

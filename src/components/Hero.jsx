@@ -1,3 +1,8 @@
+import { AiOutlineMail } from "react-icons/ai";
+import { BiLinkExternal } from "react-icons/bi";
+import { FaLinkedinIn } from "react-icons/fa";
+import { BsWhatsapp } from "react-icons/bs";
+import { BsYoutube } from "react-icons/bs";
 import { FaCode } from "react-icons/fa";
 import imageLight from "../assets/logo-light.webp";
 import imageDark from "../assets/logo-dark.webp";
@@ -30,12 +35,52 @@ const Hero = () => {
           </div>
         </div>
         <div className="flex items-center justify-center w-full h-full max-w-full">
-          <img
-            className="animate-updown"
-            src={Theme === "dark" ? imageDark : imageLight}
-            alt="salim-profile-image"
-            width={420}
-          />
+          <div className="relative">
+            <img
+              className="relative z-10 pointer-events-none animate-updown-lg"
+              src={Theme === "dark" ? imageDark : imageLight}
+              alt="salim-profile-image"
+              width={420}
+            />
+            <a
+              href="https://www.linkedin.com/in/art-sider/"
+              target="_blanc"
+              rel="noreferrer"
+              className="cursor-pointer animate-updown-sm absolute flex items-center h-10 gap-1 p-2 shadow-neomorphism dark:shadow-none hover:shadow-card bg-[#f7f7f7] dark:bg-tertiary/90 dark:hover:bg-tertiary border-2 border-white dark:border-b-tertiary dark:border-transparent rounded-xl w-fit top-10 left-10 justify-normal"
+            >
+              <FaLinkedinIn color="#2196f3" />
+              <b>Salim</b>
+              <BiLinkExternal />
+            </a>
+            <a
+              href="https://wa.link/n4mjqu"
+              target="_blanc"
+              rel="noreferrer"
+              className="z-20 cursor-pointer animate-updown-sm absolute flex items-center h-10 gap-1 p-3 shadow-neomorphism dark:shadow-none hover:shadow-card bg-[#f7f7f7] dark:bg-tertiary/90 dark:hover:bg-tertiary border-2 border-white dark:border-b-tertiary dark:border-transparent rounded-xl w-fit top-1/2 right-0 justify-normal"
+            >
+              <BsWhatsapp color="green" />
+              <p>+237</p>
+              <b>677 41 76 38</b>
+              <BiLinkExternal />
+            </a>
+            <a
+              href="https://www.youtube.com/@art-sider"
+              target="_blanc"
+              rel="noreferrer"
+              className="z-20 cursor-pointer animate-updown-sm absolute flex items-center h-10 gap-1 p-3 shadow-neomorphism dark:shadow-none hover:shadow-card bg-[#f7f7f7] dark:bg-tertiary/90 dark:hover:bg-tertiary border-2 border-white dark:border-b-tertiary dark:border-transparent rounded-xl w-fit bottom-0 left-0 justify-normal"
+            >
+              <BsYoutube color="#e01717" />
+              <b>Art sider</b>
+              <p>+7000 Abonnés</p>
+              <BiLinkExternal />
+            </a>
+            <a
+              href="mailto:salim.artsider@gmail.com"
+              className="z-20 cursor-pointer animate-updown-sm absolute flex items-center h-10 gap-1 p-4 shadow-neomorphism dark:shadow-none hover:shadow-card bg-[#f7f7f7] dark:bg-tertiary/90 dark:hover:bg-tertiary border-2 border-white dark:border-b-tertiary dark:border-transparent rounded-xl w-fit top-2/3 left-0 md:-left-6 justify-normal"
+            >
+              <AiOutlineMail size={22} color="#bc0b47" />
+            </a>
+          </div>
         </div>
       </div>
     </header>
