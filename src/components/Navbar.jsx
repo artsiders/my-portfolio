@@ -51,7 +51,7 @@ const Navbar = () => {
         className={`h-16 fixed z-[999] ${scrollClass} flex justify-between items-center px-3 md:px-6 w-screen`}
       >
         <div
-          className="sm:cursor-pointer top-4 left-4 z-[999] rounded-lg  bg-[#f7f7f7] dark:bg-dark/40 border-[1px] border-white dark:border-transparent p-2 hover:bg-slate-400/20 dark:highlight-white/5"
+          className="shadow-neomorphism dark:shadow-none sm:cursor-pointer top-4 left-4 z-[999] rounded-lg  bg-[#f7f7f7] dark:bg-dark/40 border-[1px] border-white dark:border-transparent p-2 hover:bg-slate-400/20 dark:highlight-white/5"
           onClick={() => setShowMenu(() => !showMenu)}
         >
           {showMenu ? <HiMenuAlt2 size={22} /> : <BiMenu size={22} />}
@@ -63,7 +63,7 @@ const Navbar = () => {
               selectLang.current.classList.toggle("hidden");
             }}
           >
-            <button className="text-xs leading-5 font-semibold bg-[#f7f7f7] dark:bg-dark/40 border-[1px] border-white dark:border-transparent rounded-full py-1 px-3 flex items-center space-x-2 hover:bg-slate-400/20 dark:highlight-white/5">
+            <button className="shadow-neomorphism dark:shadow-none text-xs leading-5 font-semibold bg-[#f7f7f7] dark:bg-dark/40 border-[1px] border-white dark:border-transparent rounded-full py-1 px-3 flex items-center space-x-2 hover:bg-slate-400/20 dark:highlight-white/5">
               {lang === "en" ? "English" : "French"}
               <BiChevronDown size={20} />
             </button>
@@ -91,7 +91,7 @@ const Navbar = () => {
           </div>
 
           <div
-            className="sm:cursor-pointer right-4 z-[999] rounded-full bg-[#f7f7f7] dark:bg-tertiary/50 p-2 hover:bg-primary hover:text-white  border-[1px] border-white dark:border-transparent"
+            className="shadow-neomorphism dark:shadow-none hover:shadow-none sm:cursor-pointer right-4 z-[999] rounded-full bg-[#f7f7f7] dark:bg-tertiary/50 p-2 hover:bg-primary hover:text-white  border-[1px] border-white dark:border-transparent"
             onClick={switchTheme}
           >
             {Theme === "dark" ? <BiSun size={16} /> : <BiMoon size={16} />}
@@ -111,6 +111,8 @@ const Navbar = () => {
         backdrop-blur-md 
         rounded-full 
         text-dark_primary
+        shadow-neomorphism
+        dark:shadow-none
         border-[1px] border-white dark:border-tertiary
         duration-300 ${showMenu ? "bottom-10" : "bottom-[-100%]"}`}
       >
