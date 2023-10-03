@@ -52,22 +52,22 @@ const services = [
   {
     title: "Web Developer",
     icon: web,
-    description: "Crée des sites web interactifs et fonctionnels.",
+    description: "Création de sites web interactifs et fonctionnels pour répondre aux besoins spécifiques des clients.",
   },
   {
     title: "Graphic Designer",
     icon: graphicDesigner,
-    description: "Conçoit des éléments graphiques attrayants et visuellement percutants.",
+    description: "Conception d'éléments graphiques attrayants et visuellement percutants pour renforcer l'identité visuelle des marques.",
   },
   {
     title: "Mobile Developer",
     icon: mobile,
-    description: "Développe des applications mobiles pour différentes plateformes.",
+    description: "Développement d'applications mobiles pour offrir des expériences optimales sur les plateformes iOS et Android.",
   },
   {
     title: "Content Creator",
     icon: contentCreator,
-    description: "Produit du contenu original et engageant sur des plateformes en ligne, telles que YouTube, dans divers formats.",
+    description: "Production de contenu original et engageant en ligne, pour susciter l'intérêt et l'engagement des audiences.",
   },
 ];
 

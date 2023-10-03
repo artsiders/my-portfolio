@@ -249,6 +249,9 @@ body {
 .box-center {
   @apply flex items-center justify-center;
 }
+.link {
+  @apply font-bold text-blue-600 dark:text-blue-500 hover:underline;
+}
 
 .animate-updown {
   animation: updown 3s linear infinite;
@@ -383,4 +386,21 @@ body {
 .social-icons a svg {
   position: relative;
   z-index: 3;
+}
+
+/* tooltip */
+
+.tooltip {
+  @apply bg-white dark:bg-tertiary;
+}
+.tooltip::before {
+  @apply bg-white dark:bg-tertiary;
+}
+
+/* service-card */
+.service-card .description {
+  @apply transition-all;
+}
+.service-card:hover .description {
+  @apply mb-1 transition-all opacity-100 bottom-[110px];
 }
