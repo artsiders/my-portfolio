@@ -1,7 +1,7 @@
 const ServiceCard = ({ index, title, icon, description }) => {
   return (
     <div
-      className="relative cursor-pointer service-card bg-[#f7f7f7] dark:bg-tertiary rounded-[20px] p-4 min-h-[140px] flex justify-evenly items-center flex-col border-2 border-white dark:border-b-primary dark:border-transparent md:w-[230px]"
+      className="relative cursor-pointer service-card bg-[#f7f7f7] dark:bg-tertiary rounded-[20px] p-4 min-h-[140px] flex justify-evenly items-center flex-col border-2 border-white dark:border-b-primary dark:border-transparent w-full xs:w-[230px]"
       data-aos="fade-up"
       data-aos-delay={index * 200}
     >

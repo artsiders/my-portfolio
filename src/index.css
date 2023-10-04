@@ -26,6 +26,19 @@ html,
   display: block;
 }
 
+::-webkit-scrollbar {
+  @apply w-1;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-primary/30 max-w-[5px] rounded-xl;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary/50;
+}
+::-webkit-scrollbar-track {
+  @apply p-[2px] bg-light/30 shadow-neomorphism;
+}
+
 .black-gradient {
   background: #000000; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -271,11 +284,14 @@ body {
 }
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  @apply p-2 text-xl rounded-full text-writing dark:text-white bg-white/10 dark:bg-dark/10 backdrop-blur-xl;
+  @apply p-2 text-xl rounded-full text-writing dark:text-white bg-light/30 shadow-neomorphism dark:shadow-none dark:bg-dark/30 backdrop-blur-xl;
 }
 .swiper-button-prev,
 .swiper-button-next {
   top: 40%;
+}
+.swiper-pagination-bullets .swiper-pagination-bullet {
+  @apply bg-primary;
 }
 
 /* .social-icons */
@@ -312,15 +328,6 @@ body {
 .social-icons a svg {
   position: relative;
   z-index: 3;
-}
-
-/* tooltip */
-
-.tooltip {
-  @apply bg-white dark:bg-tertiary;
-}
-.tooltip::before {
-  @apply bg-white dark:bg-tertiary;
 }
 
 /* service-card */
