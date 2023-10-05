@@ -3,7 +3,7 @@ import { technologies } from "../database";
 
 const Tech = () => {
   return (
-    <section className="w-full bg-[#f7f7f7] dark:bg-dark pb-10">
+    <section className="w-full bg-[#f7f7f7] dark:bg-dark pb-28">
       <div className="relative z-0 mx-auto padding max-w-7xl">
         <h4 className="sectionSubText">My main technologies</h4>
         <h2 className="sectionHeadText">Technologies.</h2>
@@ -25,7 +25,12 @@ const Tech = () => {
             </div>
           ))}
         </div>
-        <a href="https://github.com/artsiders/" className="mt-10 btn">
+        <a
+          href="https://github.com/artsiders/"
+          className="float-right mt-12 btn"
+          data-aos="fade-up"
+          data-aos-delay={900}
+        >
           See more... <AiOutlineGithub className="ml-2" />
         </a>
       </div>
