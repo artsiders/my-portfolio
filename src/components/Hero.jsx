@@ -3,7 +3,6 @@ import { BiLinkExternal } from "react-icons/bi";
 import { FaLinkedinIn } from "react-icons/fa";
 import { BsWhatsapp } from "react-icons/bs";
 import { BsYoutube } from "react-icons/bs";
-import { FaCode } from "react-icons/fa";
 import profile from "../assets/profile.webp";
 
 const Hero = () => {
@@ -21,13 +20,18 @@ const Hero = () => {
             Hi, I&apos;m <span className="text-primary">Salim</span>
           </h1>
           <p className={`heroSubText block mt-2`}>
-            I&apos;m Full-stack Web developper and I&apos;ll take on the world !{" "}
+            I&apos;m web developer, graphic designer, and online content
+            creator. <br />
+            <span className="lg:text-[23px] sm:text-[20px] xs:text-[16px] text-[14px] font-mono font-bold">
+              {"<!--"} Ready to captivate your audience with stunning digital
+              experiences? {"-->"}
+            </span>
             <br className="hidden sm:block" />
           </p>
           <div className="flex gap-3">
-            <button type="submit" className="mt-4 btn">
-              See More <FaCode className="ml-2" />
-            </button>
+            <a href="#overview" type="submit" className="mt-4 btn">
+              About Me
+            </a>
           </div>
         </div>
         <div className="flex items-center justify-center w-full h-full max-w-full">
@@ -43,7 +47,7 @@ const Hero = () => {
                 href="https://www.linkedin.com/in/art-sider/"
                 target="_blanc"
                 rel="noreferrer"
-                className="z-0 cursor-pointer animate-updown-sm absolute flex items-center h-10 gap-1 p-2 text-sm shadow-neomorphism dark:shadow-none hover:shadow-card bg-[#f7f7f7] dark:bg-tertiary/90 dark:hover:bg-tertiary border-2 border-white dark:border-b-tertiary dark:border-transparent rounded-xl w-fit top-10 left-10 justify-normal"
+                className="z-0 cursor-pointer animate-updown-sm absolute flex xxs:text-md text-sm items-center h-10 gap-1 p-2 shadow-neomorphism dark:shadow-none hover:shadow-card bg-[#f7f7f7] dark:bg-tertiary/90 dark:hover:bg-tertiary border-2 border-white dark:border-b-tertiary dark:border-transparent rounded-xl w-fit top-10 left-10 justify-normal"
               >
                 <FaLinkedinIn color="#2196f3" />
                 <div>
@@ -55,7 +59,7 @@ const Hero = () => {
                 href="https://wa.link/n4mjqu"
                 target="_blanc"
                 rel="noreferrer"
-                className="z-20 cursor-pointer animate-updown-sm absolute flex items-center h-10 gap-1 p-2 text-sm shadow-neomorphism dark:shadow-none hover:shadow-card bg-[#f7f7f7] dark:bg-tertiary/90 dark:hover:bg-tertiary border-2 border-white dark:border-b-tertiary dark:border-transparent rounded-xl w-fit top-1/2 right-0 justify-normal"
+                className="z-20 cursor-pointer animate-updown-sm absolute flex xxs:text-md text-sm items-center h-10 gap-1 p-2 shadow-neomorphism dark:shadow-none hover:shadow-card bg-[#f7f7f7] dark:bg-tertiary/90 dark:hover:bg-tertiary border-2 border-white dark:border-b-tertiary dark:border-transparent rounded-xl w-fit top-1/2 right-0 justify-normal"
               >
                 <BsWhatsapp color="green" />
                 <div>
@@ -68,7 +72,7 @@ const Hero = () => {
                 href="https://www.youtube.com/@art-sider"
                 target="_blanc"
                 rel="noreferrer"
-                className="z-20 cursor-pointer animate-updown-sm absolute flex items-center h-10 gap-1 p-2 text-sm shadow-neomorphism dark:shadow-none hover:shadow-card bg-[#f7f7f7] dark:bg-tertiary/90 dark:hover:bg-tertiary border-2 border-white dark:border-b-tertiary dark:border-transparent rounded-xl w-fit bottom-0 right-16 justify-normal"
+                className="z-20 cursor-pointer animate-updown-sm absolute flex xxs:text-md text-sm items-center h-10 gap-1 p-2 shadow-neomorphism dark:shadow-none hover:shadow-card bg-[#f7f7f7] dark:bg-tertiary/90 dark:hover:bg-tertiary border-2 border-white dark:border-b-tertiary dark:border-transparent rounded-xl w-fit bottom-0 right-16 justify-normal"
               >
                 <BsYoutube color="#e01717" />
                 <div>
@@ -79,7 +83,7 @@ const Hero = () => {
               </a>
               <a
                 href="mailto:salim.artsider@gmail.com"
-                className="z-0 cursor-pointer animate-updown-sm absolute flex items-center h-10 gap-1 p-2 text-sm shadow-neomorphism dark:shadow-none hover:shadow-card bg-[#f7f7f7] dark:bg-tertiary/90 dark:hover:bg-tertiary border-2 border-white dark:border-b-tertiary dark:border-transparent rounded-xl w-fit top-2/3 left-0 md:-left-6 justify-normal"
+                className="z-0 cursor-pointer animate-updown-sm absolute flex xxs:text-md text-sm items-center h-10 gap-1 p-2 shadow-neomorphism dark:shadow-none hover:shadow-card bg-[#f7f7f7] dark:bg-tertiary/90 dark:hover:bg-tertiary border-2 border-white dark:border-b-tertiary dark:border-transparent rounded-xl w-fit top-2/3 left-0 md:-left-6 justify-normal"
               >
                 <AiOutlineMail color="#bc0b47" />
                 <div>

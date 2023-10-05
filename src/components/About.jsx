@@ -1,4 +1,4 @@
-import { FaCode } from "react-icons/fa";
+import { AiOutlineMessage } from "react-icons/ai";
 
 import { services } from "../database";
 import ServiceCard from "./ServiceCard";
@@ -14,19 +14,19 @@ const About = () => {
         <h2 className="sectionHeadText">Overview.</h2>
       </div>
 
-      <p className="mt-4 text-writing dark:text-secondary text-[17px] max-w-3xl leading-[30px]">
+      <p className="text-writing dark:text-secondary text-[17px] max-w-3xl leading-[30px]">
         <span className="block">
           Passionate Full Stack Web and Mobile Developer, specialized in
           interface ergonomics and web design. 🌟 Creates responsive and
           optimized experiences for mobile devices. 📱💻 Available for free
           consultations.
         </span>
-        <button type="submit" className="mt-6 btn">
-          Adopt a Dev <FaCode className="ml-2" />
-        </button>
+        <a href="https://wa.link/n4mjqu" className="mt-6 btn">
+          Contact me <AiOutlineMessage className="ml-2" />
+        </a>
       </p>
 
-      <div className="flex flex-wrap justify-center gap-4 xs:gap-10 mt-20">
+      <div className="flex flex-wrap justify-center gap-4 mt-20 xs:gap-10">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

@@ -1,3 +1,4 @@
+import { FaRegComment } from "react-icons/fa";
 import { testimonials } from "../database";
 
 const Testimonials = () => {
@@ -7,12 +8,15 @@ const Testimonials = () => {
         <div className="relative p-5 md:h-[300px] h-fit w-full md:w-1/2 break-words">
           <p className="sectionSubText">MY CLIENT REVIEWS</p>
           <h2 className="sectionHeadText">Testimonials</h2>
-          <p className="mb-28 md:mb-0">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Consequuntur praesentium consequatur laborum unde, optio facere
-            omnis iste ipsum alias doloremque beatae maxime, culpa distinctio
-            totam recusandae porro hic illo ullam.
+          <p className="mb-3">
+            Discover the testimonials of my satisfied clients. Their authentic
+            and positive reviews testify to the quality of my services and my
+            ability to meet their needs.
           </p>
+          <button type="button" className="btn mb-28 md:mb-0">
+            <span className="mr-2">Testimonial</span>
+            <FaRegComment />
+          </button>
         </div>
         <div className="outer relative flex justify-center items-center h-[300px] w-full md:w-1/2">
           {testimonials.map((testimonial, key) => (
