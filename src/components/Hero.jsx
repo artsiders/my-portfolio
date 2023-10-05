@@ -47,7 +47,7 @@ const Hero = () => {
                 href="https://www.linkedin.com/in/art-sider/"
                 target="_blanc"
                 rel="noreferrer"
-                className="z-0 cursor-pointer animate-updown-sm absolute flex xxs:text-md text-sm items-center h-10 gap-1 p-2 shadow-neomorphism dark:shadow-none hover:shadow-card bg-[#f7f7f7] dark:bg-tertiary/90 dark:hover:bg-tertiary border-2 border-white dark:border-b-tertiary dark:border-transparent rounded-xl w-fit top-10 left-10 justify-normal"
+                className="z-0 cursor-pointer animate-updown-sm absolute flex text-[12px] xxs:text-sm items-center h-10 gap-1 p-2 shadow-neomorphism dark:shadow-none hover:shadow-card bg-[#f7f7f7] dark:bg-tertiary/90 dark:hover:bg-tertiary border-2 border-white dark:border-b-tertiary dark:border-transparent rounded-xl w-fit top-10 left-8 md:left-20 justify-normal"
               >
                 <FaLinkedinIn color="#2196f3" />
                 <div>
@@ -59,7 +59,7 @@ const Hero = () => {
                 href="https://wa.link/n4mjqu"
                 target="_blanc"
                 rel="noreferrer"
-                className="z-20 cursor-pointer animate-updown-sm absolute flex xxs:text-md text-sm items-center h-10 gap-1 p-2 shadow-neomorphism dark:shadow-none hover:shadow-card bg-[#f7f7f7] dark:bg-tertiary/90 dark:hover:bg-tertiary border-2 border-white dark:border-b-tertiary dark:border-transparent rounded-xl w-fit top-1/2 right-0 justify-normal"
+                className="z-20 cursor-pointer animate-updown-sm absolute flex text-[12px] xxs:text-sm items-center h-10 gap-1 p-2 shadow-neomorphism dark:shadow-none hover:shadow-card bg-[#f7f7f7] dark:bg-tertiary/90 dark:hover:bg-tertiary border-2 border-white dark:border-b-tertiary dark:border-transparent rounded-xl w-fit top-1/2 right-3 justify-normal"
               >
                 <BsWhatsapp color="green" />
                 <div>
@@ -72,18 +72,16 @@ const Hero = () => {
                 href="https://www.youtube.com/@art-sider"
                 target="_blanc"
                 rel="noreferrer"
-                className="z-20 cursor-pointer animate-updown-sm absolute flex xxs:text-md text-sm items-center h-10 gap-1 p-2 shadow-neomorphism dark:shadow-none hover:shadow-card bg-[#f7f7f7] dark:bg-tertiary/90 dark:hover:bg-tertiary border-2 border-white dark:border-b-tertiary dark:border-transparent rounded-xl w-fit bottom-0 right-16 justify-normal"
+                className="z-20 cursor-pointer animate-updown-sm absolute flex text-[12px] xxs:text-sm items-center h-10 gap-1 p-2 shadow-neomorphism dark:shadow-none hover:shadow-card bg-[#f7f7f7] dark:bg-tertiary/90 dark:hover:bg-tertiary border-2 border-white dark:border-b-tertiary dark:border-transparent rounded-xl w-fit bottom-0 right-16 md:right-28 justify-normal"
               >
                 <BsYoutube color="#e01717" />
-                <div>
-                  <b>Art sider</b>
-                  {/* <p>+7000 Abonnés</p> */}
-                  <BiLinkExternal />
-                </div>
+                <b>Art sider</b>
+                {/* <p>+7000 Abonnés</p> */}
+                <BiLinkExternal />
               </a>
               <a
                 href="mailto:salim.artsider@gmail.com"
-                className="z-0 cursor-pointer animate-updown-sm absolute flex xxs:text-md text-sm items-center h-10 gap-1 p-2 shadow-neomorphism dark:shadow-none hover:shadow-card bg-[#f7f7f7] dark:bg-tertiary/90 dark:hover:bg-tertiary border-2 border-white dark:border-b-tertiary dark:border-transparent rounded-xl w-fit top-2/3 left-0 md:-left-6 justify-normal"
+                className="z-0 cursor-pointer animate-updown-sm absolute flex text-[12px] xxs:text-sm items-center h-10 gap-1 p-2 shadow-neomorphism dark:shadow-none hover:shadow-card bg-[#f7f7f7] dark:bg-tertiary/90 dark:hover:bg-tertiary border-2 border-white dark:border-b-tertiary dark:border-transparent rounded-xl w-fit top-2/3 left-0 justify-normal"
               >
                 <AiOutlineMail color="#bc0b47" />
                 <div>
