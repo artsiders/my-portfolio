@@ -209,7 +209,7 @@ body {
 
 /* hero  */
 .profile-picture::after {
-  @apply z-0 absolute bg-[#f7f7f7] dark:bg-tertiary border-2 border-white dark:border-transparent;
+  @apply z-0 absolute bg-[#f7f7f7] dark:bg-tertiary border-2 border-white dark:border-transparent shadow-card dark:shadow-none;
   content: "";
   bottom: 8px;
   left: 15%;
