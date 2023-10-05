@@ -1,25 +1,25 @@
-import afb from "./assets/company/afb.webp"
-import altplus from "./assets/company/altplus.webp"
+import afb from "./assets/company/afb.webp";
+import altplus from "./assets/company/altplus.webp";
 
-import javascript from "./assets/tech/javascript.webp"
-import typescript from "./assets/tech/typescript.webp"
-import reactjs from "./assets/tech/reactjs.webp"
-import tailwind from "./assets/tech/tailwind.webp"
-import nodejs from "./assets/tech/nodejs.webp"
-import mongodb from "./assets/tech/mongodb.webp"
-import git from "./assets/tech/git.webp"
+import javascript from "./assets/tech/javascript.webp";
+import typescript from "./assets/tech/typescript.webp";
+import reactjs from "./assets/tech/reactjs.webp";
+import tailwind from "./assets/tech/tailwind.webp";
+import nodejs from "./assets/tech/nodejs.webp";
+import mongodb from "./assets/tech/mongodb.webp";
+import git from "./assets/tech/git.webp";
 
-import contentCreator from "./assets/services/content-creator.webp"
-import graphicDesigner from "./assets/services/graphic-designer.webp"
-import mobile from "./assets/services/mobile.webp"
-import web from "./assets/services/web.webp"
+import contentCreator from "./assets/services/content-creator.webp";
+import graphicDesigner from "./assets/services/graphic-designer.webp";
+import mobile from "./assets/services/mobile.webp";
+import web from "./assets/services/web.webp";
 
-import altplusSite from "./assets/work/altplus.webp"
-import comx from "./assets/work/comx.webp"
-import campus from "./assets/work/campus.webp"
-import maadana from "./assets/work/maadana.webp"
-import smartbook from "./assets/work/smartbook.webp"
-import socapco from "./assets/work/socapco.webp"
+import altplusSite from "./assets/work/altplus.webp";
+import comx from "./assets/work/comx.webp";
+import campus from "./assets/work/campus.webp";
+import maadana from "./assets/work/maadana.webp";
+import smartbook from "./assets/work/smartbook.webp";
+import socapco from "./assets/work/socapco.webp";
 
 import testimonial1 from "./assets/testimonials/testimonial-1.webp";
 import testimonial2 from "./assets/testimonials/testimonial-2.webp";
@@ -31,7 +31,6 @@ import { TbSmartHome } from "react-icons/tb";
 import { BiUser } from "react-icons/bi";
 import { RiServiceLine, RiProjectorLine } from "react-icons/ri";
 import { MdOutlinePermContactCalendar } from "react-icons/md";
-
 
 export const navLinks = [
   {
@@ -52,22 +51,26 @@ const services = [
   {
     title: "Web Developer",
     icon: web,
-    description: "Création de sites web interactifs et fonctionnels pour répondre aux besoins spécifiques des clients.",
+    description:
+      "Création de sites web interactifs et fonctionnels pour répondre aux besoins spécifiques des clients.",
   },
   {
     title: "Graphic Designer",
     icon: graphicDesigner,
-    description: "Conception d'éléments graphiques attrayants et visuellement percutants pour renforcer l'identité visuelle des marques.",
+    description:
+      "Conception d'éléments graphiques attrayants et visuellement percutants pour renforcer l'identité visuelle des marques.",
   },
   {
     title: "Mobile Developer",
     icon: mobile,
-    description: "Développement d'applications mobiles pour offrir des expériences optimales sur les plateformes iOS et Android.",
+    description:
+      "Développement d'applications mobiles pour offrir des expériences optimales sur les plateformes iOS et Android.",
   },
   {
     title: "Content Creator",
     icon: contentCreator,
-    description: "Production de contenu original et engageant en ligne, pour susciter l'intérêt et l'engagement des audiences.",
+    description:
+      "Production de contenu original et engageant en ligne, pour susciter l'intérêt et l'engagement des audiences.",
   },
 ];
 
@@ -109,6 +112,7 @@ const experiences = [
     icon: altplus,
     iconBg: "#EEEEEE",
     date: "March 2022",
+    link: "https://alt-plus.onrender.com/",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -122,6 +126,7 @@ const experiences = [
     icon: afb,
     iconBg: "#EEE",
     date: "Oct 2022 - Feb 2023",
+    link: "https://www.afrilandfirstbank.com/",
     points: [
       "télé-compensation des chèques provenant d'autres banques.",
       "Vérification des données numériques pour les transferts de fonds nationaux.",
@@ -259,7 +264,8 @@ const projects = [
   },
   {
     name: "ma'adana cloud hosting",
-    description: "Ma'adana Cloud Hosting is a reliable and innovative African cloud hosting service, providing top-notch hosting solutions for businesses and individuals.",
+    description:
+      "Ma'adana Cloud Hosting is a reliable and innovative African cloud hosting service, providing top-notch hosting solutions for businesses and individuals.",
     tags: [
       {
         name: "wordpress",
@@ -296,7 +302,6 @@ const projects = [
   },
 ];
 
-
 const nav = [
   {
     link: "#home",
@@ -304,7 +309,7 @@ const nav = [
   },
   {
     link: "#overview",
-    icon: BiUser
+    icon: BiUser,
   },
   {
     link: "#experience",
@@ -327,34 +332,42 @@ const skills = {
     {
       name: "Figma",
       para: "Lorem ipsum text  dummy",
-      logo: 'figma',
+      logo: "figma",
     },
     {
       name: "Node js",
       para: "Lorem ipsum text  dummy",
-      logo: 'nodejs',
+      logo: "nodejs",
     },
     {
       name: "Adobe Photoshop",
       para: "Lorem ipsum text  dummy",
-      logo: 'ps',
+      logo: "ps",
     },
     {
       name: "React js",
       para: "Lorem ipsum text  dummy",
-      logo: 'reactjs',
+      logo: "reactjs",
     },
     {
       name: "Sketch",
       para: "Lorem ipsum text  dummy",
-      logo: 'sketch',
+      logo: "sketch",
     },
     {
       name: "Python",
       para: "Lorem ipsum text  dummy",
-      logo: 'python',
+      logo: "python",
     },
   ],
-}
+};
 
-export { services, technologies, experiences, testimonials, projects, nav, skills };
+export {
+  services,
+  technologies,
+  experiences,
+  testimonials,
+  projects,
+  nav,
+  skills,
+};
