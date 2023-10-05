@@ -207,6 +207,18 @@ body {
   }
 }
 
+/* hero  */
+.profile-picture::after {
+  @apply z-0 absolute bg-[#f7f7f7] dark:bg-tertiary border-2 border-white dark:border-transparent;
+  content: "";
+  bottom: 8px;
+  left: 15%;
+  height: 80%;
+  width: 80%;
+  border-radius: 72% 28% 52% 48% / 67% 38% 62% 33%;
+  transform: rotate(30deg);
+}
+
 /* testimonials */
 .testimonials .card {
   animation: animate 15s linear infinite;

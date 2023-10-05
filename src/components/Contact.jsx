@@ -1,12 +1,8 @@
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
-import imageLight from "../assets/logo-light.webp";
-import imageDark from "../assets/logo-dark.webp";
-import { useContext } from "react";
-import { ThemeContext } from "../App";
+import profile from "../assets/profile.webp";
 
 const Contact = () => {
-  const { Theme } = useContext(ThemeContext);
   const formRef = useRef();
   const [form, setForm] = useState({
     name: "",
@@ -117,12 +113,15 @@ const Contact = () => {
 
         <div className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]">
           <div className="flex items-center justify-center w-full h-full p-3 lg:p-10">
-            <img
-              loading="lazy"
-              src={Theme === "dark" ? imageDark : imageLight}
-              alt="contact-image"
-              width={420}
-            />
+            <div className="z-10 profile-picture animate-updown-lg">
+              <img
+                loading="lazy"
+                src={profile}
+                alt="contact-image"
+                width={420}
+                className="relative z-20 pointer-events-none"
+              />
+            </div>
           </div>
         </div>
       </div>
