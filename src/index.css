@@ -219,6 +219,14 @@ body {
   transform: rotate(30deg);
 }
 
+.profile-picture a div {
+  display: none;
+  align-items: center;
+}
+.profile-picture a:hover div {
+  display: flex;
+}
+
 /* testimonials */
 .testimonials .card {
   animation: animate 15s linear infinite;
