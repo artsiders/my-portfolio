@@ -1,12 +1,13 @@
 import afb from "./assets/company/afb.webp";
 import altplus from "./assets/company/altplus.webp";
 
-import javascript from "./assets/tech/javascript.webp";
 import typescript from "./assets/tech/typescript.webp";
 import reactjs from "./assets/tech/reactjs.webp";
 import tailwind from "./assets/tech/tailwind.webp";
 import nodejs from "./assets/tech/nodejs.webp";
 import mongodb from "./assets/tech/mongodb.webp";
+import mysql from "./assets/tech/mysql.webp";
+import php from "./assets/tech/php.webp";
 import git from "./assets/tech/git.webp";
 
 import contentCreator from "./assets/services/content-creator.webp";
@@ -76,10 +77,6 @@ const services = [
 
 const technologies = [
   {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
     name: "TypeScript",
     icon: typescript,
   },
@@ -96,8 +93,16 @@ const technologies = [
     icon: nodejs,
   },
   {
+    name: "PHP",
+    icon: php,
+  },
+  {
     name: "MongoDB",
     icon: mongodb,
+  },
+  {
+    name: "Mysql",
+    icon: mysql,
   },
   {
     name: "git",

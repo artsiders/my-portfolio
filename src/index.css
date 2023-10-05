@@ -174,7 +174,7 @@ body {
   @apply flex items-center justify-center;
 }
 .link {
-  @apply font-bold text-blue-600 dark:text-blue-500 hover:underline;
+  @apply font-bold text-primary hover:underline;
 }
 
 .animate-updown-lg {
