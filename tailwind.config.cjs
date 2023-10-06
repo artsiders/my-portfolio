@@ -25,6 +25,7 @@ module.exports = {
       screens: {
         xs: "450px",
         xxs: "300px",
+        380: "380px",
       },
       backgroundImage: {
         "hero-pattern-light": "url('/src/assets/herobg-light.webp')",

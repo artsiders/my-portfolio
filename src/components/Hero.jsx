@@ -49,44 +49,52 @@ const Hero = () => {
                 href="https://www.linkedin.com/in/art-sider/"
                 target="_blanc"
                 rel="noreferrer"
-                className="z-20 cursor-pointer animate-updown-sm absolute flex text-[12px] xxs:text-sm items-center h-10 gap-1 p-2 shadow-neomorphism dark:shadow-none hover:shadow-card bg-[#f7f7f7] dark:bg-tertiary/90 dark:hover:bg-tertiary border-2 border-white dark:border-b-tertiary dark:border-transparent rounded-xl w-fit bottom-36 md:bottom-40 left-0 justify-normal"
+                className="z-20 cursor-pointer animate-updown-sm absolute flex text-[12px] xxs:text-sm items-center h-8 gap-1 p-2 shadow-neomorphism dark:shadow-none hover:shadow-card bg-[#f7f7f7] dark:bg-tertiary/90 dark:hover:bg-tertiary border-2 border-white dark:border-b-tertiary dark:border-transparent rounded-xl w-fit bottom-36 md:bottom-[136px] left-0 justify-normal"
               >
                 <FaLinkedinIn color="#2196f3" />
-                <b>Salim</b>
-                <BiLinkExternal />
+                <span className="hidden 380:flex items-center gap-1">
+                  <b>Salim</b>
+                  <BiLinkExternal />
+                </span>
               </a>
 
               <a
                 href="https://www.youtube.com/@art-sider"
                 target="_blanc"
                 rel="noreferrer"
-                className="z-20 cursor-pointer animate-updown-sm absolute flex text-[12px] xxs:text-sm items-center h-10 gap-1 p-2 shadow-neomorphism dark:shadow-none hover:shadow-card bg-[#f7f7f7] dark:bg-tertiary/90 dark:hover:bg-tertiary border-2 border-white dark:border-b-tertiary dark:border-transparent rounded-xl w-fit bottom-24 md:bottom-28 left-0 justify-normal"
+                className="z-20 cursor-pointer animate-updown-sm absolute flex text-[12px] xxs:text-sm items-center h-8 gap-1 p-2 shadow-neomorphism dark:shadow-none hover:shadow-card bg-[#f7f7f7] dark:bg-tertiary/90 dark:hover:bg-tertiary border-2 border-white dark:border-b-tertiary dark:border-transparent rounded-xl w-fit bottom-24 md:bottom-26 left-0 justify-normal"
               >
                 <BsYoutube color="#e01717" />
-                <b>Art sider</b>
-                {/* <p>+7000 Abonnés</p> */}
-                <BiLinkExternal />
+                <span className="hidden 380:flex items-center gap-1">
+                  <b>Art sider</b>
+                  {/* <p>+7000 Abonnés</p> */}
+                  <BiLinkExternal />
+                </span>
               </a>
 
               <a
                 href="https://wa.link/n4mjqu"
                 target="_blanc"
                 rel="noreferrer"
-                className="z-20 cursor-pointer animate-updown-sm absolute flex text-[12px] xxs:text-sm items-center h-10 gap-1 p-2 shadow-neomorphism dark:shadow-none hover:shadow-card bg-[#f7f7f7] dark:bg-tertiary/90 dark:hover:bg-tertiary border-2 border-white dark:border-b-tertiary dark:border-transparent rounded-xl w-fit bottom-12 md:bottom-16 left-0 justify-normal"
+                className="z-20 cursor-pointer animate-updown-sm absolute flex text-[12px] xxs:text-sm items-center h-8 gap-1 p-2 shadow-neomorphism dark:shadow-none hover:shadow-card bg-[#f7f7f7] dark:bg-tertiary/90 dark:hover:bg-tertiary border-2 border-white dark:border-b-tertiary dark:border-transparent rounded-xl w-fit bottom-12 md:bottom-14 left-0 justify-normal"
               >
                 <BsWhatsapp color="green" />
-                <p>+237</p>
-                <b>677 41 76 38</b>
-                <BiLinkExternal />
+                <span className="hidden 380:flex items-center gap-1">
+                  <p>+237</p>
+                  <b>677 41 76 38</b>
+                  <BiLinkExternal />
+                </span>
               </a>
 
               <a
                 href="mailto:salim.artsider@gmail.com"
-                className="z-20 cursor-pointer animate-updown-sm absolute flex text-[12px] xxs:text-sm items-center h-10 gap-1 p-2 shadow-neomorphism dark:shadow-none hover:shadow-card bg-[#f7f7f7] dark:bg-tertiary/90 dark:hover:bg-tertiary border-2 border-white dark:border-b-tertiary dark:border-transparent rounded-xl w-fit bottom-0 md:bottom-4 left-0 justify-normal"
+                className="z-20 cursor-pointer animate-updown-sm absolute flex text-[12px] xxs:text-sm items-center h-8 gap-1 p-2 shadow-neomorphism dark:shadow-none hover:shadow-card bg-[#f7f7f7] dark:bg-tertiary/90 dark:hover:bg-tertiary border-2 border-white dark:border-b-tertiary dark:border-transparent rounded-xl w-fit bottom-0 md:bottom-4 left-0 justify-normal"
               >
                 <AiOutlineMail color="#bc0b47" />
-                <p>salim.artsider@gmail.com</p>
-                <BiLinkExternal />
+                <span className="hidden 380:flex items-center gap-1">
+                  <p>salim.artsider@gmail.com</p>
+                  <BiLinkExternal />
+                </span>
               </a>
             </div>
           </div>

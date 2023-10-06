@@ -143,7 +143,7 @@ const testimonials = [
   {
     key: -1,
     image: testimonial1,
-    name: "Mewe Loic",
+    name: "Loic Durand",
     post: "Étudiant",
     message:
       "Je suis tellement reconnaissant d'avoir rencontré Mr Salim. Ses conseils et son soutien m'ont aidé à progresser dans mes études.",
@@ -167,7 +167,7 @@ const testimonials = [
   {
     key: 2,
     image: testimonial4,
-    name: "Cyril",
+    name: "Cyril feussi",
     post: "Étudiant",
     message:
       "La formation dispensée par Salim a été extrêmement bénéfique pour ma carrière. Je suis maintenant mieux préparé pour le monde professionnel.",
