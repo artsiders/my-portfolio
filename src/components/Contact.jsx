@@ -101,7 +101,7 @@ const Contact = () => {
                 value={form.message}
                 onChange={handleChange}
                 placeholder="What do you want to say?"
-                className="input-field h-28"
+                className="input-field h-28 !rounded-3xl"
               />
             </label>
 

@@ -141,10 +141,10 @@ body {
 }
 
 .btn {
-  @apply inline-flex items-center px-8 py-3 font-bold text-white border-b-2 outline-none cursor-pointer bg-primary/90 dark:bg-tertiary rounded-xl w-fit dark:border-primary/30 hover:bg-primary dark:hover:bg-primary;
+  @apply inline-flex items-center px-6 py-3 font-bold text-white border-b-2 outline-none cursor-pointer bg-primary/90 dark:bg-tertiary rounded-full w-fit dark:border-primary/30 hover:bg-primary dark:hover:bg-primary;
 }
 .input-field {
-  @apply relative p-4 transition-all dark:shadow-none shadow-[-3px_-3px_7px_#ffffff_,_3px_3px_5px_#ceced1] focus:shadow-neomorphism font-medium border-none rounded-lg outline-none bg-light dark:bg-tertiary placeholder:text-secondary text-writing dark:text-white;
+  @apply relative p-4 transition-all dark:shadow-none shadow-[-3px_-3px_7px_#ffffff_,_3px_3px_5px_#ceced1] focus:shadow-neomorphism font-medium border-none rounded-full outline-none bg-light dark:bg-tertiary placeholder:text-secondary text-writing dark:text-white;
 }
 
 .heroHeadText {

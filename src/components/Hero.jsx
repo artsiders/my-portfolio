@@ -1,3 +1,4 @@
+import { BsRocketTakeoff } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 import { BiLinkExternal } from "react-icons/bi";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -30,7 +31,7 @@ const Hero = () => {
           </p>
           <div className="flex gap-3">
             <a href="#overview" type="submit" className="mt-4 btn">
-              About Me
+              Let&apos;s get sarted <BsRocketTakeoff className="ml-2" />
             </a>
           </div>
         </div>
