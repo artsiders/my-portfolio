@@ -39,55 +39,54 @@ const Hero = () => {
           <div className="relative">
             <div className="z-10 profile-picture animate-updown-lg">
               <img
+                loading="lazy"
                 className="relative z-20 pointer-events-none"
                 src={profile}
-                alt="salim-profile-image"
+                alt="contact-image"
                 width={420}
               />
               <a
                 href="https://www.linkedin.com/in/art-sider/"
                 target="_blanc"
                 rel="noreferrer"
-                className="z-0 cursor-pointer animate-updown-sm absolute flex text-[12px] xxs:text-sm items-center h-10 gap-1 p-2 shadow-neomorphism dark:shadow-none hover:shadow-card bg-[#f7f7f7] dark:bg-tertiary/90 dark:hover:bg-tertiary border-2 border-white dark:border-b-tertiary dark:border-transparent rounded-xl w-fit top-10 left-8 md:left-20 justify-normal"
+                className="z-20 cursor-pointer animate-updown-sm absolute flex text-[12px] xxs:text-sm items-center h-10 gap-1 p-2 shadow-neomorphism dark:shadow-none hover:shadow-card bg-[#f7f7f7] dark:bg-tertiary/90 dark:hover:bg-tertiary border-2 border-white dark:border-b-tertiary dark:border-transparent rounded-xl w-fit bottom-36 md:bottom-40 left-0 justify-normal"
               >
                 <FaLinkedinIn color="#2196f3" />
-                <div>
-                  <b>Salim</b>
-                  <BiLinkExternal />
-                </div>
+                <b>Salim</b>
+                <BiLinkExternal />
               </a>
-              <a
-                href="https://wa.link/n4mjqu"
-                target="_blanc"
-                rel="noreferrer"
-                className="z-20 cursor-pointer animate-updown-sm absolute flex text-[12px] xxs:text-sm items-center h-10 gap-1 p-2 shadow-neomorphism dark:shadow-none hover:shadow-card bg-[#f7f7f7] dark:bg-tertiary/90 dark:hover:bg-tertiary border-2 border-white dark:border-b-tertiary dark:border-transparent rounded-xl w-fit top-1/2 right-3 justify-normal"
-              >
-                <BsWhatsapp color="green" />
-                <div>
-                  <p>+237</p>
-                  <b>677 41 76 38</b>
-                  <BiLinkExternal />
-                </div>
-              </a>
+
               <a
                 href="https://www.youtube.com/@art-sider"
                 target="_blanc"
                 rel="noreferrer"
-                className="z-20 cursor-pointer animate-updown-sm absolute flex text-[12px] xxs:text-sm items-center h-10 gap-1 p-2 shadow-neomorphism dark:shadow-none hover:shadow-card bg-[#f7f7f7] dark:bg-tertiary/90 dark:hover:bg-tertiary border-2 border-white dark:border-b-tertiary dark:border-transparent rounded-xl w-fit bottom-0 right-16 md:right-28 justify-normal"
+                className="z-20 cursor-pointer animate-updown-sm absolute flex text-[12px] xxs:text-sm items-center h-10 gap-1 p-2 shadow-neomorphism dark:shadow-none hover:shadow-card bg-[#f7f7f7] dark:bg-tertiary/90 dark:hover:bg-tertiary border-2 border-white dark:border-b-tertiary dark:border-transparent rounded-xl w-fit bottom-24 md:bottom-28 left-0 justify-normal"
               >
                 <BsYoutube color="#e01717" />
                 <b>Art sider</b>
                 {/* <p>+7000 Abonnés</p> */}
                 <BiLinkExternal />
               </a>
+
+              <a
+                href="https://wa.link/n4mjqu"
+                target="_blanc"
+                rel="noreferrer"
+                className="z-20 cursor-pointer animate-updown-sm absolute flex text-[12px] xxs:text-sm items-center h-10 gap-1 p-2 shadow-neomorphism dark:shadow-none hover:shadow-card bg-[#f7f7f7] dark:bg-tertiary/90 dark:hover:bg-tertiary border-2 border-white dark:border-b-tertiary dark:border-transparent rounded-xl w-fit bottom-12 md:bottom-16 left-0 justify-normal"
+              >
+                <BsWhatsapp color="green" />
+                <p>+237</p>
+                <b>677 41 76 38</b>
+                <BiLinkExternal />
+              </a>
+
               <a
                 href="mailto:salim.artsider@gmail.com"
-                className="z-0 cursor-pointer animate-updown-sm absolute flex text-[12px] xxs:text-sm items-center h-10 gap-1 p-2 shadow-neomorphism dark:shadow-none hover:shadow-card bg-[#f7f7f7] dark:bg-tertiary/90 dark:hover:bg-tertiary border-2 border-white dark:border-b-tertiary dark:border-transparent rounded-xl w-fit top-2/3 left-0 justify-normal"
+                className="z-20 cursor-pointer animate-updown-sm absolute flex text-[12px] xxs:text-sm items-center h-10 gap-1 p-2 shadow-neomorphism dark:shadow-none hover:shadow-card bg-[#f7f7f7] dark:bg-tertiary/90 dark:hover:bg-tertiary border-2 border-white dark:border-b-tertiary dark:border-transparent rounded-xl w-fit bottom-0 md:bottom-4 left-0 justify-normal"
               >
                 <AiOutlineMail color="#bc0b47" />
-                <div>
-                  <p>salim.artsider@gmail.com</p>
-                </div>
+                <p>salim.artsider@gmail.com</p>
+                <BiLinkExternal />
               </a>
             </div>
           </div>

@@ -30,6 +30,8 @@ const Tech = () => {
           className="float-right mt-12 btn"
           data-aos="fade-up"
           data-aos-delay={900}
+          target="_blank"
+          rel="noreferrer"
         >
           See more... <AiOutlineGithub className="ml-2" />
         </a>
