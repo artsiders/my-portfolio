@@ -101,6 +101,9 @@ const Navbar = () => {
       <nav
         className={`fixed 
         z-[999] 
+        w-[90vw]
+        sm:w-fit
+        justify-center
         flex 
         items-center
         sm:gap-3

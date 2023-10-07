@@ -14,6 +14,7 @@ import Testimonials from "./components/Testimonials";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Footer from "./components/Footer";
+import { Toaster } from "react-hot-toast";
 
 export const ThemeContext = createContext("light");
 
@@ -43,6 +44,7 @@ const App = () => {
     >
       <BrowserRouter>
         <div className="relative z-0 w-screen">
+          <Toaster />
           <div
             className={`${
               theme === "light"
