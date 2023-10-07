@@ -1,9 +1,13 @@
+import { useState } from "react";
 import { AiOutlineMessage } from "react-icons/ai";
 
 import { services } from "../database";
 import ServiceCard from "./ServiceCard";
+import Portal from "./Portal";
+import { IoMdClose } from "react-icons/io";
 
 const About = () => {
+  const [visible, setVisible] = useState(false);
   return (
     <section
       id="overview"
@@ -21,9 +25,25 @@ const About = () => {
           optimized experiences for mobile devices. 📱💻 Available for free
           consultations.
         </span>
-        <a href="https://wa.link/n4mjqu" className="mt-6 btn">
+        <button onClick={() => setVisible(true)} className="mt-6 btn">
           Contact me <AiOutlineMessage className="ml-2" />
-        </a>
+        </button>
+        {visible && (
+          <Portal setVisible={setVisible}>
+            <div
+              data-aos="fade-up"
+              className="relative flex p-3 bg-white dark:bg-dark dark:shadow-none h-96 w-96 rounded-xl shadow-card max-w-[90%]"
+            >
+              <span
+                onClick={() => setVisible(false)}
+                className="absolute cursor-pointer hover:text-red-500 top-3 right-3"
+              >
+                <IoMdClose />
+              </span>
+              j&apos;aime les bananes
+            </div>
+          </Portal>
+        )}
       </p>
 
       <div className="flex flex-wrap justify-center gap-4 mt-20 xs:gap-10">
