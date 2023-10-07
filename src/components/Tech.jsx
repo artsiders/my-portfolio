@@ -27,7 +27,7 @@ const Tech = () => {
         </div>
         <a
           href="https://github.com/artsiders/"
-          className="float-right mt-12 btn"
+          className="float-none mx-4 mt-12 md:mx-auto md:float-right btn"
           data-aos="fade-up"
           data-aos-delay={900}
           target="_blank"
