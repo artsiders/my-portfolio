@@ -11,49 +11,96 @@ const Contact = () => {
     message: "",
   });
   const [loading, setLoading] = useState(false);
+  const [errors, setErrors] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
+    setErrors({ ...errors, [name]: "" });
+  };
+
+  const validateForm = () => {
+    let isValid = true;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (form.name.trim() === "") {
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        name: "Please enter your name.",
+      }));
+      isValid = false;
+    }
+
+    if (form.email.trim() === "") {
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        email: "Please enter your email.",
+      }));
+      isValid = false;
+    } else if (!emailRegex.test(form.email)) {
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        email: "Please enter a valid email.",
+      }));
+      isValid = false;
+    }
+
+    if (form.message.trim() === "") {
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        message: "Please enter your message.",
+      }));
+      isValid = false;
+    }
+
+    return isValid;
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
 
-    emailjs
-      .send(
-        "service_snqenkg",
-        "template_29fkhbj",
-        {
-          form_name: form.name,
-          to_name: "Salim",
-          from_email: form.email,
-          to_email: "salim.artsider@gmail.com",
-          message: form.message,
-        },
-        "I0bYpSVfRjqiY54SQ"
-      )
-      .then(
-        () => {
-          setLoading(false);
-          toast.success(
-            "Thank you. I will get back to you as soon as possible."
-          );
+    if (validateForm()) {
+      emailjs
+        .send(
+          "service_snqenkg",
+          "template_29fkhbj",
+          {
+            form_name: form.name,
+            to_name: "Salim",
+            from_email: form.email,
+            to_email: "salim.artsider@gmail.com",
+            message: form.message,
+          },
+          "I0bYpSVfRjqiY54SQ"
+        )
+        .then(
+          () => {
+            setLoading(false);
+            toast.success(
+              "Thank you. I will get back to you as soon as possible."
+            );
 
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          setLoading(false);
+            setForm({
+              name: "",
+              email: "",
+              message: "",
+            });
+          },
+          (error) => {
+            setLoading(false);
 
-          console.log(error);
-          toast.error("Something went wrong.");
-        }
-      );
+            console.log(error);
+            toast.error("Something went wrong.");
+          }
+        );
+    } else {
+      setLoading(false);
+    }
   };
 
   return (
@@ -76,9 +123,13 @@ const Contact = () => {
                 value={form.name}
                 onChange={handleChange}
                 placeholder="What's your name?"
-                className="input-field"
+                className={`input-field ${errors.name && "border-red-500"}`}
               />
+              {errors.name && (
+                <span className="text-red-500">{errors.name}</span>
+              )}
             </label>
+
             <label className="flex flex-col">
               <span className="mb-2 font-medium text-writing dark:text-white">
                 Your email
@@ -89,9 +140,13 @@ const Contact = () => {
                 value={form.email}
                 onChange={handleChange}
                 placeholder="What's your email?"
-                className="input-field"
+                className={`input-field ${errors.email && "border-red-500"}`}
               />
+              {errors.email && (
+                <span className="text-red-500">{errors.email}</span>
+              )}
             </label>
+
             <label className="flex flex-col">
               <span className="mb-2 font-medium text-writing dark:text-white">
                 Your Message
@@ -102,17 +157,21 @@ const Contact = () => {
                 value={form.message}
                 onChange={handleChange}
                 placeholder="What do you want to say?"
-                className="input-field h-28 !rounded-3xl"
+                className={`input-field h-28 !rounded-3xl ${
+                  errors.message && "border-red-500"
+                }`}
               />
+              {errors.message && (
+                <span className="text-red-500">{errors.message}</span>
+              )}
             </label>
 
-            <button type="submit" className="mt-4 btn">
-              {loading ? "Sending..." : "Send"}
+            <button type="submit" className="btn" disabled={loading}>
+              {loading ? "Sending..." : "Send Message"}
             </button>
           </form>
         </div>
-
-        <div className="flex items-center justify-center w-full h-full p-3 lg:p-10">
+        <div className="flex-[0.25]">
           <ProfilePicture />
         </div>
       </div>
