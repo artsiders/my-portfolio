@@ -88,6 +88,8 @@ const About = () => {
 
                 <a
                   href="https://www.facebook.com/SalimArtSider"
+                  target="_blanc"
+                  rel="noreferrer"
                   className="flex items-center justify-center w-12 h-12 transition-all border-2 border-blue-300 rounded-full cursor-pointer hover:shadow-lg dark:shadow-none dark:border-blue-500/20 hover:bg-blue-100 shadow-neomorphism"
                 >
                   <BsFacebook color="#2176ff" />
