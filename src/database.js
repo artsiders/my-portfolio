@@ -133,8 +133,8 @@ const experiences = [
     date: "Oct 2022 - Feb 2023",
     link: "https://www.afrilandfirstbank.com/",
     points: [
-      "télé-compensation des chèques provenant d'autres banques.",
-      "Vérification des données numériques pour les transferts de fonds nationaux.",
+      "Check tele-clearing from other banks.",
+      "Verification of digital data for domestic fund transfers.",
     ],
   },
 ];
