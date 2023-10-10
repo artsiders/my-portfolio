@@ -9,22 +9,20 @@ import { projects } from "../database";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import ProjectCard from "./ProjectCard";
+import { useTranslation } from "react-i18next";
 
 const Works = () => {
+  const { t } = useTranslation();
   return (
     <section id="projects" className="relative z-0 mx-auto padding max-w-7xl">
       <div>
-        <p className="sectionSubText">My work</p>
-        <h2 className="sectionHeadText">Projects.</h2>
+        <p className="sectionSubText">{t("myWork")}</p>
+        <h2 className="sectionHeadText">{t("projects")}</h2>
       </div>
 
       <div className="flex w-full">
         <p className="mt-3 text-writing dark:text-secondary text-[17px] max-w-3xl leading-[30px]">
-          Following projects showcases my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to live demos in it. It reflects my ability to solve complex
-          problems, work with different technologies, and manage projects
-          effectively.
+          {t("projectText")}
         </p>
       </div>
 

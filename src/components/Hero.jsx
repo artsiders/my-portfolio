@@ -1,7 +1,10 @@
 import { BsRocketTakeoff } from "react-icons/bs";
 import ProfilePicture from "./ProfilePicture";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <header id="home" className="relative flex min-h-screen mx-auto">
       <div
@@ -13,20 +16,18 @@ const Hero = () => {
         </div> */}
         <div className="flex flex-col justify-center w-full h-full">
           <h1 className={`heroHeadText`}>
-            Hi, I&apos;m <span className="text-primary">Salim</span>
+            {t("hi")} <span className="text-primary">Salim</span>
           </h1>
           <p className={`heroSubText block mt-2`}>
-            I&apos;m web developer, graphic designer, and online content
-            creator. <br />
+            {t("iam")} <br />
             <span className="lg:text-[23px] sm:text-[20px] xs:text-[16px] text-[14px] font-mono font-bold">
-              {"<!--"} Ready to captivate your audience with stunning digital
-              experiences? {"-->"}
+              {"<!--" + t("ready") + "-->"}
             </span>
             <br className="hidden sm:block" />
           </p>
           <div className="flex gap-3">
             <a href="#overview" type="submit" className="mt-4 btn">
-              Let&apos;s get sarted <BsRocketTakeoff className="ml-2" />
+              {t("letsgetsarted")} <BsRocketTakeoff className="ml-2" />
             </a>
           </div>
         </div>

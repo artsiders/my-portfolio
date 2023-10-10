@@ -2,8 +2,10 @@ import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import ProfilePicture from "./ProfilePicture";
 import toast from "react-hot-toast";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
   const formRef = useRef();
   const [form, setForm] = useState({
     name: "",
@@ -30,7 +32,7 @@ const Contact = () => {
     if (form.name.trim() === "") {
       setErrors((prevErrors) => ({
         ...prevErrors,
-        name: "Please enter your name.",
+        name: t("pleasEname"),
       }));
       isValid = false;
     }
@@ -38,21 +40,21 @@ const Contact = () => {
     if (form.email.trim() === "") {
       setErrors((prevErrors) => ({
         ...prevErrors,
-        email: "Please enter your email.",
+        email: t("pleaseemail"),
       }));
       isValid = false;
     } else if (!emailRegex.test(form.email)) {
       setErrors((prevErrors) => ({
         ...prevErrors,
-        email: "Please enter a valid email.",
+        email: t("pleaseValidEmail"),
       }));
       isValid = false;
     }
 
-    if (form.message.trim() === "") {
+    if (form.messagtrim() === "") {
       setErrors((prevErrors) => ({
         ...prevErrors,
-        message: "Please enter your message.",
+        message: t("pleaseMessage"),
       }));
       isValid = false;
     }
@@ -115,7 +117,7 @@ const Contact = () => {
           >
             <label className="flex flex-col">
               <span className="mb-2 font-medium text-writing dark:text-white">
-                Your Name
+                {t("yourName")}
               </span>
               <input
                 type="text"
@@ -132,7 +134,7 @@ const Contact = () => {
 
             <label className="flex flex-col">
               <span className="mb-2 font-medium text-writing dark:text-white">
-                Your email
+                {t("yourEmail")}
               </span>
               <input
                 type="email"
@@ -149,7 +151,7 @@ const Contact = () => {
 
             <label className="flex flex-col">
               <span className="mb-2 font-medium text-writing dark:text-white">
-                Your Message
+                {t("yourMessage")}
               </span>
               <textarea
                 rows={7}

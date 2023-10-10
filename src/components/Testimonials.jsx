@@ -1,20 +1,18 @@
 import { FaRegComment } from "react-icons/fa";
 import { testimonials } from "../database";
+import { useTranslation } from "react-i18next";
 
 const Testimonials = () => {
+  const { t } = useTranslation();
   return (
     <section className="w-full bg-[#f7f7f7] dark:bg-dark py-10">
       <div className="relative z-0 flex flex-col mx-auto testimonials padding max-w-7xl md:flex-row">
         <div className="relative p-5 md:h-[300px] h-fit w-full md:w-1/2 break-words">
-          <p className="sectionSubText">MY CLIENT REVIEWS</p>
-          <h2 className="sectionHeadText">Testimonials</h2>
-          <p className="mb-3">
-            Discover the testimonials of my satisfied clients. Their authentic
-            and positive reviews testify to the quality of my services and my
-            ability to meet their needs.
-          </p>
+          <p className="sectionSubText">{t("clientsReviews")}</p>
+          <h2 className="sectionHeadText">{t("testimonials")}</h2>
+          <p className="mb-3">{t("testimonialsText")}</p>
           <button type="button" className="btn mb-28 md:mb-0">
-            <span className="mr-2">Testimonial</span>
+            <span className="mr-2">{t("testimonial")}</span>
             <FaRegComment />
           </button>
         </div>

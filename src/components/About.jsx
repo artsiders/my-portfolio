@@ -11,8 +11,11 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { BsWhatsapp } from "react-icons/bs";
 import { BsYoutube } from "react-icons/bs";
 import { BsFacebook } from "react-icons/bs";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+  const { t } = useTranslation();
+
   const [visible, setVisible] = useState(false);
   return (
     <section
@@ -21,18 +24,13 @@ const About = () => {
     >
       <div>
         <p className="sectionSubText">Introduction</p>
-        <h2 className="sectionHeadText">Overview.</h2>
+        <h2 className="sectionHeadText">{t("overview")}</h2>
       </div>
 
       <p className="text-writing dark:text-secondary text-[17px] max-w-3xl leading-[30px]">
-        <span className="block">
-          Passionate Full Stack Web and Mobile Developer, specialized in
-          interface ergonomics and web design. 🌟 Creates responsive and
-          optimized experiences for mobile devices. 📱💻 Available for free
-          consultations.
-        </span>
+        <span className="block">{t("aboutMe")}</span>
         <button onClick={() => setVisible(true)} className="mt-6 btn">
-          Contact me <AiOutlineMessage className="ml-2" />
+          {t("contactMe")} <AiOutlineMessage className="ml-2" />
         </button>
         {visible && (
           <Portal setVisible={setVisible}>
@@ -42,7 +40,7 @@ const About = () => {
             >
               <div className="flex items-center justify-between w-full border-b-2 h-14 border-b-writing/20">
                 <h1 className="text-writing dark:text-white border-b-writing/10">
-                  Contact Links
+                  {t("contactLinks")}
                 </h1>
                 <span
                   onClick={() => setVisible(false)}

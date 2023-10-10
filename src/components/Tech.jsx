@@ -1,11 +1,13 @@
 import { AiOutlineGithub } from "react-icons/ai";
 import { technologies } from "../database";
+import { useTranslation } from "react-i18next";
 
 const Tech = () => {
+  const { t } = useTranslation();
   return (
     <section className="w-full bg-[#f7f7f7] dark:bg-dark pb-28">
       <div className="relative z-0 mx-auto padding max-w-7xl">
-        <h4 className="sectionSubText">My main technologies</h4>
+        <h4 className="sectionSubText">{t("mainTechnologies")}</h4>
         <h2 className="sectionHeadText">Technologies.</h2>
         <br />
         <div className="flex flex-row flex-wrap justify-center gap-10">
@@ -33,7 +35,7 @@ const Tech = () => {
           target="_blank"
           rel="noreferrer"
         >
-          See more... <AiOutlineGithub className="ml-2" />
+          {t("seeMore")} <AiOutlineGithub className="ml-2" />
         </a>
       </div>
     </section>
