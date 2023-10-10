@@ -9,7 +9,7 @@ import Cookies from "js-cookie";
 import { nav } from "../database";
 
 const Navbar = () => {
-  const [showMenu, setShowMenu] = useState(true);
+  const [showMenu, setShowMenu] = useState(false);
   const [active, setActive] = useState(0);
   const [scrollClass, setScrollClass] = useState("");
   const [lang, setLang] = useState("en");
@@ -101,22 +101,22 @@ const Navbar = () => {
       <nav
         className={`fixed 
         z-[999] 
-        w-[80vw]
+        w-screen
         sm:w-fit
         justify-center
         flex 
         items-center
         xs:gap-3
         gap-2
-        bg-light/50 dark:bg-dark/30 
+        bg-light dark:bg-dark/30
         p-2
-        backdrop-blur-md 
-        rounded-full 
+        dark:backdrop-blur-md
+        rounded-t-2xl sm:rounded-full 
         text-dark_primary
         shadow-neomorphism
         dark:shadow-none
         border-[1px] border-white dark:border-tertiary
-        duration-300 ${showMenu ? "bottom-10" : "bottom-[-100%]"}`}
+        duration-300 ${showMenu ? "bottom-0 sm:bottom-10" : "bottom-[-100%]"}`}
       >
         {nav.map((item, key) => (
           <a
