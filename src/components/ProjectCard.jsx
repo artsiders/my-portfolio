@@ -3,9 +3,8 @@ import { RxExternalLink } from "react-icons/rx";
 const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
   return (
     <div className="bg-[#f7f7f7] dark:bg-tertiary border-2 dark:border-transparent border-white p-2 rounded-md sm:w-[300px] w-full shadow-none md:shadow-card dark:shadow-sm">
-      <div className="relative w-full cursor-pointer h-fit">
+      <div className="relative w-full cursor-pointer h-[160px] bg-gray-200 dark:bg-[#251246]">
         <img
-          loading="lazy"
           src={image}
           alt={name}
           className="object-cover w-full h-full border-2 border-white rounded-md dark:border-transparent"
