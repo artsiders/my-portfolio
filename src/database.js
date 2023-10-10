@@ -33,45 +33,30 @@ import { BiUser } from "react-icons/bi";
 import { RiServiceLine, RiProjectorLine } from "react-icons/ri";
 import { MdOutlinePermContactCalendar } from "react-icons/md";
 
-export const navLinks = [
-  {
-    id: "about",
-    title: "About",
-  },
-  {
-    id: "work",
-    title: "Work",
-  },
-  {
-    id: "contact",
-    title: "Contact",
-  },
-];
-
 const services = [
   {
     title: "Web Developer",
     icon: web,
     description:
-      "Création de sites web interactifs et fonctionnels pour répondre aux besoins spécifiques des clients.",
+      "Creating interactive and functional websites to meet the specific needs of clients.",
   },
   {
     title: "Graphic Designer",
     icon: graphicDesigner,
     description:
-      "Conception d'éléments graphiques attrayants et visuellement percutants pour renforcer l'identité visuelle des marques.",
+      "Designing visually appealing and impactful graphic elements to enhance the visual identity of brands.",
   },
   {
     title: "Mobile Developer",
     icon: mobile,
     description:
-      "Développement d'applications mobiles pour offrir des expériences optimales sur les plateformes iOS et Android.",
+      "Developing mobile applications to provide optimal experiences on iOS and Android platforms.",
   },
   {
     title: "Content Creator",
     icon: contentCreator,
     description:
-      "Production de contenu original et engageant en ligne, pour susciter l'intérêt et l'engagement des audiences.",
+      "Producing original and engaging online content to capture the interest and engagement of audiences.",
   },
 ];
 
@@ -146,7 +131,7 @@ const testimonials = [
     name: "Loic Durand",
     post: "Étudiant",
     message:
-      "Je suis tellement reconnaissant d'avoir rencontré Mr Salim. Ses conseils et son soutien m'ont aidé à progresser dans mes études.",
+      "I am so grateful to have met Mr. Salim. His advice and support have helped me make progress in my studies.",
   },
   {
     key: 0,
@@ -154,7 +139,7 @@ const testimonials = [
     name: "Merline Yassa",
     post: "Entrepreneur",
     message:
-      "Les applications créées par Mr Salim sont vraiment incroyables. Elles ont transformé la façon dont je gère mon entreprise.",
+      "The applications created by Mr. Salim are truly incredible. They have transformed the way I manage my business.",
   },
   {
     key: 1,
@@ -162,7 +147,7 @@ const testimonials = [
     name: "Moustapha Aka",
     post: "Directeur de l'hôtel Edkadi",
     message:
-      "J'utilise le logiciel SmartBook développé par ces jeunes. C'est très efficace et cela a grandement amélioré notre système de réservation.",
+      "I use the SmartBook software developed by these young individuals. It is highly effective and has greatly improved our reservation system.",
   },
   {
     key: 2,
@@ -170,7 +155,7 @@ const testimonials = [
     name: "Cyril feussi",
     post: "Étudiant",
     message:
-      "La formation dispensée par Salim a été extrêmement bénéfique pour ma carrière. Je suis maintenant mieux préparé pour le monde professionnel.",
+      "The training provided by Salim has been extremely beneficial for my career. I am now better prepared for the professional world.",
   },
   {
     key: 2,
@@ -178,7 +163,7 @@ const testimonials = [
     name: "Dimitri Mabon",
     post: "Développeur front-end",
     message:
-      "Je suis impressionné par les compétences de Mr Salim en développement web. Travailler avec lui a été une expérience enrichissante.",
+      "I am impressed by Mr. Salim's web development skills. Working with him has been a rewarding experience.",
   },
 ];
 
@@ -330,49 +315,4 @@ const nav = [
   },
 ];
 
-const skills = {
-  title: "Skills",
-  subtitle: "MY TOP SKILLS",
-  skills_content: [
-    {
-      name: "Figma",
-      para: "Lorem ipsum text  dummy",
-      logo: "figma",
-    },
-    {
-      name: "Node js",
-      para: "Lorem ipsum text  dummy",
-      logo: "nodejs",
-    },
-    {
-      name: "Adobe Photoshop",
-      para: "Lorem ipsum text  dummy",
-      logo: "ps",
-    },
-    {
-      name: "React js",
-      para: "Lorem ipsum text  dummy",
-      logo: "reactjs",
-    },
-    {
-      name: "Sketch",
-      para: "Lorem ipsum text  dummy",
-      logo: "sketch",
-    },
-    {
-      name: "Python",
-      para: "Lorem ipsum text  dummy",
-      logo: "python",
-    },
-  ],
-};
-
-export {
-  services,
-  technologies,
-  experiences,
-  testimonials,
-  projects,
-  nav,
-  skills,
-};
+export { services, technologies, experiences, testimonials, projects, nav };

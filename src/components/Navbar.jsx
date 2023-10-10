@@ -123,7 +123,7 @@ const Navbar = () => {
             key={key}
             href={item.link}
             onClick={() => setActive(key)}
-            className={`text-xl p-2.5 rounded-full sm:cursor-pointer hover:bg-primary/50 transition-all  ${
+            className={`text-xl p-2.5 rounded-full sm:cursor-pointer hover:bg-primary hover:text-white transition-all  ${
               key === active && "bg-primary text-white"
             } `}
           >
