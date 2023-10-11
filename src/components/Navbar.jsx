@@ -79,7 +79,7 @@ const Navbar = () => {
             </button>
             <div
               ref={selectLang}
-              className="hidden capitalize absolute top-full right-px mt-1 py-2 w-40 rounded-lg bg-[#f7f7f7]/50 shadow-none ring-1 ring-slate-900/5 text-sm leading-6 font-semibold text-slate-700 dark:bg-slate-800 dark:text-slate-300 dark:highlight-white/5 border-[1px] border-white dark:border-transparent"
+              className="hidden capitalize absolute top-full right-px mt-1 py-2 w-40 rounded-lg bg-[#f7f7f7] shadow-none ring-1 ring-slate-900/5 text-sm leading-6 font-semibold text-slate-700 dark:bg-slate-800 dark:text-slate-300 dark:highlight-white/5 border-[1px] border-white dark:border-transparent"
             >
               <span
                 className={`cursor-pointer hover:text-primary/60 flex items-center justify-between px-3 py-1 ${
