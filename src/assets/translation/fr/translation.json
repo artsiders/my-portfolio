@@ -1,0 +1,35 @@
+{
+    "key": "bonjour tout le monde !",
+    "ready":
+      "Prêt à captiver votre audience avec une expérience digitale incroyable ?",
+    "hi": "Salut, je suis",
+    "iam": "Je suis développeur web, designer graphique et créateur de contenu en ligne.",
+    "letsgetsarted": "Commençons",
+    "overview": "Apropos de moi.",
+    "aboutMe":
+      "Développeur Full Stack Web et Mobile passionné, spécialisé dans l'ergonomie des interfaces et le design web. 🌟 Crée des expériences réactives et optimisées pour les appareils mobiles. 📱💻 Disponible pour des consultations gratuites.",
+    "contactMe": "Contactez-moi",
+    "contactLinks": "Liens de contact",
+    "whatIhaveDone": "Ce que j'ai accompli jusqu'à présent",
+    "workExperience": "Expérience professionnelle.",
+    "mainTechnologies": "Mes principales technologies",
+    "seeMore": "Voir plus...",
+    "myWork": "Mon travail",
+    "projects": "Projets.",
+    "projectText":
+      "Les projets suivants présentent mes compétences et mon expérience à travers des exemples concrets de mon travail. Chaque projet est brièvement décrit avec des liens vers des démonstrations en direct. Cela reflète ma capacité à résoudre des problèmes complexes, à travailler avec différentes technologies et à gérer efficacement des projets.",
+    "clientsReviews": "AVIS DE MES CLIENTS",
+    "testimonials": "Témoignages",
+    "testimonialsText":
+      "Découvrez les témoignages de mes clients satisfaits. Leurs avis authentiques et positifs témoignent de la qualité de mes services et de ma capacité à répondre à leurs besoins.",
+    "testimonial": "Témoignage",
+    "yourName": "Votre nom",
+    "yourEmail": "Votre email",
+    "yourMessage": "Votre message",
+    "pleasEname": "Veuillez entrer votre nom.",
+    "pleaseemail": "Veuillez entrer votre email.",
+    "pleaseValidEmail": "Veuillez entrer une adresse email valide.",
+    "pleaseMessage": "Veuillez entrer votre message.",
+    "english": "anglais",
+    "french": "français"
+  }
