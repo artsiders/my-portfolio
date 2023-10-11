@@ -17,8 +17,12 @@ import { Toaster } from "react-hot-toast";
 import i18next from "i18next";
 import { initReactI18next } from "react-i18next";
 
+// Récupérer la langue par défaut du navigateur
+const browserLang = navigator.language.slice(0, 2);
+const defaultLang = ["fr", "en"].includes(browserLang) ? browserLang : "en";
+
 i18next.use(initReactI18next).init({
-  lng: document.querySelector("html").lang,
+  lng: localStorage.getItem("language") || defaultLang,
   fallbackLng: "en",
   debug: true,
   resources: {
@@ -30,31 +34,33 @@ i18next.use(initReactI18next).init({
         hi: "Hi, I'm",
         iam: "I'm web developer, graphic designer, and online content creator.",
         letsgetsarted: "Let's get started",
-        overview: "Aperçu.",
+        overview: "Overview.",
         aboutMe:
           "Passionate Full Stack Web and Mobile Developer, specialized in interface ergonomics and web design. 🌟 Creates responsive and optimized experiences for mobile devices. 📱💻 Available for free consultations.",
-        contactMe: "Contactez-moi",
-        contactLinks: "Liens de contact",
-        whatIhaveDone: "Ce que j'ai fait jusqu'à présent",
-        workExperience: "Expérience professionnelle.",
-        mainTechnologies: "Mes principales technologies",
-        seeMore: "Voir plus...",
-        myWork: "Mon travail",
-        projects: "Projets.",
+        contactMe: "Contact me",
+        contactLinks: "Contact links",
+        whatIhaveDone: "What I have done so far",
+        workExperience: "Work Experience.",
+        mainTechnologies: "My main technologies",
+        seeMore: "See more...",
+        myWork: "My work",
+        projects: "Projects.",
         projectText:
-          "Les projets suivants mettent en valeur mes compétences et mon expérience à travers des exemples concrets de mon travail. Chaque projet est brièvement décrit avec des liens vers des démonstrations en direct. Cela reflète ma capacité à résoudre des problèmes complexes, à travailler avec différentes technologies et à gérer efficacement des projets.",
-        clientsReviews: "AVIS DE MES CLIENTS",
-        testimonials: "Témoignages",
+          "Following projects showcases my skills and experience through real-world examples of my work. Each project is briefly described with links to live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.",
+        clientsReviews: "MY CLIENT REVIEWS",
+        testimonials: "Testimonials",
         testimonialsText:
-          "Découvrez les témoignages de mes clients satisfaits. Leurs avis authentiques et positifs témoignent de la qualité de mes services et de ma capacité à répondre à leurs besoins.",
-        testimonial: "Témoignage",
-        yourName: "Votre nom",
-        yourEmail: "Votre email",
-        yourMessage: "Votre message",
-        pleasEname: "Veuillez entrer votre nom.",
-        pleaseemail: "Veuillez entrer votre email.",
-        pleaseValidEmail: "Veuillez entrer une adresse email valide.",
-        pleaseMessage: "Veuillez entrer votre message.",
+          "Discover the testimonials of my satisfied clients. Their authentic and positive reviews testify to the quality of my services and my ability to meet their needs.",
+        testimonial: "Testimonial",
+        yourName: "Your Name",
+        yourEmail: "Your email",
+        yourMessage: "Your Message",
+        pleasEname: "Please enter your name.",
+        pleaseemail: "Please enter your email.",
+        pleaseValidEmail: "Please enter a valid email.",
+        pleaseMessage: "Please enter your message.",
+        english: "english",
+        french: "french",
       },
     },
     fr: {
@@ -90,6 +96,8 @@ i18next.use(initReactI18next).init({
         pleaseemail: "Veuillez entrer votre email.",
         pleaseValidEmail: "Veuillez entrer une adresse email valide.",
         pleaseMessage: "Veuillez entrer votre message.",
+        english: "anglais",
+        french: "français",
       },
     },
   },

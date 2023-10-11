@@ -7,15 +7,25 @@ import { BiMoon, BiSun } from "react-icons/bi";
 import { ThemeContext } from "../App";
 import Cookies from "js-cookie";
 import { nav } from "../database";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
+  const { t } = useTranslation();
   const [showMenu, setShowMenu] = useState(false);
   const [active, setActive] = useState(0);
   const [scrollClass, setScrollClass] = useState("");
-  const [lang, setLang] = useState("en");
+  const [lang, setLang] = useState("");
   const selectLang = useRef(null);
 
   const { Theme, SetTheme } = useContext(ThemeContext);
+
+  // Récupérer la langue par défaut du navigateur
+  useEffect(() => {
+    const browserLang = navigator.language.slice(0, 2);
+    const defaultLang = ["fr", "en"].includes(browserLang) ? browserLang : "en";
+    setLang(localStorage.getItem("language") || defaultLang);
+  }, []);
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 500) {
@@ -63,29 +73,37 @@ const Navbar = () => {
               selectLang.current.classList.toggle("hidden");
             }}
           >
-            <button className="shadow-neomorphism dark:shadow-none text-xs leading-5 font-semibold bg-[#f7f7f7]/50 dark:bg-dark/40 border-[1px] border-white dark:border-transparent rounded-full py-1 px-3 flex items-center space-x-2 hover:shadow-card dark:highlight-white/5">
-              {lang === "en" ? "English" : "French"}
+            <button className="shadow-neomorphism capitalize dark:shadow-none text-xs leading-5 font-semibold bg-[#f7f7f7]/50 dark:bg-dark/40 border-[1px] border-white dark:border-transparent rounded-full py-1 px-3 flex items-center space-x-2 hover:shadow-card dark:highlight-white/5">
+              {lang === "en" ? t("english") : t("french")}
               <BiChevronDown size={20} />
             </button>
             <div
               ref={selectLang}
-              className="hidden absolute top-full right-px mt-1 py-2 w-40 rounded-lg bg-[#f7f7f7]/50 shadow-none ring-1 ring-slate-900/5 text-sm leading-6 font-semibold text-slate-700 dark:bg-slate-800 dark:text-slate-300 dark:highlight-white/5 border-[1px] border-white dark:border-transparent"
+              className="hidden capitalize absolute top-full right-px mt-1 py-2 w-40 rounded-lg bg-[#f7f7f7]/50 shadow-none ring-1 ring-slate-900/5 text-sm leading-6 font-semibold text-slate-700 dark:bg-slate-800 dark:text-slate-300 dark:highlight-white/5 border-[1px] border-white dark:border-transparent"
             >
               <span
                 className={`cursor-pointer hover:text-primary/60 flex items-center justify-between px-3 py-1 ${
                   lang === "fr" ? "text-primary dark:text-primary" : ""
                 }`}
-                onClick={() => setLang("fr")}
+                onClick={() => {
+                  setLang("fr");
+                  localStorage.setItem("language", "fr");
+                  window.location.reload();
+                }}
               >
-                Français
+                {t("french")}
               </span>
               <span
                 className={`cursor-pointer hover:text-primary/60 flex items-center justify-between px-3 py-1 ${
                   lang === "en" ? "text-primary dark:text-primary" : ""
                 }`}
-                onClick={() => setLang("en")}
+                onClick={() => {
+                  setLang("fr");
+                  localStorage.setItem("language", "en");
+                  window.location.reload();
+                }}
               >
-                English
+                {t("english")}
               </span>
             </div>
           </div>
