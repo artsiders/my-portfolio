@@ -14,6 +14,7 @@ const ProfilePicture = () => {
         src={profile}
         alt="contact-image"
         width={420}
+        height={420}
       />
       <a
         href="https://www.linkedin.com/in/art-sider/"

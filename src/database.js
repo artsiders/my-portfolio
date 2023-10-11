@@ -15,6 +15,13 @@ import graphicDesigner from "./assets/services/graphic-designer.webp";
 import mobile from "./assets/services/mobile.webp";
 import web from "./assets/services/web.webp";
 
+import thumbAltplusSite from "./assets/work/thumb_altplus.webp";
+import thumbComx from "./assets/work/thumb_comx.webp";
+import thumbCampus from "./assets/work/thumb_campus.webp";
+import thumbMaadana from "./assets/work/thumb_maadana.webp";
+import thumbSmartbook from "./assets/work/thumb_smartbook.webp";
+import thumbSocapco from "./assets/work/thumb_socapco.webp";
+
 import altplusSite from "./assets/work/altplus.webp";
 import comx from "./assets/work/comx.webp";
 import campus from "./assets/work/campus.webp";
@@ -187,6 +194,7 @@ const projects = [
       },
     ],
     image: altplusSite,
+    thumbnail: thumbAltplusSite,
     link: "https://alt-plus.onrender.com/",
   },
   {
@@ -208,6 +216,7 @@ const projects = [
       },
     ],
     image: comx,
+    thumbnail: thumbComx,
     link: "https://comx-front.vercel.app/",
   },
   {
@@ -229,6 +238,7 @@ const projects = [
       },
     ],
     image: socapco,
+    thumbnail: thumbSocapco,
     link: "https://www.socapco-cosmetique.com/",
   },
   {
@@ -250,6 +260,7 @@ const projects = [
       },
     ],
     image: smartbook,
+    thumbnail: thumbSmartbook,
     link: "http://smartbook.onrender.com/",
   },
   {
@@ -267,6 +278,7 @@ const projects = [
       },
     ],
     image: maadana,
+    thumbnail: thumbMaadana,
     link: "https://maadana.likupdigital.com/",
   },
   {
@@ -288,6 +300,7 @@ const projects = [
       },
     ],
     image: campus,
+    thumbnail: thumbCampus,
     link: "https://campus-main-ui.onrender.com/",
   },
 ];

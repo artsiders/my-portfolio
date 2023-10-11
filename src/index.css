@@ -215,6 +215,7 @@ body {
   left: 15%;
   height: 80%;
   width: 80%;
+  min-height: 200px;
   border-radius: 72% 28% 52% 48% / 67% 38% 62% 33%;
   transform: rotate(30deg);
 }
