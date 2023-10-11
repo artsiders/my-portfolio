@@ -37,7 +37,7 @@ const ProfilePicture = () => {
       >
         <BsYoutube color="#e01717" />
         <span className="items-center hidden gap-1 380:flex">
-          <b>Art sider</b>
+          <b translate="no">Art sider</b>
           {/* <p>+7000 Abonnés</p> */}
           <BiLinkExternal />
         </span>
