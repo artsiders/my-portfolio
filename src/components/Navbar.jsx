@@ -10,7 +10,7 @@ import { nav } from "../database";
 import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [showMenu, setShowMenu] = useState(false);
   const [active, setActive] = useState(0);
   const [scrollClass, setScrollClass] = useState("");
@@ -88,7 +88,7 @@ const Navbar = () => {
                 onClick={() => {
                   setLang("fr");
                   localStorage.setItem("language", "fr");
-                  window.location.reload();
+                  i18n.changeLanguage("fr");
                 }}
               >
                 {t("french")}
@@ -98,9 +98,9 @@ const Navbar = () => {
                   lang === "en" ? "text-primary dark:text-primary" : ""
                 }`}
                 onClick={() => {
-                  setLang("fr");
+                  setLang("en");
                   localStorage.setItem("language", "en");
-                  window.location.reload();
+                  i18n.changeLanguage("en");
                 }}
               >
                 {t("english")}
