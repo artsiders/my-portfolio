@@ -19,13 +19,6 @@ const Navbar = () => {
 
   const { Theme, SetTheme } = useContext(ThemeContext);
 
-  // Récupérer la langue par défaut du navigateur
-  useEffect(() => {
-    const browserLang = navigator.language.slice(0, 2);
-    const defaultLang = ["fr", "en"].includes(browserLang) ? browserLang : "en";
-    setLang(localStorage.getItem("language") || defaultLang);
-  }, []);
-
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 500) {
@@ -87,7 +80,6 @@ const Navbar = () => {
                 }`}
                 onClick={() => {
                   setLang("fr");
-                  localStorage.setItem("language", "fr");
                   i18n.changeLanguage("fr");
                 }}
               >
@@ -99,7 +91,6 @@ const Navbar = () => {
                 }`}
                 onClick={() => {
                   setLang("en");
-                  localStorage.setItem("language", "en");
                   i18n.changeLanguage("en");
                 }}
               >
