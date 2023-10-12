@@ -7,6 +7,7 @@ import testimonial2 from "../assets/testimonials/testimonial-2.webp";
 import testimonial3 from "../assets/testimonials/testimonial-3.webp";
 import testimonial4 from "../assets/testimonials/testimonial-4.webp";
 import testimonial5 from "../assets/testimonials/testimonial-5.webp";
+import { toast } from "react-hot-toast";
 
 import Portal from "./Portal";
 import { IoMdClose } from "react-icons/io";
@@ -103,7 +104,13 @@ const Testimonials = () => {
                     className={`input-field h-28 !rounded-3xl`}
                   />
                 </label>
-                <button className="btn">
+                <button
+                  onClick={() => {
+                    toast.success("Thank you ! 😄");
+                    setVisible(false);
+                  }}
+                  className="btn"
+                >
                   {t("send")} <BiSend className="ml-2" />
                 </button>
               </div>
