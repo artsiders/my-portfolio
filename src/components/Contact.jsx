@@ -1,3 +1,5 @@
+import { BiLoaderCircle } from "react-icons/bi";
+import { BiSend } from "react-icons/bi";
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import ProfilePicture from "./ProfilePicture";
@@ -51,7 +53,7 @@ const Contact = () => {
       isValid = false;
     }
 
-    if (form.messagtrim() === "") {
+    if (form.message.trim() === "") {
       setErrors((prevErrors) => ({
         ...prevErrors,
         message: t("pleaseMessage"),
@@ -64,9 +66,9 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setLoading(true);
 
     if (validateForm()) {
+      setLoading(true);
       emailjs
         .send(
           "service_snqenkg",
@@ -169,11 +171,21 @@ const Contact = () => {
             </label>
 
             <button type="submit" className="btn" disabled={loading}>
-              {loading ? "Sending..." : "Send Message"}
+              {loading ? (
+                <>
+                  Sending...
+                  <BiLoaderCircle className="ml-2 animate-spin" />
+                </>
+              ) : (
+                <>
+                  Send Message
+                  <BiSend className="ml-2" />
+                </>
+              )}
             </button>
           </form>
         </div>
-        <div className="flex-[0.25]">
+        <div className="flex items-center justify-center w-full h-full max-w-full">
           <ProfilePicture />
         </div>
       </div>
