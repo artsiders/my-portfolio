@@ -1,13 +1,38 @@
 import { VerticalTimeline } from "react-vertical-timeline-component";
-
-import "react-vertical-timeline-component/style.min.css";
-
-import { experiences } from "../database";
 import ExperienceCard from "./ExperienceCard";
 import { useTranslation } from "react-i18next";
+import afb from "../assets/company/afb.webp";
+import altplus from "../assets/company/altplus.webp";
+import "react-vertical-timeline-component/style.min.css";
 
 const Experience = () => {
   const { t } = useTranslation();
+
+  const experiences = [
+    {
+      title: t("experiences.webDeveloper"),
+      company_name: "Alt plus",
+      icon: altplus,
+      iconBg: "#EEEEEE",
+      date: "March 2022",
+      link: "https://alt-plus.onrender.com/",
+      points: [
+        t("experiences.point1"),
+        t("experiences.point2"),
+        t("experiences.point3"),
+        t("experiences.point4"),
+      ],
+    },
+    {
+      title: t("experiences.operation"),
+      company_name: "AFRILAND FIRST BANK",
+      icon: afb,
+      iconBg: "#EEE",
+      date: "Oct 2022 - Feb 2023",
+      link: "https://www.afrilandfirstbank.com/",
+      points: [t("experiences.point5"), t("experiences.point6")],
+    },
+  ];
   return (
     <section
       id="experience"

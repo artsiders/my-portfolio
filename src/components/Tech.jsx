@@ -1,9 +1,51 @@
 import { AiOutlineGithub } from "react-icons/ai";
-import { technologies } from "../database";
 import { useTranslation } from "react-i18next";
+
+import typescript from "../assets/tech/typescript.webp";
+import reactjs from "../assets/tech/reactjs.webp";
+import tailwind from "../assets/tech/tailwind.webp";
+import nodejs from "../assets/tech/nodejs.webp";
+import mongodb from "../assets/tech/mongodb.webp";
+import mysql from "../assets/tech/mysql.webp";
+import php from "../assets/tech/php.webp";
+import git from "../assets/tech/git.webp";
 
 const Tech = () => {
   const { t } = useTranslation();
+  const technologies = [
+    {
+      name: "TypeScript",
+      icon: typescript,
+    },
+    {
+      name: "React JS",
+      icon: reactjs,
+    },
+    {
+      name: "Tailwind CSS",
+      icon: tailwind,
+    },
+    {
+      name: "Node JS",
+      icon: nodejs,
+    },
+    {
+      name: "PHP",
+      icon: php,
+    },
+    {
+      name: "MongoDB",
+      icon: mongodb,
+    },
+    {
+      name: "Mysql",
+      icon: mysql,
+    },
+    {
+      name: "git",
+      icon: git,
+    },
+  ];
   return (
     <section className="w-full bg-[#f7f7f7] dark:bg-dark pb-28">
       <div className="relative z-0 mx-auto padding max-w-7xl">

@@ -4,9 +4,12 @@ import { useState, useEffect, useContext, useRef } from "react";
 import { HiMenuAlt2 } from "react-icons/hi";
 import { createElement } from "react";
 import { BiMoon, BiSun } from "react-icons/bi";
+import { TbSmartHome } from "react-icons/tb";
+import { BiUser } from "react-icons/bi";
+import { RiServiceLine, RiProjectorLine } from "react-icons/ri";
+import { MdOutlinePermContactCalendar } from "react-icons/md";
 import { ThemeContext } from "../App";
 import Cookies from "js-cookie";
-import { nav } from "../database";
 import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
@@ -14,10 +17,33 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [active, setActive] = useState(0);
   const [scrollClass, setScrollClass] = useState("");
-  const [lang, setLang] = useState("");
+  const [lang, setLang] = useState(i18n.language);
   const selectLang = useRef(null);
 
   const { Theme, SetTheme } = useContext(ThemeContext);
+
+  const nav = [
+    {
+      link: "#home",
+      icon: TbSmartHome,
+    },
+    {
+      link: "#overview",
+      icon: BiUser,
+    },
+    {
+      link: "#experience",
+      icon: RiServiceLine,
+    },
+    {
+      link: "#projects",
+      icon: RiProjectorLine,
+    },
+    {
+      link: "#contact",
+      icon: MdOutlinePermContactCalendar,
+    },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {

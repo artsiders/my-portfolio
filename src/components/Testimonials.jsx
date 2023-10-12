@@ -1,9 +1,50 @@
 import { FaRegComment } from "react-icons/fa";
-import { testimonials } from "../database";
 import { useTranslation } from "react-i18next";
+import testimonial1 from "../assets/testimonials/testimonial-1.webp";
+import testimonial2 from "../assets/testimonials/testimonial-2.webp";
+import testimonial3 from "../assets/testimonials/testimonial-3.webp";
+import testimonial4 from "../assets/testimonials/testimonial-4.webp";
+import testimonial5 from "../assets/testimonials/testimonial-5.webp";
 
 const Testimonials = () => {
   const { t } = useTranslation();
+  const testimonials = [
+    {
+      key: -1,
+      image: testimonial1,
+      name: "Loic Durand",
+      post: t("testimo.student"),
+      message: t("testimo.loicMsg"),
+    },
+    {
+      key: 0,
+      image: testimonial2,
+      name: "Merline Yassa",
+      post: "Entrepreneur",
+      message: t("testimo.merlineMsg"),
+    },
+    {
+      key: 1,
+      image: testimonial3,
+      name: "Moustapha Aka",
+      post: t("testimo.manager"),
+      message: t("testimo.akaMsg"),
+    },
+    {
+      key: 2,
+      image: testimonial4,
+      name: "Cyril feussi",
+      post: t("testimo.student"),
+      message: t("testimo.cyrilMsg"),
+    },
+    {
+      key: 2,
+      image: testimonial5,
+      name: "Dimitri Mabon",
+      post: t("testimo.devFront"),
+      message: t("testimo.dimiMsg"),
+    },
+  ];
   return (
     <section className="w-full bg-[#f7f7f7] dark:bg-dark py-10">
       <div className="relative z-0 flex flex-col mx-auto testimonials padding max-w-7xl md:flex-row">

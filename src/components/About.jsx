@@ -1,7 +1,11 @@
 import { useState } from "react";
 import { AiOutlineMessage } from "react-icons/ai";
 
-import { services } from "../database";
+import contentCreator from "../assets/services/content-creator.webp";
+import graphicDesigner from "../assets/services/graphic-designer.webp";
+import mobile from "../assets/services/mobile.webp";
+import web from "../assets/services/web.webp";
+
 import ServiceCard from "./ServiceCard";
 import Portal from "./Portal";
 import { IoMdClose } from "react-icons/io";
@@ -15,6 +19,29 @@ import { useTranslation } from "react-i18next";
 
 const About = () => {
   const { t } = useTranslation();
+
+  const services = [
+    {
+      title: t("services.webDeveloper"),
+      icon: web,
+      description: t("services.webDevDesc"),
+    },
+    {
+      title: t("services.graphicDesigner"),
+      icon: graphicDesigner,
+      description: t("services.graphicDesignerDesc"),
+    },
+    {
+      title: t("services.mobileDeveloper"),
+      icon: mobile,
+      description: t("services.mobileDeveloperDesc"),
+    },
+    {
+      title: t("services.contentCreator"),
+      icon: contentCreator,
+      description: t("services.contentCreatorDesc"),
+    },
+  ];
 
   const [visible, setVisible] = useState(false);
   return (
@@ -100,7 +127,7 @@ const About = () => {
 
       <div className="flex flex-wrap justify-center gap-4 mt-20 xs:gap-10">
         {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
+          <ServiceCard key={index} index={index} {...service} />
         ))}
       </div>
     </section>

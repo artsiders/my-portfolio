@@ -31,5 +31,47 @@
     "pleaseValidEmail": "Veuillez entrer une adresse email valide.",
     "pleaseMessage": "Veuillez entrer votre message.",
     "english": "anglais",
-    "french": "français"
+    "french": "français",
+
+    "services": {
+      "webDeveloper": "Développeur Web",
+      "webDevDesc": "Création de sites web interactifs et fonctionnels répondant aux besoins spécifiques des clients.",
+      "graphicDesigner": "Designer Graphique",
+      "graphicDesignerDesc": "Conception d'éléments graphiques attrayants et percutants pour améliorer l'identité visuelle des marques.",
+      "mobileDeveloper": "Développeur Mobile",
+      "mobileDeveloperDesc": "Développement d'applications mobiles pour offrir des expériences optimales sur les plateformes iOS et Android.",
+      "contentCreator": "Créateur de Contenu",
+      "contentCreatorDesc": "Production de contenus originaux et captivants en ligne pour susciter l'intérêt et l'engagement des audiences."
+    },
+
+    "experiences": {
+      "webDeveloper": "Web Developer",
+      "operation": "Assistant Chef Operation",
+      "point1": "Développement et maintenance d'applications web en utilisant React.js et autres technologies connexes.",
+      "point2": "Collaboration avec des équipes multidisciplinaires incluant des concepteurs, chefs de produit et autres développeurs pour créer des produits de haute qualité.",
+      "point3": "Mise en œuvre de la conception responsive et assurance de la compatibilité multi-navigateurs.",
+      "point4": "Participation aux revues de code et fourniture de commentaires constructifs aux autres développeurs.",
+      "point5": "télé-compensation des cheques provenant d'autres banques.",
+      "point6": "Vérification des données numériques pour les transferts inter-nationaux."
+    },
+
+    "works": {
+      "altplus": "Le site web Alt plus est une plateforme qui met en valeur les services et les réalisations de cette startup innovante. Alt plus repousse les limites de la technologie pour fournir des solutions informatiques personnalisées et de haute qualité.",
+      "comx": "Comx-front est une application web qui permet aux utilisateurs de créer facilement et rapidement leur propre boutique en ligne. Avec cette application, vous pouvez créer une boutique en ligne pour vendre vos produits en quelques minutes seulement, sans avoir besoin de compétences techniques.",
+      "socapco": "Conception et développement d'un site web pour la société de cosmétiques Socapco, mettant en valeur leurs produits et services avec une interface utilisateur moderne et conviviale.",
+      "smartbook": "SmartBook est une application complète de gestion de la comptabilité analytique spécialement conçue pour répondre aux besoins spécifiques de l'Hôtel Edkadi. Cette application offre des fonctionnalités avancées qui permettent à l'hôtel de suivre et d'analyser ses dépenses et ses revenus de manière détaillée.",
+      "maadana": "Ma'adana Cloud Hosting est un service de cloud hosting africain fiable et innovant, fournissant des solutions d'hébergement de premier ordre pour les entreprises et les particuliers.",
+      "campus": "Une plateforme complète de gestion du parcours universitaire, regroupant une bibliothèque numérique, la gestion des notes, l'emploi du temps, la communication et les supports de cours numériques."
+    },
+
+    "testimo": {
+      "student": "Étudiant",
+      "loicMsg": "Je suis tellement reconnaissant d'avoir rencontré M. Salim. Ses conseils et son soutien m'ont aidé à progresser dans mes études.",
+      "merlineMsg": "Les applications créées par M. Salim sont vraiment incroyables. Elles ont transformé la façon dont je gère mon entreprise.",
+      "manager": "Directeur général de l'Hôtel Edkadi",
+      "akaMsg": "J'utilise le logiciel SmartBook développé par ce jeune. Il est très efficace et a considérablement amélioré notre système de gestion de depenses et recettes.",
+      "cyrilMsg": "La formation dispensée par Salim a été extrêmement bénéfique pour ma carrière. Je suis maintenant mieux préparé pour le monde professionnel.",
+      "devFront": "Développeur front-end",
+      "dimiMsg": "Je suis impressionné par les compétences de développement web de M. Salim. Travailler avec lui a été une expérience enrichissante."
+    }
   }
