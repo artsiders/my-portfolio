@@ -4,7 +4,6 @@ import LanguageDetector from "i18next-browser-languagedetector";
 import HttpApi from "i18next-http-backend";
 
 i18next.use(HttpApi).use(LanguageDetector).use(initReactI18next).init({
-  debug: true,
   fallback: "en",
 });
 
