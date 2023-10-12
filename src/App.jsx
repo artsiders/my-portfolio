@@ -8,34 +8,13 @@ import Tech from "./components/Tech";
 import Works from "./components/Works";
 import Contact from "./components/Contact";
 import Testimonials from "./components/Testimonials";
-import en from "./assets/translation/en/translation.json";
-import fr from "./assets/translation/fr/translation.json";
+import "./i18next";
 
 // Animation package
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Footer from "./components/Footer";
 import { Toaster } from "react-hot-toast";
-import i18next from "i18next";
-import { initReactI18next } from "react-i18next";
-
-// Récupérer la langue par défaut du navigateur
-const browserLang = navigator.language.slice(0, 2);
-const defaultLang = ["fr", "en"].includes(browserLang) ? browserLang : "en";
-
-i18next.use(initReactI18next).init({
-  lng: localStorage.getItem("language") || defaultLang,
-  fallbackLng: "en",
-  debug: true,
-  resources: {
-    en: {
-      translation: en,
-    },
-    fr: {
-      translation: fr,
-    },
-  },
-});
 
 export const ThemeContext = createContext("light");
 
