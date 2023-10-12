@@ -10,7 +10,13 @@ function Portal({ children, setVisible }) {
       data-aos="fade"
       className="fixed top-0 flex items-center justify-center float-right w-screen h-screen bg-white/20 dark:bg-dark/20 backdrop-blur-sm"
     >
-      {children}
+      <div
+        data-aos="fade-up"
+        className="relative flex flex-col gap-2 p-6 bg-white dark:border-2 dark:border-primary/25 dark:bg-dark dark:shadow-none h-fit w-fit rounded-3xl shadow-card max-w-[90%]"
+        onClick={(e) => e.stopPropagation()}
+      >
+        {children}
+      </div>
     </div>,
     document.getElementById("modal")
   );

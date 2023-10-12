@@ -173,12 +173,12 @@ const Contact = () => {
             <button type="submit" className="btn" disabled={loading}>
               {loading ? (
                 <>
-                  Sending...
+                  {t("sending")}
                   <BiLoaderCircle className="ml-2 animate-spin" />
                 </>
               ) : (
                 <>
-                  Send Message
+                  {t("send")}
                   <BiSend className="ml-2" />
                 </>
               )}

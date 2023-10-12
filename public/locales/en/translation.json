@@ -1,5 +1,4 @@
 {
-    "key": "hello world !",
     "ready":
       "Ready to captivate your audience with stunning digital experiences?",
     "hi": "Hi, I'm",
@@ -23,6 +22,7 @@
     "testimonialsText":
       "Discover the testimonials of my satisfied clients. Their authentic and positive reviews testify to the quality of my services and my ability to meet their needs.",
     "testimonial": "Testimonial",
+    "addTestimonial": "Add Testimonial",
     "yourName": "Your Name",
     "yourEmail": "Your email",
     "yourMessage": "Your Message",
@@ -30,6 +30,8 @@
     "pleaseemail": "Please enter your email.",
     "pleaseValidEmail": "Please enter a valid email.",
     "pleaseMessage": "Please enter your message.",
+    "sending": "Sending...",
+    "send": "Send Message",
     "english": "english",
     "french": "french",
 

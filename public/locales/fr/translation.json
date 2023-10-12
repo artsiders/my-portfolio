@@ -20,6 +20,7 @@
       "Les projets suivants présentent mes compétences et mon expérience à travers des exemples concrets de mon travail. Chaque projet est brièvement décrit avec des liens vers des démonstrations en direct. Cela reflète ma capacité à résoudre des problèmes complexes, à travailler avec différentes technologies et à gérer efficacement des projets.",
     "clientsReviews": "AVIS DE MES CLIENTS",
     "testimonials": "Témoignages",
+    "addTestimonial": "Ajouter un Témoignages",
     "testimonialsText":
       "Découvrez les témoignages de mes clients satisfaits. Leurs avis authentiques et positifs témoignent de la qualité de mes services et de ma capacité à répondre à leurs besoins.",
     "testimonial": "Témoignage",
@@ -30,6 +31,8 @@
     "pleaseemail": "Veuillez entrer votre email.",
     "pleaseValidEmail": "Veuillez entrer une adresse email valide.",
     "pleaseMessage": "Veuillez entrer votre message.",
+    "sending": "En-cours...",
+    "send": "Envoyez",
     "english": "anglais",
     "french": "français",
 
