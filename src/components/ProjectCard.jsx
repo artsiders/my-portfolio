@@ -63,8 +63,8 @@ const ProjectCard = ({
       {visible && (
         <Portal setVisible={setVisible}>
           <div className="sticky left-0 flex items-center justify-between w-full p-3 py-6 border-b-2 rounded-b-lg -top-6 bg-white/30 dark:bg-dark/30 backdrop-blur-lg h-14 border-b-writing/20 dark:border-b-primary/30">
-            <h1 className="text-writing dark:text-white border-b-writing/10">
-              {t("projects")}
+            <h1 className="text-lg font-semibold text-writing dark:text-white border-b-writing/10">
+              {t("project")}
             </h1>
             <span
               onClick={() => setVisible(false)}
