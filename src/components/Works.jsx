@@ -45,7 +45,8 @@ const Works = () => {
       ],
       image: altplusSite,
       thumbnail: thumbAltplusSite,
-      link: "https://alt-plus.onrender.com/",
+      demo: "https://alt-plus.onrender.com/",
+      sourceCode: "",
     },
     {
       name: "Comx shop",
@@ -66,7 +67,8 @@ const Works = () => {
       ],
       image: comx,
       thumbnail: thumbComx,
-      link: "https://comx-front.vercel.app/",
+      demo: "https://comx-front.vercel.app/",
+      sourceCode: "",
     },
     {
       name: "socapco cosmetic website",
@@ -87,7 +89,8 @@ const Works = () => {
       ],
       image: socapco,
       thumbnail: thumbSocapco,
-      link: "https://www.socapco-cosmetique.com/",
+      demo: "https://www.socapco-cosmetique.com/",
+      sourceCode: "",
     },
     {
       name: "smartbook Accounting",
@@ -108,7 +111,8 @@ const Works = () => {
       ],
       image: smartbook,
       thumbnail: thumbSmartbook,
-      link: "http://smartbook.onrender.com/",
+      demo: "http://smartbook.onrender.com/",
+      sourceCode: "",
     },
     {
       name: "ma'adana cloud hosting",
@@ -125,7 +129,8 @@ const Works = () => {
       ],
       image: maadana,
       thumbnail: thumbMaadana,
-      link: "https://maadana.likupdigital.com/",
+      demo: "https://maadana.likupdigital.com/",
+      sourceCode: "",
     },
     {
       name: "campus app",
@@ -146,7 +151,8 @@ const Works = () => {
       ],
       image: campus,
       thumbnail: thumbCampus,
-      link: "https://campus-main-ui.onrender.com/",
+      demo: "https://campus-main-ui.onrender.com/",
+      sourceCode: "",
     },
   ];
 

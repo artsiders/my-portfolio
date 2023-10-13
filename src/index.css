@@ -36,7 +36,7 @@ html,
   @apply bg-primary/50;
 }
 ::-webkit-scrollbar-track {
-  @apply p-[2px] bg-light/30 shadow-neomorphism;
+  @apply p-[2px] bg-light/30;
 }
 
 .black-gradient {
