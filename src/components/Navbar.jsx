@@ -11,6 +11,8 @@ import { MdOutlinePermContactCalendar } from "react-icons/md";
 import { ThemeContext } from "../App";
 import Cookies from "js-cookie";
 import { useTranslation } from "react-i18next";
+import fr from "../assets/langs-img/fr.png";
+import en from "../assets/langs-img/en.png";
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
@@ -101,7 +103,7 @@ const Navbar = () => {
               className="hidden capitalize absolute top-full right-px mt-1 py-2 w-40 rounded-lg bg-[#f7f7f7] shadow-none ring-1 ring-slate-900/5 text-sm leading-6 font-semibold text-slate-700 dark:bg-slate-800 dark:text-slate-300 dark:highlight-white/5 border-[1px] border-white dark:border-transparent"
             >
               <span
-                className={`cursor-pointer hover:text-primary/60 flex items-center justify-between px-3 py-1 ${
+                className={`cursor-pointer hover:text-primary/60 flex items-center gap-2 px-3 py-1 ${
                   lang === "fr" ? "text-primary dark:text-primary" : ""
                 }`}
                 onClick={() => {
@@ -109,10 +111,11 @@ const Navbar = () => {
                   i18n.changeLanguage("fr");
                 }}
               >
+                <img src={fr} className="h-5" alt="fr" />
                 {t("french")}
               </span>
               <span
-                className={`cursor-pointer hover:text-primary/60 flex items-center justify-between px-3 py-1 ${
+                className={`cursor-pointer hover:text-primary/60 flex items-center gap-2 px-3 py-1 ${
                   lang === "en" ? "text-primary dark:text-primary" : ""
                 }`}
                 onClick={() => {
@@ -120,6 +123,7 @@ const Navbar = () => {
                   i18n.changeLanguage("en");
                 }}
               >
+                <img src={en} className="h-5" alt="en" />
                 {t("english")}
               </span>
             </div>
