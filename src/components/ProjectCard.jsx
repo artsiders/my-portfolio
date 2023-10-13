@@ -101,26 +101,30 @@ const ProjectCard = ({
                   ))}
                 </div>
                 <div className="flex flex-wrap gap-2 p-3">
-                  {sourceCode && (
-                    <a
-                      target="_blank"
-                      rel="noreferrer"
-                      href={sourceCode}
-                      className="!bg-gray-800 btn !w-full xs:!w-auto flex justify-between"
-                    >
-                      Code <AiOutlineGithub className="ml-2" />
-                    </a>
-                  )}
-                  {demo && (
-                    <a
-                      target="_blank"
-                      rel="noreferrer"
-                      href={demo}
-                      className="!w-full xs:!w-auto flex justify-between btn"
-                    >
-                      Demo <BsBrowserEdge className="ml-2" />
-                    </a>
-                  )}
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href={sourceCode}
+                    className={`!bg-gray-800 btn !w-full xs:!w-auto flex justify-between ${
+                      sourceCode
+                        ? ""
+                        : "pointer-events-none !bg-gray-800/40 dark:!bg-dark/10 dark:!border-gray-800"
+                    }`}
+                  >
+                    Code <AiOutlineGithub className="ml-2" />
+                  </a>
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href={demo}
+                    className={`!w-full xs:!w-auto flex justify-between btn ${
+                      demo
+                        ? ""
+                        : "pointer-events-none !bg-primary/40 dark:!bg-dark/10 dark:!border-gray-800"
+                    }`}
+                  >
+                    Demo <BsBrowserEdge className="ml-2" />
+                  </a>
                 </div>
               </div>
             </div>
