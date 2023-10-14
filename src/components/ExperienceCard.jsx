@@ -29,6 +29,8 @@ const ExperienceCard = ({ experience }) => {
       iconStyle={{ background: experience.iconBg }}
       icon={
         <a
+          target="_blank"
+          rel="noreferrer"
           href={experience.link}
           className="flex items-center justify-center w-full h-full"
         >
@@ -46,6 +48,8 @@ const ExperienceCard = ({ experience }) => {
           {experience.title}
         </h3>
         <a
+          target="_blank"
+          rel="noreferrer"
           href={experience.link}
           className="block text-writing/80 link dark:text-secondary text-[16px] font-semibold"
           style={{ margin: 0 }}

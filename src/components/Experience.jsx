@@ -1,3 +1,4 @@
+import { CgSoftwareDownload } from "react-icons/cg";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import ExperienceCard from "./ExperienceCard";
 import { useTranslation } from "react-i18next";
@@ -50,6 +51,15 @@ const Experience = () => {
           ))}
         </VerticalTimeline>
       </div>
+      <a
+        href="/documents/salim-cv.pdf"
+        className="btn mt-2"
+        onClick={(e) => {
+          console.log(e.currentTarget);
+        }}
+      >
+        {t("downloadCv")} <CgSoftwareDownload className="ml-2" size={20} />
+      </a>
     </section>
   );
 };
