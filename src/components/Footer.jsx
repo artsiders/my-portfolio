@@ -13,7 +13,7 @@ function Footer() {
             target="_blank"
             rel="noreferrer"
             href="https://www.youtube.com/@art-sider"
-            className="mr-9 text-neutral-800 dark:text-neutral-200 hover:text-red-600 dark:hover:text-red-600 dark:bg-dark dark:shadow-none dark:hover:before:bg-tertiary/50 dark:hover:before:shadow-none"
+            className="mr-9 dark:text-neutral-200 text-red-600 dark:text-red-600 dark:bg-dark dark:shadow-none dark:hover:before:bg-tertiary/50 dark:hover:before:shadow-none"
           >
             <BsYoutube />
           </a>
@@ -21,7 +21,7 @@ function Footer() {
             target="_blank"
             rel="noreferrer"
             href="https://www.facebook.com/SalimArtSider"
-            className="mr-9 text-neutral-800 dark:text-neutral-200 hover:text-blue-600 dark:hover:text-blue-600 dark:bg-dark dark:shadow-none dark:hover:before:bg-tertiary/50 dark:hover:before:shadow-none"
+            className="mr-9 text-blue-600 dark:bg-dark dark:shadow-none dark:hover:before:bg-tertiary/50 dark:hover:before:shadow-none"
           >
             <BsFacebook />
           </a>
@@ -29,7 +29,7 @@ function Footer() {
             target="_blank"
             rel="noreferrer"
             href="https://github.com/artsiders/"
-            className="mr-9 text-neutral-800 dark:text-neutral-200 hover:text-gray-500 dark:hover:text-gray-500 dark:bg-dark dark:shadow-none dark:hover:before:bg-tertiary/50 dark:hover:before:shadow-none"
+            className="mr-9 text-gray-900 dark:bg-dark dark:shadow-none dark:hover:before:bg-tertiary/50 dark:hover:before:shadow-none"
           >
             <BsGithub />
           </a>
@@ -37,7 +37,7 @@ function Footer() {
             target="_blank"
             rel="noreferrer"
             href="https://www.linkedin.com/in/art-sider/"
-            className="mr-9 text-neutral-800 dark:text-neutral-200 hover:text-blue-500 dark:hover:text-blue-500 dark:bg-dark dark:shadow-none dark:hover:before:bg-tertiary/50 dark:hover:before:shadow-none"
+            className="mr-9 text-blue-500 dark:bg-dark dark:shadow-none dark:hover:before:bg-tertiary/50 dark:hover:before:shadow-none"
           >
             <FaLinkedinIn />
           </a>
@@ -45,7 +45,7 @@ function Footer() {
             target="_blank"
             rel="noreferrer"
             href="https://wa.link/n4mjqu"
-            className="mr-9 text-neutral-800 dark:text-neutral-200 hover:text-green-600 dark:hover:text-green-600 dark:bg-dark dark:shadow-none dark:hover:before:bg-tertiary/50 dark:hover:before:shadow-none"
+            className="mr-9 text-green-600 dark:bg-dark dark:shadow-none dark:hover:before:bg-tertiary/50 dark:hover:before:shadow-none"
           >
             <ImWhatsapp />
           </a>
@@ -53,7 +53,7 @@ function Footer() {
             target="_blank"
             rel="noreferrer"
             href="https://www.tiktok.com/@artsider99"
-            className="text-neutral-800 dark:text-neutral-200 hover:text-pink-700 dark:hover:text-pink-700 dark:bg-dark dark:shadow-none dark:hover:before:bg-tertiary/50 dark:hover:before:shadow-none"
+            className="text-pink-700 dark:bg-dark dark:shadow-none dark:hover:before:bg-tertiary/50 dark:hover:before:shadow-none"
           >
             <FaTiktok />
           </a>
@@ -69,7 +69,7 @@ function Footer() {
           href="/"
         >
           {" "}
-          SALIM NJIKAM
+          ART SIDER - Salim
         </a>
       </div>
     </footer>

@@ -27,7 +27,7 @@ const Works = () => {
   const { t } = useTranslation();
   const projects = [
     {
-      name: "Atplus website",
+      name: "Altplus website",
       description: t("works.altplus"),
       tags: [
         {

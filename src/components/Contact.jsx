@@ -118,55 +118,55 @@ const Contact = () => {
             className="flex flex-col gap-4"
           >
             <label className="flex flex-col">
-              <span className="mb-2 font-medium text-writing dark:text-white">
-                {t("yourName")}
-              </span>
+              <span className="mb-2 font-medium text-writing dark:text-white"></span>
               <input
                 type="text"
                 name="name"
                 value={form.name}
                 onChange={handleChange}
-                placeholder="What's your name?"
-                className={`input-field ${errors.name && "border-red-500"}`}
+                className={`input-field ${errors.name && "!border-red-300"}`}
+                placeholder={t("yourName")}
               />
               {errors.name && (
-                <span className="text-red-500">{errors.name}</span>
+                <span className="text-red-400 font-bold text-sm pl-4">
+                  {errors.name}
+                </span>
               )}
             </label>
 
             <label className="flex flex-col">
-              <span className="mb-2 font-medium text-writing dark:text-white">
-                {t("yourEmail")}
-              </span>
+              <span className="mb-2 font-medium text-writing dark:text-white"></span>
               <input
                 type="email"
                 name="email"
                 value={form.email}
                 onChange={handleChange}
-                placeholder="What's your email?"
-                className={`input-field ${errors.email && "border-red-500"}`}
+                className={`input-field ${errors.email && "!border-red-300"}`}
+                placeholder={t("yourEmail")}
               />
               {errors.email && (
-                <span className="text-red-500">{errors.email}</span>
+                <span className="text-red-400 font-bold text-sm pl-4">
+                  {errors.email}
+                </span>
               )}
             </label>
 
             <label className="flex flex-col">
-              <span className="mb-2 font-medium text-writing dark:text-white">
-                {t("yourMessage")}
-              </span>
+              <span className="mb-2 font-medium text-writing dark:text-white"></span>
               <textarea
                 rows={7}
                 name="message"
                 value={form.message}
                 onChange={handleChange}
-                placeholder="What do you want to say?"
+                placeholder={t("yourMessage")}
                 className={`input-field h-28 !rounded-3xl ${
-                  errors.message && "border-red-500"
+                  errors.message && "!border-red-300"
                 }`}
               />
               {errors.message && (
-                <span className="text-red-500">{errors.message}</span>
+                <span className="text-red-400 font-bold text-sm pl-4">
+                  {errors.message}
+                </span>
               )}
             </label>
 
