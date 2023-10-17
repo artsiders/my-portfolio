@@ -1,4 +1,3 @@
-import { BiSend } from "react-icons/bi";
 import { useState } from "react";
 import { FaRegComment } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
@@ -7,10 +6,10 @@ import testimonial2 from "../assets/testimonials/testimonial-2.webp";
 import testimonial3 from "../assets/testimonials/testimonial-3.webp";
 import testimonial4 from "../assets/testimonials/testimonial-4.webp";
 import testimonial5 from "../assets/testimonials/testimonial-5.webp";
-import { toast } from "react-hot-toast";
 
 import Portal from "./Portal";
 import { IoMdClose } from "react-icons/io";
+import FormTestimanial from "./FormTestimanial";
 
 const Testimonials = () => {
   const { t } = useTranslation();
@@ -81,39 +80,7 @@ const Testimonials = () => {
                   <IoMdClose />
                 </span>
               </div>
-              <div className="flex flex-col justify-center gap-3 p-2 sm:w-[420px]">
-                <label className="flex flex-col">
-                  <span className="mb-2 font-medium text-writing dark:text-white">
-                    {t("yourName")}
-                  </span>
-                  <input
-                    type="text"
-                    name="name"
-                    placeholder="What's your name?"
-                    className={`input-field`}
-                  />
-                </label>
-                <label className="flex flex-col">
-                  <span className="mb-2 font-medium text-writing dark:text-white">
-                    {t("yourMessage")}
-                  </span>
-                  <textarea
-                    rows={7}
-                    name="message"
-                    placeholder="What do you want to say?"
-                    className={`input-field h-28 !rounded-3xl`}
-                  />
-                </label>
-                <button
-                  onClick={() => {
-                    toast.success("Thank you ! 😄");
-                    setVisible(false);
-                  }}
-                  className="btn"
-                >
-                  {t("send")} <BiSend className="ml-2" />
-                </button>
-              </div>
+              <FormTestimanial setVisible={setVisible} />
             </Portal>
           )}
         </div>

@@ -39,7 +39,9 @@
       "pleaseMessage": "Please enter your message.",
       "sending": "Sending...",
       "send": "Send Message",
-      "hiSalim": "Hi Salim, what's poppin ?"
+      "hiSalim": "Hi Salim, what's poppin ?",
+      "role": "Your role",
+      "goodJob": "You make a good job !"
     },
 
     "services": {

@@ -127,7 +127,7 @@ const Contact = () => {
                 value={form.name}
                 onChange={handleChange}
                 placeholder="Morgan Freeman"
-                className={`input-field ${errors.name && "border-red-500"}`}
+                className={`input-field ${errors.name && "!border-red-300"}`}
               />
               {errors.name && (
                 <span className="text-red-400 ml-4 text-sm font-bold">
@@ -146,7 +146,7 @@ const Contact = () => {
                 value={form.email}
                 onChange={handleChange}
                 placeholder="Email@example.com"
-                className={`input-field ${errors.email && "border-red-500"}`}
+                className={`input-field ${errors.email && "!border-red-300"}`}
               />
               {errors.email && (
                 <span className="text-red-400 ml-4 text-sm font-bold">
@@ -166,7 +166,7 @@ const Contact = () => {
                 onChange={handleChange}
                 placeholder={t("contact.hiSalim")}
                 className={`input-field h-28 !rounded-3xl ${
-                  errors.message && "border-red-500"
+                  errors.message && "!border-red-300"
                 }`}
               />
               {errors.message && (

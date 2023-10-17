@@ -40,7 +40,9 @@
       "pleaseMessage": "Veuillez entrer votre message.",
       "sending": "En-cours...",
       "send": "Envoyez",
-      "hiSalim": "Hey Salim, quoi de neuf ?"
+      "hiSalim": "Hey Salim, quoi de neuf ?",
+      "role": "Votre rôle",
+      "goodJob": "Tu fait du bon travail !"
     },
 
     "services": {
