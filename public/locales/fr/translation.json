@@ -26,17 +26,22 @@
     "testimonialsText":
       "Découvrez les témoignages de mes clients satisfaits. Leurs avis authentiques et positifs témoignent de la qualité de mes services et de ma capacité à répondre à leurs besoins.",
     "testimonial": "Témoignage",
-    "yourName": "Votre nom",
-    "yourEmail": "Votre email",
-    "yourMessage": "Votre message",
-    "pleasEname": "Veuillez entrer votre nom.",
-    "pleaseemail": "Veuillez entrer votre email.",
-    "pleaseValidEmail": "Veuillez entrer une adresse email valide.",
-    "pleaseMessage": "Veuillez entrer votre message.",
-    "sending": "En-cours...",
-    "send": "Envoyez",
+    
     "english": "anglais",
     "french": "français",
+
+    "contact":{
+      "yourName": "Votre nom",
+      "yourEmail": "Votre email",
+      "yourMessage": "Votre message",
+      "pleasEname": "Veuillez entrer votre nom.",
+      "pleaseemail": "Veuillez entrer votre email.",
+      "pleaseValidEmail": "Veuillez entrer une adresse email valide.",
+      "pleaseMessage": "Veuillez entrer votre message.",
+      "sending": "En-cours...",
+      "send": "Envoyez",
+      "hiSalim": "Hey Salim, quoi de neuf ?"
+    },
 
     "services": {
       "webDeveloper": "Développeur Web",

@@ -34,7 +34,7 @@ const Contact = () => {
     if (form.name.trim() === "") {
       setErrors((prevErrors) => ({
         ...prevErrors,
-        name: t("pleasEname"),
+        name: t("contact.pleasEname"),
       }));
       isValid = false;
     }
@@ -42,13 +42,13 @@ const Contact = () => {
     if (form.email.trim() === "") {
       setErrors((prevErrors) => ({
         ...prevErrors,
-        email: t("pleaseemail"),
+        email: t("contact.pleaseemail"),
       }));
       isValid = false;
     } else if (!emailRegex.test(form.email)) {
       setErrors((prevErrors) => ({
         ...prevErrors,
-        email: t("pleaseValidEmail"),
+        email: t("contact.pleaseValidEmail"),
       }));
       isValid = false;
     }
@@ -56,7 +56,7 @@ const Contact = () => {
     if (form.message.trim() === "") {
       setErrors((prevErrors) => ({
         ...prevErrors,
-        message: t("pleaseMessage"),
+        message: t("contact.pleaseMessage"),
       }));
       isValid = false;
     }
@@ -118,53 +118,59 @@ const Contact = () => {
             className="flex flex-col gap-4"
           >
             <label className="flex flex-col">
-              <span className="mb-2 font-medium text-writing dark:text-white"></span>
+              <span className="mb-2 font-medium text-writing dark:text-white">
+                {t("contact.yourName")}
+              </span>
               <input
                 type="text"
                 name="name"
                 value={form.name}
                 onChange={handleChange}
-                className={`input-field ${errors.name && "!border-red-300"}`}
-                placeholder={t("yourName")}
+                placeholder="Morgan Freeman"
+                className={`input-field ${errors.name && "border-red-500"}`}
               />
               {errors.name && (
-                <span className="text-red-400 font-bold text-sm pl-4">
+                <span className="text-red-400 ml-4 text-sm font-bold">
                   {errors.name}
                 </span>
               )}
             </label>
 
             <label className="flex flex-col">
-              <span className="mb-2 font-medium text-writing dark:text-white"></span>
+              <span className="mb-2 font-medium text-writing dark:text-white">
+                {t("contact.yourEmail")}
+              </span>
               <input
                 type="email"
                 name="email"
                 value={form.email}
                 onChange={handleChange}
-                className={`input-field ${errors.email && "!border-red-300"}`}
-                placeholder={t("yourEmail")}
+                placeholder="Email@example.com"
+                className={`input-field ${errors.email && "border-red-500"}`}
               />
               {errors.email && (
-                <span className="text-red-400 font-bold text-sm pl-4">
+                <span className="text-red-400 ml-4 text-sm font-bold">
                   {errors.email}
                 </span>
               )}
             </label>
 
             <label className="flex flex-col">
-              <span className="mb-2 font-medium text-writing dark:text-white"></span>
+              <span className="mb-2 font-medium text-writing dark:text-white">
+                {t("contact.yourMessage")}
+              </span>
               <textarea
                 rows={7}
                 name="message"
                 value={form.message}
                 onChange={handleChange}
-                placeholder={t("yourMessage")}
+                placeholder={t("contact.hiSalim")}
                 className={`input-field h-28 !rounded-3xl ${
-                  errors.message && "!border-red-300"
+                  errors.message && "border-red-500"
                 }`}
               />
               {errors.message && (
-                <span className="text-red-400 font-bold text-sm pl-4">
+                <span className="text-red-400 ml-4 text-sm font-bold">
                   {errors.message}
                 </span>
               )}
@@ -173,12 +179,12 @@ const Contact = () => {
             <button type="submit" className="btn" disabled={loading}>
               {loading ? (
                 <>
-                  {t("sending")}
+                  {t("contact.sending")}
                   <BiLoaderCircle className="ml-2 animate-spin" />
                 </>
               ) : (
                 <>
-                  {t("send")}
+                  {t("contact.send")}
                   <BiSend className="ml-2" />
                 </>
               )}

@@ -21,21 +21,26 @@
       "Following projects showcases my skills and experience through real-world examples of my work. Each project is briefly described with links to live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.",
     "clientsReviews": "MY CLIENT REVIEWS",
     "testimonials": "Testimonials",
+    "addTestimonial": "Add Testimonial",
     "testimonialsText":
       "Discover the testimonials of my satisfied clients. Their authentic and positive reviews testify to the quality of my services and my ability to meet their needs.",
     "testimonial": "Testimonial",
-    "addTestimonial": "Add Testimonial",
-    "yourName": "Your Name",
-    "yourEmail": "Your email",
-    "yourMessage": "Your Message",
-    "pleasEname": "Please enter your name.",
-    "pleaseemail": "Please enter your email.",
-    "pleaseValidEmail": "Please enter a valid email.",
-    "pleaseMessage": "Please enter your message.",
-    "sending": "Sending...",
-    "send": "Send Message",
+    
     "english": "english",
     "french": "french",
+
+    "contact": {
+      "yourName": "Your Name",
+      "yourEmail": "Your email",
+      "yourMessage": "Your Message",
+      "pleasEname": "Please enter your name.",
+      "pleaseemail": "Please enter your email.",
+      "pleaseValidEmail": "Please enter a valid email.",
+      "pleaseMessage": "Please enter your message.",
+      "sending": "Sending...",
+      "send": "Send Message",
+      "hiSalim": "Hi Salim, what's poppin ?"
+    },
 
     "services": {
       "webDeveloper": "Web Developer",
