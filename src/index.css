@@ -350,3 +350,8 @@ body {
 .service-card:hover .description {
   @apply mb-1 transition-all opacity-100 bottom-[110px];
 }
+
+/* react-hot-toast  */
+.custom-react-hot-toast {
+  @apply !rounded-full mt-14 dark:!bg-dark dark:!text-white dark:border-2 dark:border-primary/50;
+}

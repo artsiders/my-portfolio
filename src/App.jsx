@@ -45,7 +45,11 @@ const App = () => {
     >
       <BrowserRouter>
         <div className="relative z-0 w-screen">
-          <Toaster />
+          <Toaster
+            toastOptions={{
+              className: "custom-react-hot-toast",
+            }}
+          />
           <div
             className={`${
               theme === "light"
