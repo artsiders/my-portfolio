@@ -12,7 +12,7 @@ function Portal({ children, setVisible }) {
     >
       <div
         data-aos="fade-up"
-        className="relative overflow-y-scroll max-h-[90vh] py-6 flex flex-col gap-2 p-6 bg-white dark:border-2 dark:border-primary/25 dark:bg-dark dark:shadow-none h-fit w-fit rounded-xl shadow-card max-w-[90%]"
+        className="relative w-screen h-screen overflow-y-scroll max-h-none sm:max-h-[90vh] py-6 flex flex-col gap-2 p-6 bg-white dark:border-2 dark:border-primary/25 dark:bg-dark dark:shadow-none sm:h-fit sm:w-fit rounded-xl shadow-card max-w-none sm:max-w-[90%]"
         onClick={(e) => e.stopPropagation()}
       >
         {children}
