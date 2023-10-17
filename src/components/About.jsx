@@ -72,7 +72,7 @@ const About = () => {
                 <IoMdClose />
               </span>
             </div>
-            <div className="flex flex-wrap items-center justify-center gap-4 py-2 w-fll">
+            <div className="flex flex-wrap items-center justify-center content-center gap-4 py-2 h-[70vh]">
               <a
                 href="https://www.linkedin.com/in/art-sider/"
                 target="_blanc"

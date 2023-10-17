@@ -73,7 +73,7 @@ const ProjectCard = ({
               <IoMdClose />
             </span>
           </div>
-          <div className="py-8 w-full max-w-[90vw] lg:max-w-5xl">
+          <div className="py-8 w-full sm:max-w-[90vw] lg:max-w-5xl">
             <div className="flex flex-col gap-4 md:flex-row">
               <img
                 loading="lazy"
