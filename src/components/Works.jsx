@@ -164,7 +164,7 @@ const Works = () => {
       </div>
 
       <div className="flex w-full">
-        <p className="mt-3 text-writing dark:text-secondary text-[17px] max-w-3xl leading-[30px]">
+        <p className="mt-3 text-writing dark:text-white-100 text-[17px] max-w-3xl leading-[30px]">
           {t("projectText")}
         </p>
       </div>

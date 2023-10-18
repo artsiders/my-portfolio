@@ -17,6 +17,8 @@ const ExperienceCard = ({ experience }) => {
   let dark = {
     background: "#1d1836",
     color: "#fff",
+    boxShadow: "none",
+    borderBottom: "3px solid #2196f3",
   };
   return (
     <VerticalTimelineElement
@@ -26,7 +28,15 @@ const ExperienceCard = ({ experience }) => {
           Theme === "light" ? "7px solid  #ffffff" : "7px solid  #232631",
       }}
       date={experience.date}
-      iconStyle={{ background: experience.iconBg }}
+      iconStyle={
+        Theme === "dark"
+          ? {
+              background: experience.iconBg,
+              border: "2px solid #2196f380",
+              boxShadow: "none",
+            }
+          : { background: experience.iconBg }
+      }
       icon={
         <a
           target="_blank"
@@ -51,7 +61,7 @@ const ExperienceCard = ({ experience }) => {
           target="_blank"
           rel="noreferrer"
           href={experience.link}
-          className="block text-writing/80 link dark:text-secondary text-[16px] font-semibold"
+          className="block text-writing/80 link dark:text-secondary text-[16px] font-semibold uppercase"
           style={{ margin: 0 }}
         >
           {experience.company_name}

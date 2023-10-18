@@ -6,8 +6,12 @@ import afb from "../assets/company/afb.webp";
 import altplus from "../assets/company/altplus.webp";
 import "react-vertical-timeline-component/style.min.css";
 
+import { useContext } from "react";
+import { ThemeContext } from "../App";
+
 const Experience = () => {
   const { t } = useTranslation();
+  const { Theme } = useContext(ThemeContext);
 
   const experiences = [
     {
@@ -45,7 +49,9 @@ const Experience = () => {
       </div>
 
       <div className="flex flex-col mt-20">
-        <VerticalTimeline>
+        <VerticalTimeline
+          lineColor={Theme === "dark" ? "#2196f350" : "#FFFFFF"}
+        >
           {experiences.map((experience, index) => (
             <ExperienceCard key={index} experience={experience} />
           ))}

@@ -73,7 +73,7 @@ const Tech = () => {
           href="https://github.com/artsiders/"
           className="float-none mx-4 mt-12 md:mx-auto md:float-right btn"
           data-aos="fade-up"
-          data-aos-delay={900}
+          data-aos-delay={300}
           target="_blank"
           rel="noreferrer"
         >

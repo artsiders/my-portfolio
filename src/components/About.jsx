@@ -54,7 +54,7 @@ const About = () => {
         <h2 className="sectionHeadText">{t("overview")}</h2>
       </div>
 
-      <p className="text-writing dark:text-secondary text-[17px] max-w-3xl leading-[30px]">
+      <p className="text-writing dark:text-white-100 text-[17px] max-w-3xl leading-[30px]">
         <span className="block">{t("aboutMe")}</span>
         <button onClick={() => setVisible(true)} className="mt-6 btn">
           {t("contactMe")} <AiOutlineMessage className="ml-2" />

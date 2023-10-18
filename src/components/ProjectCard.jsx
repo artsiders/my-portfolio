@@ -48,7 +48,7 @@ const ProjectCard = ({
         >
           {name}
         </a>
-        <p className="mt-2 text-writing dark:text-secondary text-[14px] line-clamp-5">
+        <p className="mt-2 text-writing dark:text-white-100 text-[14px] line-clamp-5">
           {description}
         </p>
       </div>
@@ -89,7 +89,7 @@ const ProjectCard = ({
                   <span className="font-bold text-1xl md:text-2xl text-writing dark:text-white">
                     {name}
                   </span>
-                  <p className="mt-2 text-writing dark:text-secondary">
+                  <p className="mt-2 text-writing dark:text-white-100">
                     {description}
                   </p>
                 </div>
