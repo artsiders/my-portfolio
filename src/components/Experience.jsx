@@ -50,7 +50,7 @@ const Experience = () => {
 
       <div className="flex flex-col mt-20">
         <VerticalTimeline
-          lineColor={Theme === "dark" ? "#2196f350" : "#FFFFFF"}
+          lineColor={Theme === "dark" ? "#915EFF50" : "#FFFFFF"}
         >
           {experiences.map((experience, index) => (
             <ExperienceCard key={index} experience={experience} />

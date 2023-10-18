@@ -145,7 +145,7 @@ body {
 }
 
 .btn {
-  @apply inline-flex items-center px-6 py-3 font-bold text-white border-b-2 rounded-full outline-none cursor-pointer bg-primary/90 dark:bg-tertiary w-fit dark:border-secondary hover:bg-primary dark:hover:bg-primary;
+  @apply inline-flex items-center px-6 py-3 font-bold text-white rounded-full outline-none cursor-pointer bg-primary w-fit hover:bg-primary/90;
 }
 .input-field {
   @apply relative border-[1px] border-white dark:border-none p-4 transition-all dark:shadow-none shadow-[-3px_-3px_7px_#ffffff_,_3px_3px_5px_#ceced1] focus:shadow-neomorphism font-medium rounded-full outline-none bg-light dark:bg-tertiary text-writing dark:text-white;
@@ -178,7 +178,7 @@ body {
   @apply flex items-center justify-center;
 }
 .link {
-  @apply font-bold text-secondary hover:underline;
+  @apply font-bold text-primary hover:underline;
 }
 
 .animate-updown-lg {

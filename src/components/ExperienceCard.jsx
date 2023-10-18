@@ -18,7 +18,7 @@ const ExperienceCard = ({ experience }) => {
     background: "#1d1836",
     color: "#fff",
     boxShadow: "none",
-    borderBottom: "3px solid #2196f3",
+    borderBottom: "3px solid #915EFF",
   };
   return (
     <VerticalTimelineElement
@@ -32,7 +32,7 @@ const ExperienceCard = ({ experience }) => {
         Theme === "dark"
           ? {
               background: experience.iconBg,
-              border: "2px solid #2196f380",
+              border: "2px solid #915EFF80",
               boxShadow: "none",
             }
           : { background: experience.iconBg }
@@ -61,7 +61,7 @@ const ExperienceCard = ({ experience }) => {
           target="_blank"
           rel="noreferrer"
           href={experience.link}
-          className="block text-writing/80 link dark:text-secondary text-[16px] font-semibold uppercase"
+          className="block text-writing/80 link dark:text-primary text-[16px] font-semibold uppercase"
           style={{ margin: 0 }}
         >
           {experience.company_name}
