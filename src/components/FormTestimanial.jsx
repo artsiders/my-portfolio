@@ -102,7 +102,7 @@ const FormTestimanial = ({ setVisible }) => {
     <form
       ref={formRef}
       onSubmit={handleSubmit}
-      className="flex flex-col justify-center gap-3 p-2 sm:w-[420px]"
+      className="flex flex-col justify-center gap-3 sm:w-[420px] p-4"
     >
       <label className="flex flex-col">
         <span className="mb-2 font-medium text-writing dark:text-white">

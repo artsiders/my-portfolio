@@ -61,7 +61,7 @@ const About = () => {
         </button>
         {visible && (
           <Portal setVisible={setVisible}>
-            <div className="flex items-center justify-between w-full border-b-2 h-14 border-b-writing/20">
+            <div className="flex items-center justify-between w-full border-b-2 h-14 border-b-writing/20 p-6">
               <h1 className="text-writing dark:text-white border-b-writing/10">
                 {t("contactLinks")}
               </h1>
@@ -72,7 +72,7 @@ const About = () => {
                 <IoMdClose />
               </span>
             </div>
-            <div className="flex flex-wrap items-center justify-center content-center gap-4 py-2 h-[70vh]">
+            <div className="flex flex-wrap items-center justify-center content-center gap-4 p-6">
               <a
                 href="https://www.linkedin.com/in/art-sider/"
                 target="_blanc"

@@ -139,7 +139,7 @@ const Navbar = () => {
       </div>
       <nav
         className={`fixed 
-        z-[999] 
+        z-20
         w-screen
         sm:w-fit
         justify-center

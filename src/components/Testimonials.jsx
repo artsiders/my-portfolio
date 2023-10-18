@@ -69,7 +69,7 @@ const Testimonials = () => {
           </button>
           {visible && (
             <Portal setVisible={setVisible}>
-              <div className="flex items-center justify-between w-full border-b-2 h-14 border-b-writing/20">
+              <div className="flex items-center justify-between w-full border-b-2 h-14 border-b-writing/20 p-4">
                 <h1 className="text-writing dark:text-white border-b-writing/10">
                   {t("addTestimonial")}
                 </h1>

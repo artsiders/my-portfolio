@@ -50,6 +50,7 @@ const App = () => {
               className: "custom-react-hot-toast",
             }}
           />
+          <div id="modal"></div>
           <div
             className={`${
               theme === "light"
