@@ -13,7 +13,7 @@ function Footer() {
             target="_blank"
             rel="noreferrer"
             href="https://www.youtube.com/@art-sider"
-            className="mr-9 dark:text-neutral-200 text-red-600 dark:text-red-600 dark:bg-dark dark:shadow-none dark:hover:before:bg-tertiary/50 dark:hover:before:shadow-none"
+            className="mr-9 text-red-600 dark:text-red-600 dark:bg-dark dark:shadow-none dark:hover:before:bg-tertiary/50 dark:hover:before:shadow-none"
           >
             <BsYoutube />
           </a>
@@ -29,7 +29,7 @@ function Footer() {
             target="_blank"
             rel="noreferrer"
             href="https://github.com/artsiders/"
-            className="mr-9 text-gray-900 dark:bg-dark dark:shadow-none dark:hover:before:bg-tertiary/50 dark:hover:before:shadow-none"
+            className="mr-9 text-gray-500 dark:bg-dark dark:shadow-none dark:hover:before:bg-tertiary/50 dark:hover:before:shadow-none"
           >
             <BsGithub />
           </a>
