@@ -58,7 +58,7 @@ const Tech = () => {
               className="bg-[#f7f7f7] shadow-neomorphism dark:bg-tertiary w-20 h-20 border-[1px] border-white dark:border-transparent rounded-lg flex justify-center items-center dark:shadow-none"
               key={technology.name}
               data-aos="fade-up"
-              data-aos-delay={key * 100}
+              data-aos-delay={key * 50}
             >
               <img
                 loading="lazy"
@@ -73,7 +73,7 @@ const Tech = () => {
           href="https://github.com/artsiders/"
           className="float-none mx-4 mt-12 md:mx-auto md:float-right btn"
           data-aos="fade-up"
-          data-aos-delay={300}
+          data-aos-delay={100}
           target="_blank"
           rel="noreferrer"
         >

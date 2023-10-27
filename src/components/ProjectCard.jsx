@@ -14,10 +14,15 @@ const ProjectCard = ({
   image,
   demo,
   sourceCode,
+  index,
 }) => {
   const [visible, setVisible] = useState(false);
   return (
-    <div className="bg-[#f7f7f7] dark:bg-tertiary border-2 dark:border-transparent border-white p-2 rounded-md sm:w-[300px] w-full shadow-none md:shadow-card dark:shadow-sm">
+    <div
+      data-aos="fade-up"
+      data-aos-delay={index * 50}
+      className="bg-[#f7f7f7] dark:bg-tertiary border-2 dark:border-transparent border-white p-2 rounded-md sm:w-[300px] w-full shadow-none md:shadow-card dark:shadow-sm"
+    >
       <div className="relative w-full cursor-pointer h-[160px] bg-gray-200 dark:bg-[#251246]">
         <img
           loading="lazy"
