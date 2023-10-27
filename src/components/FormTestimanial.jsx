@@ -64,7 +64,7 @@ const FormTestimanial = ({ setVisible }) => {
       emailjs
         .send(
           "service_snqenkg",
-          "template_29fkhbj",
+          "template_gowa3td",
           {
             form_name: form.name,
             to_name: "Salim",
