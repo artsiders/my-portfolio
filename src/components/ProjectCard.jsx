@@ -1,21 +1,9 @@
 import { BsBrowserEdge } from "react-icons/bs";
 import { AiOutlineGithub } from "react-icons/ai";
 
-const ProjectCard = ({
-  name,
-  description,
-  tags,
-  image,
-  demo,
-  sourceCode,
-  index,
-}) => {
+const ProjectCard = ({ name, description, tags, image, demo, sourceCode }) => {
   return (
-    <div
-      className="py-8 w-full sm:max-w-[90vw] lg:max-w-5xl"
-      data-aos="fade-up"
-      data-aos-delay={index * 50}
-    >
+    <div className="py-8 w-full sm:max-w-[90vw] lg:max-w-5xl">
       <div className="flex flex-col gap-4 md:flex-row">
         <img
           loading="lazy"
@@ -24,9 +12,14 @@ const ProjectCard = ({
           width={1366}
           height={768}
           className="w-full md:w-[60%] h-fit border-2 border-white rounded-md shadow-card dark:shadow-none dark:border-transparent"
+          data-aos="fade-up"
         />
         <div>
-          <div className="py-3 px-8 sm:px-3">
+          <div
+            data-aos="fade-up"
+            data-aos-delay={50}
+            className="py-3 px-8 sm:px-3"
+          >
             <span className="font-bold text-1xl md:text-2xl text-writing dark:text-white">
               {name}
             </span>
@@ -34,14 +27,22 @@ const ProjectCard = ({
               {description}
             </p>
           </div>
-          <div className="flex flex-wrap gap-2 py-3 px-8 sm:px-3">
+          <div
+            data-aos="fade-up"
+            data-aos-delay={100}
+            className="flex flex-wrap gap-2 py-3 px-8 sm:px-3"
+          >
             {tags.map((tag) => (
               <p key={tag.name} className={`${tag.color}`}>
                 #{tag.name}
               </p>
             ))}
           </div>
-          <div className="flex flex-wrap gap-2 p-3">
+          <div
+            data-aos="fade-up"
+            data-aos-delay={150}
+            className="flex flex-wrap gap-2 p-3"
+          >
             <a
               target="_blank"
               rel="noreferrer"

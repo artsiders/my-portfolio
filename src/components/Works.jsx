@@ -196,7 +196,7 @@ const Works = () => {
         >
           {projects.map((project, index) => (
             <SwiperSlide key={index}>
-              <ProjectCard index={index} {...project} />
+              <ProjectCard {...project} />
             </SwiperSlide>
           ))}
         </Swiper>
