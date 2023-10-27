@@ -19,9 +19,11 @@ import socapco from "../assets/work/socapco.webp";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation, Pagination, Parallax } from "swiper/modules";
 import ProjectCard from "./ProjectCard";
 import { useTranslation } from "react-i18next";
+import { useContext } from "react";
+import { ThemeContext } from "../App";
 
 const Works = () => {
   const { t } = useTranslation();
@@ -155,6 +157,7 @@ const Works = () => {
       sourceCode: "",
     },
   ];
+  const { Theme } = useContext(ThemeContext);
 
   return (
     <section id="projects" className="relative z-0 mx-auto padding max-w-7xl">
@@ -174,24 +177,22 @@ const Works = () => {
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div> */}
-      <div className="mt-20">
+      <div className="mt-8 backdrop-blur-sm bg-black h-full w-full">
         <Swiper
-          modules={[Navigation, Pagination]}
+          style={{
+            "--swiper-navigation-color": "#fff",
+            "--swiper-pagination-color": "#fff",
+          }}
+          speed={600}
+          parallax={true}
           pagination={{
-            type: "bullets",
+            clickable: true,
           }}
           navigation={true}
-          breakpoints={{
-            0: {
-              slidesPerView: 1,
-            },
-            768: {
-              slidesPerView: 2,
-            },
-            950: {
-              slidesPerView: 3,
-            },
-          }}
+          modules={[Parallax, Pagination, Navigation]}
+          className={`${
+            Theme === "light" ? "bg-hero-pattern-light" : "bg-hero-pattern-dark"
+          } bg-cover bg-no-repeat bg-center rounded-lg`}
         >
           {projects.map((project, index) => (
             <SwiperSlide key={index}>

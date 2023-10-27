@@ -291,21 +291,18 @@ body {
   width: 100%;
   height: 100%;
 }
+
 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  padding-bottom: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @apply py-0 px-2 sm:pt-10 sm:pb-0 sm:px-16 text-lg;
 }
+
 .swiper-button-prev::after,
 .swiper-button-next::after {
   @apply p-2 text-xl rounded-full text-writing dark:text-white bg-light/30 shadow-neomorphism dark:shadow-none dark:bg-dark/30 backdrop-blur-xl;
 }
 .swiper-button-prev,
 .swiper-button-next {
-  top: 40%;
+  /* top: 40%; */
 }
 .swiper-pagination-bullets .swiper-pagination-bullet {
   @apply bg-primary;
