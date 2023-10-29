@@ -160,24 +160,21 @@ const Works = () => {
   const { Theme } = useContext(ThemeContext);
 
   return (
-    <section id="projects" className="relative z-0 mx-auto padding max-w-7xl">
-      <div>
-        <p className="sectionSubText">{t("myWork")}</p>
-        <h2 className="sectionHeadText">{t("projects")}</h2>
+    <section id="projects" className="">
+      <div className="padding  relative z-0 mx-auto max-w-7xl">
+        <div>
+          <p className="sectionSubText">{t("myWork")}</p>
+          <h2 className="sectionHeadText">{t("projects")}</h2>
+        </div>
+
+        <div className="flex w-full">
+          <p className="mt-3 text-writing dark:text-white-100 text-[17px] max-w-3xl leading-[30px]">
+            {t("projectText")}
+          </p>
+        </div>
       </div>
 
-      <div className="flex w-full">
-        <p className="mt-3 text-writing dark:text-white-100 text-[17px] max-w-3xl leading-[30px]">
-          {t("projectText")}
-        </p>
-      </div>
-
-      {/* <div className="flex flex-wrap justify-center mt-20 gap-7">
-        {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
-        ))}
-      </div> */}
-      <div className="mt-8 backdrop-blur-sm bg-black h-full w-full">
+      <div className="h-full w-full">
         <Swiper
           style={{
             "--swiper-navigation-color": "#fff",
@@ -192,7 +189,7 @@ const Works = () => {
           modules={[Parallax, Pagination, Navigation]}
           className={`${
             Theme === "light" ? "bg-hero-pattern-light" : "bg-hero-pattern-dark"
-          } bg-cover bg-no-repeat bg-center rounded-lg`}
+          } bg-cover bg-no-repeat bg-center bg-fixed padding`}
         >
           {projects.map((project, index) => (
             <SwiperSlide key={index}>

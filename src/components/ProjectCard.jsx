@@ -3,15 +3,15 @@ import { AiOutlineGithub } from "react-icons/ai";
 
 const ProjectCard = ({ name, description, tags, image, demo, sourceCode }) => {
   return (
-    <div className="py-8 w-full sm:max-w-[90vw] lg:max-w-5xl">
-      <div className="flex flex-col gap-4 md:flex-row">
+    <div className="py-8 w-full sm:max-w-[90vw] lg:max-w-5xl relative z-0 mx-auto max-w-7xl">
+      <div className="flex flex-col gap-4 lg:flex-row">
         <img
           loading="lazy"
           src={image}
           alt={name}
           width={1366}
           height={768}
-          className="w-full md:w-[60%] h-fit border-2 border-white rounded-md shadow-card dark:shadow-none dark:border-transparent"
+          className="w-full lg:w-[60%] h-fit border-2 border-white rounded-md shadow-card dark:shadow-none dark:border-transparent"
           data-aos="fade-up"
         />
         <div>
