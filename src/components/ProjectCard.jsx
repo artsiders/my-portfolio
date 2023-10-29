@@ -4,7 +4,11 @@ import { AiOutlineGithub } from "react-icons/ai";
 const ProjectCard = ({ name, description, tags, image, demo, sourceCode }) => {
   return (
     <div className="py-8 w-full sm:max-w-[90vw] lg:max-w-5xl relative z-0 mx-auto max-w-7xl">
-      <div className="flex flex-col gap-4 lg:flex-row">
+      <div
+        className="flex flex-col gap-4 lg:flex-row"
+        data-aos="fade-up"
+        data-aos-delay={50}
+      >
         <img
           loading="lazy"
           src={image}
@@ -15,11 +19,7 @@ const ProjectCard = ({ name, description, tags, image, demo, sourceCode }) => {
           data-aos="fade-up"
         />
         <div>
-          <div
-            data-aos="fade-up"
-            data-aos-delay={50}
-            className="py-3 px-8 sm:px-3"
-          >
+          <div className="py-3 px-8 sm:px-3">
             <span className="font-bold text-1xl md:text-2xl text-writing dark:text-white">
               {name}
             </span>
@@ -27,22 +27,14 @@ const ProjectCard = ({ name, description, tags, image, demo, sourceCode }) => {
               {description}
             </p>
           </div>
-          <div
-            data-aos="fade-up"
-            data-aos-delay={100}
-            className="flex flex-wrap gap-2 py-3 px-8 sm:px-3"
-          >
+          <div className="flex flex-wrap gap-2 py-3 px-8 sm:px-3">
             {tags.map((tag) => (
               <p key={tag.name} className={`${tag.color}`}>
                 #{tag.name}
               </p>
             ))}
           </div>
-          <div
-            data-aos="fade-up"
-            data-aos-delay={150}
-            className="flex flex-wrap gap-2 p-3"
-          >
+          <div className="flex flex-wrap gap-2 p-3">
             <a
               target="_blank"
               rel="noreferrer"
