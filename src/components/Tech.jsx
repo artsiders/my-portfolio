@@ -9,6 +9,7 @@ import mongodb from "../assets/tech/mongodb.webp";
 import mysql from "../assets/tech/mysql.webp";
 import php from "../assets/tech/php.webp";
 import git from "../assets/tech/git.webp";
+import wordpress from "../assets/tech/wordpress.webp";
 
 const Tech = () => {
   const { t } = useTranslation();
@@ -44,6 +45,10 @@ const Tech = () => {
     {
       name: "git",
       icon: git,
+    },
+    {
+      name: "wordpress",
+      icon: wordpress,
     },
   ];
   return (
