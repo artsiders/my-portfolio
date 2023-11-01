@@ -1,7 +1,16 @@
 import { BsBrowserEdge } from "react-icons/bs";
 import { AiOutlineGithub } from "react-icons/ai";
 
-const ProjectCard = ({ name, description, tags, image, demo, sourceCode }) => {
+const ProjectCard = ({
+  name,
+  description,
+  tags,
+  image,
+  demo,
+  sourceCode,
+  thumbnail,
+}) => {
+  const mobile = window.matchMedia("(max-width: 640px)").matches;
   return (
     <div className="py-8 w-full sm:max-w-[90vw] lg:max-w-5xl relative z-0 mx-auto max-w-7xl">
       <div
@@ -11,10 +20,10 @@ const ProjectCard = ({ name, description, tags, image, demo, sourceCode }) => {
       >
         <img
           loading="lazy"
-          src={image}
+          src={mobile ? thumbnail : image}
           alt={name}
-          width={1366}
-          height={768}
+          width={mobile ? 546 : 1366}
+          height={mobile ? 307 : 768}
           className="w-full lg:w-[60%] h-fit border-2 border-white rounded-md shadow-card dark:shadow-none dark:border-transparent"
           data-aos="fade-up"
         />
