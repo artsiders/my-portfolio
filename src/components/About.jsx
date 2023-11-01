@@ -3,8 +3,13 @@ import { AiOutlineMessage } from "react-icons/ai";
 
 import contentCreator from "../assets/services/content-creator.webp";
 import graphicDesigner from "../assets/services/graphic-designer.webp";
-import mobile from "../assets/services/mobile.webp";
-import web from "../assets/services/web.webp";
+import mobile from "../assets/services/mobile-developer.webp";
+import web from "../assets/services/web-developer.webp";
+
+import contentCreatorIll from "../assets/services/illustration-content-creator.webp";
+import graphicDesignerIll from "../assets/services/illustration-graphic-designer.webp";
+import mobileIll from "../assets/services/illustration-mobile-developer.webp";
+import webIll from "../assets/services/illustration-web-developer.webp";
 
 import ServiceCard from "./ServiceCard";
 import Portal from "./Portal";
@@ -24,21 +29,25 @@ const About = () => {
     {
       title: t("services.webDeveloper"),
       icon: web,
+      image: webIll,
       description: t("services.webDevDesc"),
     },
     {
       title: t("services.graphicDesigner"),
       icon: graphicDesigner,
+      image: graphicDesignerIll,
       description: t("services.graphicDesignerDesc"),
     },
     {
       title: t("services.mobileDeveloper"),
       icon: mobile,
+      image: mobileIll,
       description: t("services.mobileDeveloperDesc"),
     },
     {
       title: t("services.contentCreator"),
       icon: contentCreator,
+      image: contentCreatorIll,
       description: t("services.contentCreatorDesc"),
     },
   ];

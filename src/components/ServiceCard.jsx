@@ -9,7 +9,7 @@ import { BsYoutube } from "react-icons/bs";
 import { BsFacebook } from "react-icons/bs";
 import { useTranslation } from "react-i18next";
 
-const ServiceCard = ({ index, title, icon, description }) => {
+const ServiceCard = ({ index, title, icon, description, image }) => {
   const [visible, setVisible] = useState(false);
   const { t } = useTranslation();
   return (
@@ -46,6 +46,15 @@ const ServiceCard = ({ index, title, icon, description }) => {
             </span>
           </div>
           <div className="max-w-sm p-5">
+            <img
+              loading="lazy"
+              src={image}
+              alt={`image-${title}`}
+              width={1366}
+              height={768}
+              className="w-full mb-2 h-fit border-2 border-white rounded-md shadow-card dark:shadow-none dark:border-transparent"
+              data-aos="fade-up"
+            />
             {description}
             <br />
             <span className="font-bold mt-4 block">{t("contactMe")}</span>
