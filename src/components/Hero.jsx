@@ -5,6 +5,7 @@ import { IoMdClose } from "react-icons/io";
 
 const Hero = () => {
   const { t } = useTranslation();
+  console.log("banane");
 
   return (
     <header id="home" className="relative flex min-h-screen mx-auto">
@@ -20,32 +21,36 @@ const Hero = () => {
             {t("hi")} <span className="text-primary">Salim</span>
           </h1>
           <div className={`heroSubText block mt-2`}>
-            {t("iam")} <br />
-            <span className="bg-[#f7f7f7] max-w-[calc(100vw_-_48px)] flex flex-col dark:bg-tertiary border-2 border-white dark:border-primary/20 shadow-card dark:shadow-none relative rounded-lg p-2 sm:text-[20px] xs:text-[16px] text-[14px] font-mono font-bold">
+            <span className="bg-[#f7f7f7] my-4 leading-7 min-h-[calc(100%_-_100px)] max-w-[calc(100vw_-_48px)] flex flex-col dark:bg-tertiary border-2 border-white dark:border-primary/20 shadow-card dark:shadow-none relative rounded-lg p-2 xs:text-[16px] text-[14px] font-bold">
               <div className="flex flex-row gap-1 items-center bg-white dark:bg-primary/20 px-2 py-1 rounded-lg">
                 <div className="bg-red-500 hover:bg-red-300 cursor-pointer h-3 w-3 rounded-full"></div>
                 <div className="bg-yellow-500 hover:bg-yellow-300 cursor-pointer h-3 w-3 rounded-full"></div>
                 <div className="bg-green-500 hover:bg-green-300 cursor-pointer h-3 w-3  rounded-full"></div>
 
                 <div className="cursor-pointer h-9 ml-3 rounded-lg bg-[#f7f7f7] dark:bg-tertiary flex justify-center items-center p-2">
-                  <span className="text-green-400 text-[14px]">Salim.tsx</span>{" "}
-                  <IoMdClose className="ml-2 hover:bg-white dark:hover:bg-primary/20 rounded-lg p-1" />
-                </div>
-                <div className="hidden cursor-pointer h-9 hover:bg-[#f7f7f7] dark:hover:bg-tertiary/30 rounded-lg xxs:flex justify-center items-center p-2">
-                  <span className="text-orange-200 text-[14px]">
-                    Banane.tsx
+                  <span className="text-[#74be79] text-[14px]">
+                    AboutMe.tsx
                   </span>{" "}
                   <IoMdClose className="ml-2 hover:bg-white dark:hover:bg-primary/20 rounded-lg p-1" />
                 </div>
+                <div className="hidden cursor-pointer h-9 hover:bg-[#f7f7f7] dark:hover:bg-tertiary/30 rounded-lg xxs:flex justify-center items-center p-2">
+                  <span className="text-orange-200 text-[14px]">Other.tsx</span>{" "}
+                  <IoMdClose className="ml-2 hover:bg-white dark:hover:bg-primary/20 rounded-lg p-1" />
+                </div>
               </div>
-              <code className="dark:border-primary/20 block p-2">
-                {"<!-- " + t("ready") + " -->"}
+              <code className="dark:border-primary/20 block p-2 font-code">
+                <span className="text-pink-500">const</span> salim ={" "}
+                <span className="text-[#74be79]">&quot;{t("iam")}&quot;</span>;
+                <br />
+                <span className="text-pink-500">console</span>.
+                <span className="text-blue-500">log</span>(salim);
+                <br />
+                <span className="text-[#5c6370]/80">
+                  {"/** " + t("ready") + " */"}
+                </span>
               </code>
             </span>
-            <br className="hidden sm:block" />
-          </div>
-          <div className="flex gap-3">
-            <a href="#overview" type="submit" className="btn mt-2">
+            <a href="#overview" type="submit" className="btn mt-2 text-sm">
               {t("letsgetsarted")} <BsRocketTakeoff className="ml-2" />
             </a>
           </div>

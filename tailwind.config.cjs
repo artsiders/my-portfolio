@@ -31,6 +31,9 @@ module.exports = {
         "hero-pattern-light": "url('/src/assets/herobg-light.webp')",
         "hero-pattern-dark": "url('/src/assets/herobg-dark.webp')",
       },
+      fontFamily: {
+        code: ["'Cascadia Code'", "Consolas", "'Lucida Console'"],
+      },
     },
   },
   plugins: [],
