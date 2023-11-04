@@ -7,7 +7,7 @@ import profile from "../assets/profile.webp";
 
 const ProfilePicture = () => {
   return (
-    <div className="z-10 profile-picture relative">
+    <div className="relative z-10 profile-picture animate-updown-lg">
       <img
         loading="lazy"
         className="relative z-20 pointer-events-none"

@@ -27,7 +27,7 @@ html,
 }
 
 ::selection {
-  @apply bg-primary text-white;
+  @apply text-white bg-primary;
 }
 
 ::-webkit-scrollbar {
@@ -152,7 +152,7 @@ body {
 }
 
 .heroHeadText {
-  @apply font-black text-writing dark:text-white lg:text-[50px] sm:text-[38px] xs:text-[34px] text-[30px] mt-2;
+  @apply font-black text-writing dark:text-white sm:text-[38px] xs:text-[34px] text-[30px] mt-2;
 }
 .heroSubText {
   @apply text-writing/80 dark:text-[#dfd9ff] font-medium lg:text-[26px] sm:text-[23px] xs:text-[18px] text-[16px] lg:leading-[40px];
@@ -213,7 +213,7 @@ body {
 
 /* hero  */
 .profile-picture::after {
-  @apply z-0 absolute bg-[#f7f7f7] dark:bg-tertiary border-2 border-white dark:border-primary/20 shadow-card dark:shadow-none;
+  @apply z-0 absolute bg-[#f7f7f7]/30 backdrop-blur-sm dark:bg-tertiary/50 border-2 border-white dark:border-primary/20 shadow-card dark:shadow-none;
   content: "";
   bottom: 8px;
   left: 15%;
@@ -293,7 +293,7 @@ body {
 }
 
 .swiper-slide {
-  @apply py-0 px-2 sm:pt-10 sm:pb-0 sm:px-16 text-lg;
+  @apply px-2 py-0 text-lg sm:pt-10 sm:pb-0 sm:px-16;
 }
 
 .swiper-button-prev::after,
