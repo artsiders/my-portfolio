@@ -45,7 +45,7 @@ const Testimonials = () => {
     {
       key: 2,
       image: testimonial5,
-      name: "Dimitri Mabon",
+      name: "Charles Loïc",
       post: t("testimo.devFront"),
       message: t("testimo.dimiMsg"),
     },
