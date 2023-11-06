@@ -25,7 +25,7 @@ const Hero = () => {
                 <div className="w-3 h-3 bg-green-500 rounded-full cursor-pointer hover:bg-green-300"></div>
 
                 <div className="cursor-pointer h-9 ml-3 rounded-2xl bg-[#f7f7f7] dark:bg-tertiary flex justify-center items-center p-2">
-                  <span className="text-[#74be79] text-[14px]">
+                  <span className="text-[#74be79] text-[14px] pl-1">
                     AboutMe.tsx
                   </span>{" "}
                   <IoMdClose className="p-1 ml-2 hover:bg-white dark:hover:bg-primary/20 rounded-2xl" />

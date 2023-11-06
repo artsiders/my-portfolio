@@ -45,7 +45,7 @@ const ServiceCard = ({ index, title, icon, description, image }) => {
               <IoMdClose />
             </span>
           </div>
-          <div className="max-w-sm p-5">
+          <div className="md:max-w-sm p-5">
             <img
               loading="lazy"
               src={image}

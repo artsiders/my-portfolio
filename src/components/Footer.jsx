@@ -60,7 +60,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className="w-full p-4 pb-32 text-center bg-light dark:bg-dark text-neutral-700 dark:text-neutral-200 dark:shadow-none dark:hover:before:bg-tertiary/50 dark:hover:before:shadow-none">
+      <div className="w-full p-4 pb-20 sm:pb-32 text-center bg-light dark:bg-dark text-neutral-700 dark:text-neutral-200 dark:shadow-none dark:hover:before:bg-tertiary/50 dark:hover:before:shadow-none">
         © 2023 Copyright:
         <a
           target="_blank"
