@@ -16,7 +16,7 @@ import en from "../assets/langs-img/en.png";
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
-  const [showMenu, setShowMenu] = useState(false);
+  const [showMenu, setShowMenu] = useState(true);
   const [active, setActive] = useState(0);
   const [scrollClass, setScrollClass] = useState("");
   const [lang, setLang] = useState(i18n.language);

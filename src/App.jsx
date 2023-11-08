@@ -21,7 +21,7 @@ export const ThemeContext = createContext("light");
 const App = () => {
   useEffect(() => {
     Aos.init({
-      duration: 400,
+      duration: 300,
       offset: 100,
       // disable: "mobile",
     });

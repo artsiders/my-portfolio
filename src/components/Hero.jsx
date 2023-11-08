@@ -8,7 +8,7 @@ const Hero = () => {
 
   return (
     <header id="home" className="relative flex min-h-screen mx-auto">
-      <div className="inset-0 flex flex-col-reverse items-center justify-between gap-10 mx-auto mt-20 mb-10 max-w-7xl paddingX md:grid md:grid-cols-2 md:items-start">
+      <div className="inset-0 flex flex-col-reverse items-center justify-between gap-10 md:gap-24 lg:gap-40 mx-auto mt-20 mb-10 max-w-7xl paddingX md:grid md:grid-cols-2 md:items-start">
         {/* <div className="absolute flex flex-col items-center justify-center mt-5">
           <div className="w-5 h-5 rounded-full bg-primary" />
           <div className="w-1 h-40 sm:h-80 violet-gradient" />
