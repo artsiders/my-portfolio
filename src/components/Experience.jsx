@@ -4,6 +4,7 @@ import ExperienceCard from "./ExperienceCard";
 import { useTranslation } from "react-i18next";
 import afb from "../assets/company/afb.webp";
 import altplus from "../assets/company/altplus.webp";
+import jeegitalMedia from "../assets/company/jeegital_media.webp";
 import "react-vertical-timeline-component/style.min.css";
 
 import { useContext } from "react";
@@ -36,6 +37,15 @@ const Experience = () => {
       date: "Oct 2022 - Feb 2023",
       link: "https://www.afrilandfirstbank.com/",
       points: [t("experiences.point5"), t("experiences.point6")],
+    },
+    {
+      title: t("experiences.webDeveloperFullstack"),
+      company_name: "JEEGITAL MEDIA",
+      icon: jeegitalMedia,
+      iconBg: "#EEE",
+      date: "Nov 2023",
+      link: "#",
+      points: [t("experiences.point7"), t("experiences.point8"), t("experiences.point9"), t("experiences.point10")],
     },
   ];
   return (
