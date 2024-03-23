@@ -3,14 +3,18 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
+import thumbEatsy from "../assets/work/thumb_eatsy.webp";
 import thumbAltplusSite from "../assets/work/thumb_altplus.webp";
+import thumbChangenewlife from "../assets/work/thumb_changenewlife.webp";
 import thumbComx from "../assets/work/thumb_comx.webp";
 import thumbCampus from "../assets/work/thumb_campus.webp";
 import thumbMaadana from "../assets/work/thumb_maadana.webp";
 import thumbSmartbook from "../assets/work/thumb_smartbook.webp";
 import thumbSocapco from "../assets/work/thumb_socapco.webp";
 
+import eatsy from "../assets/work/eatsy.webp";
 import altplusSite from "../assets/work/altplus.webp";
+import changenewlife from "../assets/work/changenewlife.webp";
 import comx from "../assets/work/comx.webp";
 import campus from "../assets/work/campus.webp";
 import maadana from "../assets/work/maadana.webp";
@@ -28,6 +32,50 @@ import { ThemeContext } from "../App";
 const Works = () => {
   const { t } = useTranslation();
   const projects = [
+    {
+      name: "Change new life MLM",
+      description: t("works.changenewlife"),
+      tags: [
+        {
+          name: "Typescript",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Reactjs",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Tailwindcss",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: changenewlife,
+      thumbnail: thumbChangenewlife,
+      demo: "https://change-new-life.vercel.app/",
+      sourceCode: "",
+    },
+    {
+      name: "Eatsy Resto",
+      description: t("works.eatsy"),
+      tags: [
+        {
+          name: "Typescript",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Reactjs",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Tailwindcss",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: eatsy,
+      thumbnail: thumbEatsy,
+      demo: "https://resto-qr.vercel.app/",
+      sourceCode: "",
+    },
     {
       name: "Altplus website",
       description: t("works.altplus"),
@@ -187,9 +235,8 @@ const Works = () => {
           }}
           navigation={true}
           modules={[Parallax, Pagination, Navigation]}
-          className={`${
-            Theme === "light" ? "bg-hero-pattern-light" : "bg-hero-pattern-dark"
-          } bg-cover bg-no-repeat bg-center bg-fixed padding`}
+          className={`${Theme === "light" ? "bg-hero-pattern-light" : "bg-hero-pattern-dark"
+            } bg-cover bg-no-repeat bg-center bg-fixed padding`}
         >
           {projects.map((project, index) => (
             <SwiperSlide key={index}>
