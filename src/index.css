@@ -152,7 +152,7 @@ body {
 }
 
 .heroHeadText {
-  @apply font-black text-writing dark:text-white sm:text-[38px] xs:text-[34px] text-[30px] mt-2;
+  @apply font-black text-writing dark:text-white xl:text-5xl text-4xl mt-2;
 }
 .heroSubText {
   @apply text-writing/80 dark:text-[#dfd9ff] font-medium lg:text-[26px] sm:text-[23px] xs:text-[18px] text-[16px] lg:leading-[40px];
@@ -213,15 +213,15 @@ body {
 
 /* hero  */
 .profile-picture::after {
-  @apply z-0 absolute bg-[#f7f7f7]/30 backdrop-blur-sm dark:bg-tertiary/50 border-2 border-white dark:border-primary/20 shadow-card dark:shadow-none;
+  @apply rounded-2xl z-0 absolute bg-[#f7f7f7]/30 backdrop-blur-sm dark:bg-tertiary/50 border-2 border-white dark:border-primary/20 shadow-card dark:shadow-none;
   content: "";
-  bottom: 8px;
-  left: 15%;
-  height: 80%;
-  width: 80%;
-  min-height: 200px;
-  border-radius: 72% 28% 52% 48% / 67% 38% 62% 33%;
-  transform: rotate(30deg);
+  bottom: 0;
+  /* left: 10%; */
+  height: 85%;
+  width: 100%;
+  min-height: 90%;
+  /* border-radius: 72% 28% 52% 48% / 67% 38% 62% 33%; */
+  /* transform: rotate(30deg); */
 }
 
 /* testimonials */
@@ -358,4 +358,20 @@ body {
 /* react-hot-toast  */
 .custom-react-hot-toast {
   @apply !rounded-full mt-14 dark:!bg-dark dark:!text-white dark:border-2 dark:border-primary/50;
+}
+
+.animate-bounce-horizontal {
+  animation: bounceHorizontal 1s infinite;
+}
+
+@keyframes bounceHorizontal {
+  0%,
+  100% {
+    transform: translateX(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateX(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
 }
