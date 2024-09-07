@@ -7,77 +7,67 @@ const Hero = () => {
   const { t } = useTranslation();
 
   return (
-    <header id="home" className="relative flex h-screen mx-auto">
-      <div className="mx-auto mt-28 max-w-7xl paddingX flex flex-col-reverse md:grid md:grid-cols-2 md:gap-12">
-        {/* <div className="absolute flex flex-col items-center justify-center mt-5">
-          <div className="w-5 h-5 rounded-full bg-primary" />
-          <div className="w-1 h-40 sm:h-80 violet-gradient" />
-        </div> */}
-        <h1 className="heroHeadText col-span-2">
-          {t("hi")} <span className="text-primary">Salim</span>
-        </h1>
-        <div className="flex flex-col justify-center w-full h-full">
-          <div className="block heroSubText">
-            <span className="bg-[#f7f7f7]/30 backdrop-blur-sm my-4 leading-7 min-h-[calc(100%_-_100px)] max-w-[calc(100vw_-_48px)] flex flex-col dark:bg-tertiary/30 border-2 border-white dark:border-primary/20 shadow-card dark:shadow-none relative rounded-2xl p-2 xs:text-[16px] text-[14px] font-bold">
-              <div className="flex flex-row items-center gap-1 px-2 py-1 bg-white dark:bg-primary/20 rounded-lg">
-                <div className="w-3 h-3 bg-red-500 rounded-full cursor-pointer hover:bg-red-300"></div>
-                <div className="w-3 h-3 bg-yellow-500 rounded-full cursor-pointer hover:bg-yellow-300"></div>
-                <div className="w-3 h-3 bg-green-500 rounded-full cursor-pointer hover:bg-green-300"></div>
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="flex flex-col-reverse md:flex-row items-center justify-between min-h-screen">
+        <div className="w-full md:w-1/2 mb-8 md:mb-0">
+          <h1 className="heroHeadText col-span-2">
+            {t("hi")} <span className="text-primary">Salim</span>
+          </h1>
+          <div className="flex flex-col justify-center w-full h-full">
+            <div className="block heroSubText">
+              <span className="bg-[#f7f7f7]/30 backdrop-blur-sm my-4 leading-7 min-h-[calc(100%_-_100px)] max-w-[calc(100vw_-_48px)] flex flex-col dark:bg-tertiary/30 border-2 border-white dark:border-primary/20 shadow-card dark:shadow-none relative rounded-2xl p-2 xs:text-[16px] text-[14px] font-bold">
+                <div className="flex flex-row items-center gap-1 px-2 py-1 bg-white dark:bg-primary/20 rounded-lg">
+                  <div className="w-3 h-3 bg-red-500 rounded-full cursor-pointer hover:bg-red-300"></div>
+                  <div className="w-3 h-3 bg-yellow-500 rounded-full cursor-pointer hover:bg-yellow-300"></div>
+                  <div className="w-3 h-3 bg-green-500 rounded-full cursor-pointer hover:bg-green-300"></div>
 
-                <div className="cursor-pointer h-9 ml-3 rounded-2xl bg-[#f7f7f7] dark:bg-tertiary flex justify-center items-center p-2">
-                  <span className="text-[#74be79] text-[14px] pl-1">
-                    AboutMe.tsx
-                  </span>{" "}
-                  <IoMdClose className="p-1 ml-2 hover:bg-white dark:hover:bg-primary/20 rounded-2xl" />
+                  <div className="cursor-pointer h-9 ml-3 rounded-2xl bg-[#f7f7f7] dark:bg-tertiary flex justify-center items-center p-2">
+                    <span className="text-[#74be79] text-[14px] pl-1">
+                      AboutMe.tsx
+                    </span>{" "}
+                    <IoMdClose className="p-1 ml-2 hover:bg-white dark:hover:bg-primary/20 rounded-2xl" />
+                  </div>
+                  <div className="hidden cursor-pointer h-9 hover:bg-[#f7f7f7] dark:hover:bg-tertiary/30 rounded-2xl xxs:flex justify-center items-center p-2">
+                    <span className="text-orange-200 text-[14px]">Other.tsx</span>{" "}
+                    <IoMdClose className="p-1 ml-2 hover:bg-white dark:hover:bg-primary/20 rounded-2xl" />
+                  </div>
                 </div>
-                <div className="hidden cursor-pointer h-9 hover:bg-[#f7f7f7] dark:hover:bg-tertiary/30 rounded-2xl xxs:flex justify-center items-center p-2">
-                  <span className="text-orange-200 text-[14px]">Other.tsx</span>{" "}
-                  <IoMdClose className="p-1 ml-2 hover:bg-white dark:hover:bg-primary/20 rounded-2xl" />
+                <code className="block px-2 py-4 dark:border-primary/20 font-code leading-6">
+                  <span className="text-pink-500">const</span> Me ={" {"}
+                  <div className="m-0 ml-4">
+                    name : <span className="text-[#74be79]">&quot;salim&quot;</span>,
+                    <br />intro :
+                    <span className="text-[#74be79]">&quot;{t("iam")}&quot;</span>,
+                  </div>
+                  {" };"}
+                  <br />
+                  <span className="text-pink-500">console</span>.
+                  <span className="text-blue-500">log</span>(Me.intro);
+                  <br />
+                  <br />
+                  <span className="text-[#5c6370]/80 italic !font-normal">
+                    {"/** " + t("ready") + " */"}
+                  </span>
+                </code>
+                <div className="border-t border-primary/40 pt-2">
+                  <a href="#overview" type="submit" className="mt-2 text-sm flex items-center px-2 mb-2 hover:text-primary">
+                    <span className="animate-bounce-horizontal">{">>> "}</span>{t("letsgetsarted")} <BsRocketTakeoff className="ml-2" />
+                  </a>
                 </div>
-              </div>
-              <code className="block px-2 py-4 dark:border-primary/20 font-code leading-6">
-                <span className="text-pink-500">const</span> Me ={" {"}
-                <div className="m-0 ml-4">
-                  name : <span className="text-[#74be79]">&quot;salim&quot;</span>,
-                  <br />intro :
-                  <span className="text-[#74be79]">&quot;{t("iam")}&quot;</span>,
-                </div>
-                {" };"}
-                <br />
-                <span className="text-pink-500">console</span>.
-                <span className="text-blue-500">log</span>(Me.intro);
-                <br />
-                <br />
-                <span className="text-[#5c6370]/80 italic !font-normal">
-                  {"/** " + t("ready") + " */"}
-                </span>
-              </code>
-              <div className="border-t border-primary/40 pt-2">
-                <a href="#overview" type="submit" className="mt-2 text-sm flex items-center px-2 mb-2 hover:text-primary">
-                  <span className="animate-bounce-horizontal">{">>> "}</span>{t("letsgetsarted")} <BsRocketTakeoff className="ml-2" />
-                </a>
-              </div>
-            </span>
+              </span>
+            </div>
           </div>
         </div>
 
-        <div className="flex flex-col justify-end w-full h-full">
+        <div className="w-full md:w-1/2 flex justify-center md:justify-end items-end">
           <img
-            loading="lazy"
-            className="relative w-[calc(25vw_-_50px)] mx-auto"
             src={profile}
-            alt="contact-image"
+            alt="Hero image"
+            className="max-w-full h-screen object-cover"
           />
         </div>
-
-
-
-
-        {/* <div className="flex flex-col justify-center w-full h-full">
-          <ProfilePicture />
-        </div> */}
       </div>
-    </header>
+    </div>
   );
 };
 
