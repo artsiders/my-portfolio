@@ -1,70 +1,142 @@
-import { BsRocketTakeoff } from "react-icons/bs";
+import React from 'react';
 import profile from "../assets/salim-toman-hero portfolio.png";
 import { useTranslation } from "react-i18next";
-import { IoMdClose } from "react-icons/io";
+
+import { AiOutlineMail } from "react-icons/ai";
+import { BiLinkExternal } from "react-icons/bi";
+import { FaLinkedinIn } from "react-icons/fa";
+import { BsFacebook, BsGithub, BsWhatsapp, BsYoutube } from "react-icons/bs";
 
 const Hero = () => {
   const { t } = useTranslation();
 
+  // Fonction pour calculer la position de l'élément
+  const calculatePosition = (angle, radius = 192) => {
+    const x = Math.cos(angle * Math.PI / 180) * radius;
+    const y = Math.sin(angle * Math.PI / 180) * radius;
+    return { x, y };
+  };
+
   return (
-    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="flex flex-col-reverse md:flex-row items-center justify-between min-h-screen">
-        <div className="w-full md:w-1/2 mb-8 md:mb-0">
-          <h1 className="heroHeadText col-span-2">
+    <div className="relative w-screen h-screen m-auto">
+      <div className="h-screen absolute w-full z-10">
+        <img src={profile} alt="Profile" className="w-auto m-auto h-screen object-cover" />
+      </div>
+      <div className="h-screen flex justify-center items-center absolute w-full ">
+        <div className="relative w-[55vh] h-[55vh] flex justify-center items-center">
+          {/* Cercle central */}
+          <div className="absolute inset-0 bg-transparent border-4 border-white dark:border-primary shadow-neomorphism dark:shadow-none rounded-full"></div>
+
+          {/* Titre - 0° */}
+          <h1
+            className="font-black sm:w-48 w-32 text-writing sm:text-clip dark:text-white xl:text-2xl text-xl absolute"
+            style={{
+              transform: `translate(${calculatePosition(-50, 240).x}px, ${calculatePosition(-50, 240).y}px)`,
+            }}
+          >
             {t("hi")} <span className="text-primary">Salim</span>
           </h1>
-          <div className="flex flex-col justify-center w-full h-full">
-            <div className="block heroSubText">
-              <span className="bg-[#f7f7f7]/30 backdrop-blur-sm my-4 leading-7 min-h-[calc(100%_-_100px)] max-w-[calc(100vw_-_48px)] flex flex-col dark:bg-tertiary/30 border-2 border-white dark:border-primary/20 shadow-card dark:shadow-none relative rounded-2xl p-2 xs:text-[16px] text-[14px] font-bold">
-                <div className="flex flex-row items-center gap-1 px-2 py-1 bg-white dark:bg-primary/20 rounded-lg">
-                  <div className="w-3 h-3 bg-red-500 rounded-full cursor-pointer hover:bg-red-300"></div>
-                  <div className="w-3 h-3 bg-yellow-500 rounded-full cursor-pointer hover:bg-yellow-300"></div>
-                  <div className="w-3 h-3 bg-green-500 rounded-full cursor-pointer hover:bg-green-300"></div>
 
-                  <div className="cursor-pointer h-9 ml-3 rounded-2xl bg-[#f7f7f7] dark:bg-tertiary flex justify-center items-center p-2">
-                    <span className="text-[#74be79] text-[14px] pl-1">
-                      AboutMe.tsx
-                    </span>{" "}
-                    <IoMdClose className="p-1 ml-2 hover:bg-white dark:hover:bg-primary/20 rounded-2xl" />
-                  </div>
-                  <div className="hidden cursor-pointer h-9 hover:bg-[#f7f7f7] dark:hover:bg-tertiary/30 rounded-2xl xxs:flex justify-center items-center p-2">
-                    <span className="text-orange-200 text-[14px]">Other.tsx</span>{" "}
-                    <IoMdClose className="p-1 ml-2 hover:bg-white dark:hover:bg-primary/20 rounded-2xl" />
-                  </div>
-                </div>
-                <code className="block px-2 py-4 dark:border-primary/20 font-code leading-6">
-                  <span className="text-pink-500">const</span> Me ={" {"}
-                  <div className="m-0 ml-4">
-                    name : <span className="text-[#74be79]">&quot;salim&quot;</span>,
-                    <br />intro :
-                    <span className="text-[#74be79]">&quot;{t("iam")}&quot;</span>,
-                  </div>
-                  {" };"}
-                  <br />
-                  <span className="text-pink-500">console</span>.
-                  <span className="text-blue-500">log</span>(Me.intro);
-                  <br />
-                  <br />
-                  <span className="text-[#5c6370]/80 italic !font-normal">
-                    {"/** " + t("ready") + " */"}
-                  </span>
-                </code>
-                <div className="border-t border-primary/40 pt-2">
-                  <a href="#overview" type="submit" className="mt-2 text-sm flex items-center px-2 mb-2 hover:text-primary">
-                    <span className="animate-bounce-horizontal">{">>> "}</span>{t("letsgetsarted")} <BsRocketTakeoff className="ml-2" />
-                  </a>
-                </div>
-              </span>
-            </div>
-          </div>
-        </div>
+          {/* LinkedIn - 72° */}
+          <a
+            href="https://www.linkedin.com/in/art-sider/"
+            target="_blank"
+            rel="noreferrer"
+            className="z-20 cursor-pointer absolute flex text-[12px] xxs:text-sm items-center h-12 gap-1 p-2 shadow-neomorphism dark:shadow-none hover:shadow-card bg-[#f7f7f7] dark:bg-tertiary/90 dark:hover:bg-tertiary border-2 border-white dark:border-b-tertiary dark:border-transparent rounded-xl w-fit"
+            style={{
+              transform: `translate(${calculatePosition(45).x}px, ${calculatePosition(45).y}px) translate(55%, -50%)`
+            }}
+          >
+            <FaLinkedinIn color="#2196f3" />
+            <span className="items-center hidden gap-1 380:flex">
+              <b className='hidden'>Njikam Salim</b>
+              <BiLinkExternal />
+            </span>
+          </a>
 
-        <div className="w-full md:w-1/2 flex justify-center md:justify-end items-end">
-          <img
-            src={profile}
-            alt="Hero image"
-            className="max-w-full h-screen object-cover"
-          />
+          {/* YouTube - 240° */}
+          <a
+            href="https://www.youtube.com/@art-sider"
+            target="_blank"
+            rel="noreferrer"
+            className="z-20 cursor-pointer absolute flex text-[12px] xxs:text-sm items-center h-12 gap-1 p-2 shadow-neomorphism dark:shadow-none hover:shadow-card bg-[#f7f7f7] dark:bg-tertiary/90 dark:hover:bg-tertiary border-2 border-white dark:border-b-tertiary dark:border-transparent rounded-xl w-fit"
+            style={{
+              transform: `translate(${calculatePosition(240).x}px, ${calculatePosition(240).y}px) translate(-55%, -50%)`
+            }}
+          >
+            <BsYoutube color="#e01717" />
+            <span className="items-center hidden gap-1 380:flex">
+              <b className='hidden' translate="no">Art sider</b>
+              <BiLinkExternal />
+            </span>
+          </a>
+
+          {/* Facebook - 205° */}
+          <a
+            href="https://www.facebook.com/SalimArtSider"
+            target="_blank"
+            rel="noreferrer"
+            className="z-20 cursor-pointer absolute flex text-[12px] xxs:text-sm items-center h-12 gap-1 p-2 shadow-neomorphism dark:shadow-none hover:shadow-card bg-[#f7f7f7] dark:bg-tertiary/90 dark:hover:bg-tertiary border-2 border-white dark:border-b-tertiary dark:border-transparent rounded-xl w-fit"
+            style={{
+              transform: `translate(${calculatePosition(205).x}px, ${calculatePosition(205).y}px) translate(-55%, -50%)`
+            }}
+          >
+            <BsFacebook color="#101eEE" />
+            <span className="items-center hidden gap-1 380:flex">
+              <b className='hidden' translate="no">Art sider</b>
+              <BiLinkExternal />
+            </span>
+          </a>
+
+          {/* Github - 170° */}
+          <a
+            href="https://github.com/artsiders"
+            target="_blank"
+            rel="noreferrer"
+            className="z-20 cursor-pointer absolute flex text-[12px] xxs:text-sm items-center h-12 gap-1 p-2 shadow-neomorphism dark:shadow-none hover:shadow-card bg-[#f7f7f7] dark:bg-tertiary/90 dark:hover:bg-tertiary border-2 border-white dark:border-b-tertiary dark:border-transparent rounded-xl w-fit"
+            style={{
+              transform: `translate(${calculatePosition(170).x}px, ${calculatePosition(170).y}px) translate(-55%, -50%)`
+            }}
+          >
+            <BsGithub color="#242424" />
+            <span className="items-center hidden gap-1 380:flex">
+              <b className='hidden' translate="no">Artsiders</b>
+              <BiLinkExternal />
+            </span>
+          </a>
+
+          {/* WhatsApp - 13° */}
+          <a
+            href="https://wa.link/n4mjqu"
+            target="_blank"
+            rel="noreferrer"
+            className="z-20 cursor-pointer absolute flex text-[12px] xxs:text-sm items-center h-12 gap-1 p-2 shadow-neomorphism dark:shadow-none hover:shadow-card bg-[#f7f7f7] dark:bg-tertiary/90 dark:hover:bg-tertiary border-2 border-white dark:border-b-tertiary dark:border-transparent rounded-xl w-fit"
+            style={{
+              transform: `translate(${calculatePosition(13).x}px, ${calculatePosition(13).y}px) translate(55%, -50%)`
+            }}
+          >
+            <BsWhatsapp color="green" />
+            <span className="items-center hidden gap-1 380:flex">
+              <b className='hidden'><span className='font-light'>+237</span> 677 41 76 38</b>
+              <BiLinkExternal />
+            </span>
+          </a>
+
+          {/* Email - 135° */}
+          <a
+            href="mailto:salim.artsider@gmail.com"
+            className="z-20 cursor-pointer absolute flex text-[12px] xxs:text-sm items-center h-12 gap-1 p-2 shadow-neomorphism dark:shadow-none hover:shadow-card bg-[#f7f7f7] dark:bg-tertiary/90 dark:hover:bg-tertiary border-2 border-white dark:border-b-tertiary dark:border-transparent rounded-xl w-fit"
+            style={{
+              transform: `translate(${calculatePosition(135).x}px, ${calculatePosition(135).y}px) translate(-55%, -50%)`
+            }}
+          >
+            <AiOutlineMail color="#bc0b47" />
+            <span className="items-center hidden gap-1 380:flex">
+              <b className='hidden'>salim.artsider@gmail.com</b>
+              <BiLinkExternal />
+            </span>
+          </a>
+
         </div>
       </div>
     </div>

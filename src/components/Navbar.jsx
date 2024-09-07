@@ -103,9 +103,8 @@ const Navbar = () => {
               className="hidden capitalize absolute top-full right-px mt-1 py-2 w-40 rounded-lg bg-[#f7f7f7] shadow-none ring-1 ring-slate-900/5 text-sm leading-6 font-semibold text-slate-700 dark:bg-slate-800 dark:text-slate-300 dark:highlight-white/5 border-[1px] border-white dark:border-transparent"
             >
               <span
-                className={`cursor-pointer hover:text-primary/60 flex items-center gap-2 px-3 py-1 ${
-                  lang === "fr" ? "text-primary dark:text-primary" : ""
-                }`}
+                className={`cursor-pointer hover:text-primary/60 flex items-center gap-2 px-3 py-1 ${lang === "fr" ? "text-primary dark:text-primary" : ""
+                  }`}
                 onClick={() => {
                   setLang("fr");
                   i18n.changeLanguage("fr");
@@ -115,9 +114,8 @@ const Navbar = () => {
                 {t("french")}
               </span>
               <span
-                className={`cursor-pointer hover:text-primary/60 flex items-center gap-2 px-3 py-1 ${
-                  lang === "en" ? "text-primary dark:text-primary" : ""
-                }`}
+                className={`cursor-pointer hover:text-primary/60 flex items-center gap-2 px-3 py-1 ${lang === "en" ? "text-primary dark:text-primary" : ""
+                  }`}
                 onClick={() => {
                   setLang("en");
                   i18n.changeLanguage("en");
@@ -138,12 +136,12 @@ const Navbar = () => {
         </div>
       </div>
       <nav
-        className={`fixed 
+        className={`fixed hidden
         z-20
         w-screen
         sm:w-fit
         justify-center
-        flex 
+        @flex 
         items-center
         xs:gap-3
         gap-2
@@ -162,9 +160,8 @@ const Navbar = () => {
             key={key}
             href={item.link}
             onClick={() => setActive(key)}
-            className={`text-xl p-2.5 rounded-full sm:cursor-pointer hover:bg-primary hover:text-white transition-all  ${
-              key === active && "bg-primary text-white"
-            } `}
+            className={`text-xl p-2.5 rounded-full sm:cursor-pointer hover:bg-primary hover:text-white transition-all  ${key === active && "bg-primary text-white"
+              } `}
           >
             {createElement(item.icon)}
           </a>
