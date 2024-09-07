@@ -4,13 +4,19 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { BsWhatsapp } from "react-icons/bs";
 import { BsYoutube } from "react-icons/bs";
 import profile from "../assets/profile.webp";
+import { IoMdClose } from "react-icons/io";
 
 const ProfilePicture = () => {
   return (
     <div className="relative z-10 profile-picture">
+      <div className="absolute h-11 top-[48px] w-[calc(100%-20px)] left-[10px] z-20 flex flex-row items-center gap-1 px-2 py-1 bg-white dark:bg-primary/20 rounded-lg">
+        <div className="w-3 h-3 bg-red-500 rounded-full cursor-pointer hover:bg-red-300"></div>
+        <div className="w-3 h-3 bg-yellow-500 rounded-full cursor-pointer hover:bg-yellow-300"></div>
+        <div className="w-3 h-3 bg-green-500 rounded-full cursor-pointer hover:bg-green-300"></div>
+      </div>
       <img
         loading="lazy"
-        className="relative z-20 pointer-events-none"
+        className="relative z-20 pointer-events-none h-14 w-14"
         src={profile}
         alt="contact-image"
         width={400}

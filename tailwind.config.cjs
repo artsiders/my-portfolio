@@ -29,7 +29,7 @@ module.exports = {
       },
       backgroundImage: {
         "hero-pattern-light": "url('/src/assets/herobg-light.webp')",
-        "hero-pattern-dark": "url('/src/assets/herobg-dark.webp')",
+        "hero-pattern-dark": "url('/src/assets/herobg-dark.svg')",
       },
       fontFamily: {
         code: ["'Cascadia Code'", "Consolas", "'Lucida Console'"],

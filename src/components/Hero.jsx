@@ -1,5 +1,5 @@
 import { BsRocketTakeoff } from "react-icons/bs";
-import ProfilePicture from "./ProfilePicture";
+import profile from "../assets/salim-toman-hero portfolio.png";
 import { useTranslation } from "react-i18next";
 import { IoMdClose } from "react-icons/io";
 
@@ -7,16 +7,16 @@ const Hero = () => {
   const { t } = useTranslation();
 
   return (
-    <header id="home" className="relative flex min-h-screen mx-auto">
-      <div className="inset-0 flex flex-col-reverse items-center justify-between gap-10 md:gap-24 lg:gap-40 mx-auto mt-20 mb-10 max-w-7xl paddingX md:grid md:grid-cols-2 md:items-start">
+    <header id="home" className="relative flex h-screen mx-auto">
+      <div className="mx-auto mt-28 max-w-7xl paddingX flex flex-col-reverse md:grid md:grid-cols-2 md:gap-12">
         {/* <div className="absolute flex flex-col items-center justify-center mt-5">
           <div className="w-5 h-5 rounded-full bg-primary" />
           <div className="w-1 h-40 sm:h-80 violet-gradient" />
         </div> */}
+        <h1 className="heroHeadText col-span-2">
+          {t("hi")} <span className="text-primary">Salim</span>
+        </h1>
         <div className="flex flex-col justify-center w-full h-full">
-          <h1 className="heroHeadText">
-            {t("hi")} <span className="text-primary">Salim</span>
-          </h1>
           <div className="block heroSubText">
             <span className="bg-[#f7f7f7]/30 backdrop-blur-sm my-4 leading-7 min-h-[calc(100%_-_100px)] max-w-[calc(100vw_-_48px)] flex flex-col dark:bg-tertiary/30 border-2 border-white dark:border-primary/20 shadow-card dark:shadow-none relative rounded-2xl p-2 xs:text-[16px] text-[14px] font-bold">
               <div className="flex flex-row items-center gap-1 px-2 py-1 bg-white dark:bg-primary/20 rounded-lg">
@@ -60,9 +60,22 @@ const Hero = () => {
             </span>
           </div>
         </div>
-        <div className="flex items-center justify-center w-full h-full max-w-full">
-          <ProfilePicture />
+
+        <div className="flex flex-col justify-end w-full h-full">
+          <img
+            loading="lazy"
+            className="relative w-[calc(25vw_-_50px)] mx-auto"
+            src={profile}
+            alt="contact-image"
+          />
         </div>
+
+
+
+
+        {/* <div className="flex flex-col justify-center w-full h-full">
+          <ProfilePicture />
+        </div> */}
       </div>
     </header>
   );
