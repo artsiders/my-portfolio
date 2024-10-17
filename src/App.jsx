@@ -2,7 +2,6 @@ import { BrowserRouter } from "react-router-dom";
 import { createContext, useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import About from "./components/About";
 import Experience from "./components/Experience";
 import Tech from "./components/Tech";
 import Works from "./components/Works";
@@ -15,6 +14,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import Footer from "./components/Footer";
 import { Toaster } from "react-hot-toast";
+import Services from "./components/Services";
 
 export const ThemeContext = createContext("light");
 
@@ -60,7 +60,7 @@ const App = () => {
             <Navbar />
             <Hero />
           </div>
-          <About />
+          <Services />
           <Experience />
           <Tech />
           <Works />
