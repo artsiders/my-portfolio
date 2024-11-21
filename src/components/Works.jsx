@@ -11,6 +11,7 @@ import thumbCampus from "../assets/work/thumb_campus.webp";
 import thumbMaadana from "../assets/work/thumb_maadana.webp";
 import thumbSmartbook from "../assets/work/thumb_smartbook.webp";
 import thumbSocapco from "../assets/work/thumb_socapco.webp";
+import thumbPangoafrika from "../assets/work/thumb_pangoafrika.webp";
 
 import eatsy from "../assets/work/eatsy.webp";
 import altplusSite from "../assets/work/altplus.webp";
@@ -20,6 +21,7 @@ import campus from "../assets/work/campus.webp";
 import maadana from "../assets/work/maadana.webp";
 import smartbook from "../assets/work/smartbook.webp";
 import socapco from "../assets/work/socapco.webp";
+import pangoafrika from "../assets/work/pangoafrika.webp";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -32,6 +34,28 @@ import { ThemeContext } from "../App";
 const Works = () => {
   const { t } = useTranslation();
   const projects = [
+    {
+      name: "Pangoafrika",
+      description: t("works.pangoafrika"),
+      tags: [
+        {
+          name: "Javascript",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Reactjs",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Tailwindcss",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: pangoafrika,
+      thumbnail: thumbPangoafrika,
+      demo: "http://pangoafrika.com/",
+      sourceCode: "",
+    },
     {
       name: "Change new life MLM",
       description: t("works.changenewlife"),
@@ -51,7 +75,7 @@ const Works = () => {
       ],
       image: changenewlife,
       thumbnail: thumbChangenewlife,
-      demo: "https://change-new-life.vercel.app/",
+      demo: "https://www.changenewlife.com/",
       sourceCode: "",
     },
     {
@@ -73,7 +97,7 @@ const Works = () => {
       ],
       image: eatsy,
       thumbnail: thumbEatsy,
-      demo: "https://resto-qr.vercel.app/",
+      demo: "https://eatsy.shop/",
       sourceCode: "",
     },
     {
@@ -95,7 +119,7 @@ const Works = () => {
       ],
       image: altplusSite,
       thumbnail: thumbAltplusSite,
-      demo: "https://alt-plus.onrender.com/",
+      demo: "https://altplus.dev/",
       sourceCode: "",
     },
     {

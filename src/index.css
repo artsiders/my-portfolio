@@ -298,7 +298,7 @@ body {
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  @apply p-2 m-0 text-xl rounded-full text-writing dark:text-white bg-light/30 shadow-neomorphism dark:shadow-none dark:bg-dark/30 backdrop-blur-xl;
+  @apply p-2 m-0 text-xl rounded-full text-white shadow-none bg-dark/80 backdrop-blur-xl;
 }
 .swiper-button-prev {
   @apply left-2 md:left-10;

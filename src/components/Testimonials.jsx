@@ -64,7 +64,7 @@ const Testimonials = () => {
             type="button"
             className="btn mb-28 md:mb-0"
           >
-            <span className="mr-2">{t("testimonial")}</span>
+            <span className="mr-2">{t("addTestimonial")}</span>
             <FaRegComment />
           </button>
           {visible && (

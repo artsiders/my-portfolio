@@ -9,7 +9,7 @@ import { BsYoutube } from "react-icons/bs";
 import { BsFacebook } from "react-icons/bs";
 import { useTranslation } from "react-i18next";
 
-const ServiceCard = ({ index, title, icon, description, image }) => {
+const ServiceCard = ({ index, title, icon, description, image, video }) => {
   const [visible, setVisible] = useState(false);
   const { t } = useTranslation();
   return (
@@ -46,15 +46,29 @@ const ServiceCard = ({ index, title, icon, description, image }) => {
             </span>
           </div>
           <div className="md:max-w-sm p-5">
-            <img
-              loading="lazy"
-              src={image}
-              alt={`image-${title}`}
-              width={1366}
-              height={768}
-              className="w-full mb-2 h-fit border-2 border-white rounded-md shadow-card dark:shadow-none dark:border-transparent"
-              data-aos="fade-up"
-            />
+            {
+              video ? (
+                <iframe
+                  className="w-full mb-2 border-2 border-white rounded-md shadow-card dark:shadow-none dark:border-transparent"
+                  width="100%"
+                  height="250"
+                  src={`${video}?autoplay=1`}
+                  title="ARRÊTEZ DE REGARDER DES TUTORIELS DE PROGRAMMATION ❌"
+                  rel="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; autoplay"
+                  allowFullScreen
+                ></iframe>
+              ) :
+                <img
+                  loading="lazy"
+                  src={image}
+                  alt={`image-${title}`}
+                  width={1366}
+                  height={768}
+                  className="w-full mb-2 h-fit border-2 border-white rounded-md shadow-card dark:shadow-none dark:border-transparent"
+                  data-aos="fade-up"
+                />
+            }
             {description}
             <br />
             <span className="font-bold mt-4 block">{t("contactMe")}</span>

@@ -49,6 +49,7 @@ const About = () => {
       icon: contentCreator,
       image: contentCreatorIll,
       description: t("services.contentCreatorDesc"),
+      video: "https://www.youtube.com/embed/WLCTjBgNJss?si=UlV_lZJD8nq3r2Sk"
     },
   ];
 
