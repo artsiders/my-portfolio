@@ -25,7 +25,7 @@ import pangoafrika from "../assets/work/pangoafrika.webp";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Parallax } from "swiper/modules";
+import { Navigation, Pagination, Parallax, Autoplay } from "swiper/modules";
 import ProjectCard from "./ProjectCard";
 import { useTranslation } from "react-i18next";
 import { useContext } from "react";
@@ -254,11 +254,17 @@ const Works = () => {
           }}
           speed={600}
           parallax={true}
+          loop={true}
+          autoplay={{
+            delay: 5000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          }}
           pagination={{
             clickable: true,
           }}
           navigation={true}
-          modules={[Parallax, Pagination, Navigation]}
+          modules={[Parallax, Pagination, Navigation, Autoplay]}
           className={`${Theme === "light" ? "bg-hero-pattern-light" : "bg-hero-pattern-dark"
             } bg-cover bg-no-repeat bg-center bg-fixed padding`}
         >
