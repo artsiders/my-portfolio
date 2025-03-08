@@ -12,6 +12,8 @@ import thumbMaadana from "../assets/work/thumb_maadana.webp";
 import thumbSmartbook from "../assets/work/thumb_smartbook.webp";
 import thumbSocapco from "../assets/work/thumb_socapco.webp";
 import thumbPangoafrika from "../assets/work/thumb_pangoafrika.webp";
+import thumbBrasserie from "../assets/work/brasserie_de_bethusy.webp";
+import Brasserie from "../assets/work/brasserie_de_bethusy.webp";
 
 import eatsy from "../assets/work/eatsy.webp";
 import altplusSite from "../assets/work/altplus.webp";
@@ -55,6 +57,29 @@ const Works = () => {
       thumbnail: thumbPangoafrika,
       demo: "http://pangoafrika.com/",
       sourceCode: "",
+    },
+    {
+      name: "Brasserie de Béthusy",
+      description: t("works.brasserie_de_bethusy"),
+      tags: [
+        {
+          name: "NextJS 15",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "GSAP",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Tailwindcss",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: Brasserie,
+      thumbnail: thumbBrasserie,
+      demo: "https://brasserie-de-bethusy.vercel.app/",
+      sourceCode: "",
+      dev: true,
     },
     {
       name: "Change new life MLM",
@@ -229,6 +254,7 @@ const Works = () => {
       sourceCode: "",
     },
   ];
+
   const { Theme } = useContext(ThemeContext);
 
   return (
@@ -257,7 +283,7 @@ const Works = () => {
           loop={true}
           autoplay={{
             delay: 5000,
-            disableOnInteraction: false,
+            disableOnInteraction: true,
             pauseOnMouseEnter: true,
           }}
           pagination={{

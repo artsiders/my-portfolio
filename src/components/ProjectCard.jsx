@@ -9,6 +9,7 @@ const ProjectCard = ({
   demo,
   sourceCode,
   thumbnail,
+  dev,
 }) => {
   const mobile = window.matchMedia("(max-width: 640px)").matches;
   return (
@@ -30,7 +31,7 @@ const ProjectCard = ({
         <div>
           <div className="py-3 px-8 sm:px-3">
             <span className="font-bold text-1xl md:text-2xl text-writing dark:text-white">
-              {name}
+              {name} {dev && <span className="text-primary bg-primary/20 rounded-xl px-2 text-sm">Building</span>}
             </span>
             <p className="mt-2 text-writing dark:text-white-100">
               {description}
@@ -48,11 +49,10 @@ const ProjectCard = ({
               target="_blank"
               rel="noreferrer"
               href={sourceCode}
-              className={`!bg-gray-800 btn !w-full xs:!w-auto flex justify-between ${
-                sourceCode
-                  ? ""
-                  : "pointer-events-none !bg-gray-800/40 dark:!bg-dark/10 dark:!border-gray-800"
-              }`}
+              className={`!bg-gray-800 btn !w-full xs:!w-auto flex justify-between ${sourceCode
+                ? ""
+                : "pointer-events-none cursor-not-allowed opacity-40 !bg-gray-800/40 dark:!bg-dark/10 dark:!border-gray-800"
+                }`}
             >
               Code <AiOutlineGithub className="ml-2" />
             </a>
@@ -60,11 +60,10 @@ const ProjectCard = ({
               target="_blank"
               rel="noreferrer"
               href={demo}
-              className={`!w-full xs:!w-auto flex justify-between btn ${
-                demo
-                  ? ""
-                  : "pointer-events-none !bg-primary/40 dark:!bg-dark/10 dark:!border-gray-800"
-              }`}
+              className={`!w-full xs:!w-auto flex justify-between btn ${demo
+                ? ""
+                : "pointer-events-none !bg-primary/40 dark:!bg-dark/10 dark:!border-gray-800"
+                }`}
             >
               Demo <BsBrowserEdge className="ml-2" />
             </a>
