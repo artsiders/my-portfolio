@@ -2,7 +2,7 @@ import { AiOutlineGithub } from "react-icons/ai";
 import { useTranslation } from "react-i18next";
 
 import typescript from "../assets/tech/typescript.webp";
-import reactjs from "../assets/tech/reactjs.webp";
+import nextjs from "../assets/tech/nextjs.webp";
 import tailwind from "../assets/tech/tailwind.webp";
 import nodejs from "../assets/tech/nodejs.webp";
 import mongodb from "../assets/tech/mongodb.webp";
@@ -19,8 +19,8 @@ const Tech = () => {
       icon: typescript,
     },
     {
-      name: "React JS",
-      icon: reactjs,
+      name: "Next JS",
+      icon: nextjs,
     },
     {
       name: "Tailwind CSS",
