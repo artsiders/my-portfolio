@@ -1,5 +1,6 @@
-import { BsBrowserEdge } from "react-icons/bs";
+import { BiLinkExternal } from "react-icons/bi";
 import { AiOutlineGithub } from "react-icons/ai";
+import { useTranslation } from "react-i18next";
 
 const ProjectCard = ({
   name,
@@ -12,6 +13,7 @@ const ProjectCard = ({
   dev,
 }) => {
   const mobile = window.matchMedia("(max-width: 640px)").matches;
+  const { t } = useTranslation();
   return (
     <div className="py-8 w-full sm:max-w-[90vw] lg:max-w-5xl relative z-0 mx-auto max-w-7xl">
       <div
@@ -65,7 +67,7 @@ const ProjectCard = ({
                 : "pointer-events-none !bg-primary/40 dark:!bg-dark/10 dark:!border-gray-800"
                 }`}
             >
-              Demo <BsBrowserEdge className="ml-2" />
+              {t("works.preview")} <BiLinkExternal className="ml-2" />
             </a>
           </div>
         </div>

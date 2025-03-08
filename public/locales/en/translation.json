@@ -63,6 +63,8 @@
     "point10": "Perform a digital audit for businesses."
   },
   "works": {
+    "showAll": "Show all projects",
+    "preview": "Preview",
     "pangoafrika": "Pangoafrika is a multifunctional platform that allows users to create online shops to sell fashion items, offer hotel services, or manage real estate, inspired by the Airbnb model. The project aims to make digital services more accessible to professionals while emphasizing inclusivity and social impact.",
     "brasserie_de_bethusy": "Modern website for Brasserie de Béthusy, combining presentation and online ordering. Built with Next.js for a smooth and intuitive experience.",
     "eatsy": "This innovative application revolutionizes the dining experience by allowing customers to scan a QR code to access the restaurant’s menu. It also provides efficient order management for the restaurant. A digital tool that combines convenience for the customer and efficiency for the restaurateur.",

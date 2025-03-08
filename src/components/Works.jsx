@@ -1,3 +1,4 @@
+import { AiOutlineArrowRight } from "react-icons/ai";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -272,7 +273,8 @@ const Works = () => {
         </div>
       </div>
 
-      <div className="h-full w-full">
+      <div className={`${Theme === "light" ? "bg-hero-pattern-light" : "bg-hero-pattern-dark"
+        } bg-cover bg-no-repeat bg-center bg-fixed w-full h-full padding`}>
         <Swiper
           style={{
             "--swiper-navigation-color": "#fff",
@@ -291,8 +293,7 @@ const Works = () => {
           }}
           navigation={true}
           modules={[Parallax, Pagination, Navigation, Autoplay]}
-          className={`${Theme === "light" ? "bg-hero-pattern-light" : "bg-hero-pattern-dark"
-            } bg-cover bg-no-repeat bg-center bg-fixed padding`}
+          className={``}
         >
           {projects.map((project, index) => (
             <SwiperSlide key={index}>
@@ -300,6 +301,11 @@ const Works = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+        <div className="flex justify-center w-full items-center">
+          <button className="btn mt-10">
+            {t("works.showAll")} <AiOutlineArrowRight className="ml-2" />
+          </button>
+        </div>
       </div>
     </section>
   );
