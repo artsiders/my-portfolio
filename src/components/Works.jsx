@@ -1,4 +1,3 @@
-import { AiOutlineArrowRight } from "react-icons/ai";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -301,11 +300,11 @@ const Works = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className="flex justify-center w-full items-center">
+        {/* <div className="flex justify-center w-full items-center">
           <button className="btn mt-10">
             {t("works.showAll")} <AiOutlineArrowRight className="ml-2" />
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   );
