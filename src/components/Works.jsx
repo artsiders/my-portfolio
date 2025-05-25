@@ -77,7 +77,7 @@ const Works = () => {
       ],
       image: Brasserie,
       thumbnail: thumbBrasserie,
-      demo: "https://brasserie-de-bethusy.vercel.app/",
+      demo: "https://bethusy.altplus.dev/",
       sourceCode: "",
       dev: true,
     },
